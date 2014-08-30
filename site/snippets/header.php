@@ -1,7 +1,7 @@
 <?
 
 // Site settings and general variables
-$css_update_date = "20140823u";
+$css_update_date = "20140830a";
 $js_update_date = "20140823f";
 $nl = "\r\n";
 $page_type = "";
@@ -28,7 +28,6 @@ if($page_name=='') $page_name = 'home';
 // Tweaks to the body tag
 $body_extra='';
 if($page_type!='legal'){
-	//$body_extra=' onload="fullHeight();';
 	if($page->title()=='Find'&&!isset($_GET['term'])){
 		$body_extra.=' onload="document.forms.searchform.term.focus();"';
 	}
@@ -90,7 +89,6 @@ if($page->isVisible() || $page_name=="home" || $page_name=="links"){
 }
 
 // Setup a profile image
-//$profile_image_path = '/assets/images/common/brendan-murty.jpg';
 $profile_image_path = '/assets/images/common/brendan-and-isla.jpg';
 
 ?><!DOCTYPE html>

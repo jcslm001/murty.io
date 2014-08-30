@@ -1,20 +1,10 @@
 <?
 
 function __autoload($class_name){
-	// Automatically load OO classes
+	// Automatically load object-oriented classes
 	// Example: '$testing = new \Testing\Begin();' would load '/html/site/classes/Testing/Begin.php'
 	
 	$class_path = './site/classes/'.str_replace('\\', '/', $class_name).'.php';
-
-	// Debugging
-	/*
-	if(is_dev()){
-		$debug_message = 'Loaded ';
-		if(!file_exists($class_path)) $debug_message = 'Couldn\'t find ';
-		echo $debug_message.'<strong>'.$class_name.'</strong> from <em>'.$class_path.'</em><br />';
-	}
-	*/
-
 	if(file_exists($class_path)) require_once $class_path;
 }
 

@@ -1,4 +1,4 @@
-/* Force a suitable viewport */
+/* Force suitable screen viewports */
 
 @-webkit-viewport{width:device-width;height:device-height}
 @-moz-viewport{width:device-width;height:device-height}
@@ -186,6 +186,7 @@ ul.item-listing li.more a{width:100px;background:#090909;float:left;margin:0 15p
 ul.item-listing li.more a:hover{background:#000}
 
 /* Item Listing: Grid view */
+
 .name_github article, .name_instagram article, .name_tweets article, .name_posts article, .name_links article, .type_tag-list article, .type_home article, .name_search article{width:96%;padding:2%}
 .type_home article{padding-top:0}
 ul.item-listing.grid{width:100%;max-width:1300px;margin:0 auto}
@@ -212,6 +213,8 @@ ul.item-listing.grid i{color:#fff;float:none;margin:1px 7px 0 0}
 	ul.item-listing.grid .instagram span{height:auto}
 }
 
+/* Legal pages */
+
 .type_legal{background:#fff none 0 0 no-repeat;color:#000;height:auto}
 .type_legal #container{background:#fff none 0 0 no-repeat;color:#000;padding-top:1%;height:auto}
 .type_legal header{background:transparent none 0 0 no-repeat;height:auto;padding:0;margin:0 auto;text-align:left;width:100%;max-width:700px;float:none}
@@ -230,6 +233,9 @@ ul.item-listing.grid i{color:#fff;float:none;margin:1px 7px 0 0}
 .type_legal article ul{margin:0 0 30px 40px}
 .type_legal hr{background:#ccc}
 .name_about p,.name_contact p{clear:none}
+
+/* Tweaks for different screen sizes */
+
 @media only screen and (max-width:2000px){
 	header,footer,nav,article,section#about{width:50%;padding:2% 25%}
 }
@@ -321,7 +327,7 @@ ul.item-listing.grid i{color:#fff;float:none;margin:1px 7px 0 0}
 	@page{margin:0.5cm}
 }
 
-/* AJAX states */
+/* AJAX states and loading animations */
 
 section#content.loading{height:600px}
 section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animation: fadein 3s;-ms-animation: fadein 3s;-o-animation: fadein 3s;animation: fadein 3s}
