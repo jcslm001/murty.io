@@ -4,8 +4,7 @@
 
 function instagram_user_activity_public($username='highhorser', $options=''){
 
-	snippet('auth');
-	$instagram = new \Instagram($auth_instagram_client, $auth_instagram_secret, '');
+	$instagram = new \Instagram($GLOBALS['auth_instagram_client'], $GLOBALS['auth_instagram_secret'], '');
 	$post_items = '';
 
 	if($username == 'highhorser'){
@@ -40,7 +39,7 @@ function instagram_user_activity_public($username='highhorser', $options=''){
 	// Show liked posts - Limited to "highhorser" as user authentication is required
 	if($username == 'highhorser'){
 
-		$instagram->setAccessToken($auth_instagram_user);
+		$instagram->setAccessToken($GLOBALS['auth_instagram_user']);
 		$liked = $instagram->getUserLikes('10');
 		
 		if($liked){
@@ -74,8 +73,7 @@ function instagram_user_activity_public($username='highhorser', $options=''){
 
 function instagram_user_id($username='highhorser', $options=''){
 
-	snippet('auth');
-	$client = new \Instagram($auth_instagram_client);
+	$client = new \Instagram($GLOBALS['auth_instagram_client']);
 	$result = $client->searchUser($username, 1);
 
 	if($result){

@@ -8,6 +8,7 @@ $page_type = "";
 $page_name = "";
 
 // Add common files
+snippet('auth');
 snippet('libs_general');
 snippet('libs_tags');
 snippet('libs_page');

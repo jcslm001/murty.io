@@ -2,8 +2,6 @@
 
 function list_items($pages_object,$type='all',$mode='all'){
 
-	snippet('auth');
-
 	$nl="\r\n";
 	$i=0;
 	$l='';
@@ -132,7 +130,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 		}
 
 		// Instagram
-		$instagram = new \Instagram($auth_instagram_client, $auth_instagram_secret, '');
+		$instagram = new \Instagram($GLOBALS['auth_instagram_client'], $GLOBALS['auth_instagram_secret'], '');
 		if($instagram){
 
 			// Show posts by "highhorser"
@@ -158,7 +156,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 			}
 
 			// Show posts liked by "highhorser"
-			$instagram->setAccessToken($auth_instagram_user);
+			$instagram->setAccessToken($GLOBALS['auth_instagram_user']);
 			$liked = $instagram->getUserLikes('10');
 			if($liked){
 				foreach($liked->data as $like){

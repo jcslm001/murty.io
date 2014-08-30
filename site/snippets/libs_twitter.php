@@ -264,14 +264,12 @@ class TwitterAPIExchange
 
 function twitter_follower_count($username='brendanmurty', $options=''){
 
-    snippet('auth');
-
     // Initialise the API connection
     $settings = array(
-        'oauth_access_token' => $auth_twitter_token,
-        'oauth_access_token_secret' => $auth_twitter_secret,
-        'consumer_key' => $auth_twitter_consumer_key,
-        'consumer_secret' => $auth_twitter_consumer_secret
+        'oauth_access_token' => $GLOBALS['auth_twitter_token'],
+        'oauth_access_token_secret' => $GLOBALS['auth_twitter_secret'],
+        'consumer_key' => $GLOBALS['auth_twitter_consumer_key'],
+        'consumer_secret' => $GLOBALS['auth_twitter_consumer_secret']
     );
 
     // Construct the Twitter API URL
@@ -291,14 +289,12 @@ function twitter_follower_count($username='brendanmurty', $options=''){
 
 function twitter_tweets_data($username='brendanmurty', $amount='10', $options=''){
 
-    snippet('auth');
-
-	// Initialise the API connection
+    // Initialise the API connection
 	$settings = array(
-	    'oauth_access_token' => $auth_twitter_token,
-	    'oauth_access_token_secret' => $auth_twitter_secret,
-	    'consumer_key' => $auth_twitter_consumer_key,
-	    'consumer_secret' => $auth_twitter_consumer_secret
+	    'oauth_access_token' => $GLOBALS['auth_twitter_token'],
+	    'oauth_access_token_secret' => $GLOBALS['auth_twitter_secret'],
+	    'consumer_key' => $GLOBALS['auth_twitter_consumer_key'],
+	    'consumer_secret' => $GLOBALS['auth_twitter_consumer_secret']
 	);
 
 	// Construct the Twitter API URL

@@ -15,6 +15,7 @@ if ( get("method") ) {
 
 	// Include common files
 
+	snippet('auth');
 	snippet('libs_general');
 	snippet('libs_tags');
 	snippet('libs_page');
