@@ -15,4 +15,6 @@ As I'm self-taught, learning by example helped my start my career. I hope a budd
 
 ## License ##
 
-All files here are offered under the [GPL V2 license](/LICENSE). However, you may not use files or content in the */content* and */assets/images* folders without my permission.
+All files are licences under the [CSS-Tricks License](/LICENSE). This was created by [Chris Coyier](https://github.com/chriscoyier/) and his attitude on the open web is an inspiration for me.
+
+The files in the */content* and */assets/images* directories contain my own personal opinions and image content, please don't use these without my permission.
