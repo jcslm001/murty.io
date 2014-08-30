@@ -1,0 +1,9 @@
+Title: Fixing Windows 8
+----
+Date: 20131223
+----
+Tags: ux, windows
+----
+Link: http://jaymachalani.com/blog/2013/12/12/fixing-windows-8
+----
+Text: Jay Machalani explains his proposed solutions to fix some common Windows 8 complaints.

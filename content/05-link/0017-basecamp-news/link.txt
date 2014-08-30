@@ -1,0 +1,9 @@
+Title: Basecamp - Announcements
+----
+Date: 20130101
+----
+Tags: productivity
+----
+Link: https://basecamp.com/announcements
+----
+Text: The very latest features and updates to Basecamp.

@@ -1,0 +1,9 @@
+Title: Windows Phone 8 Startscreen Tile sizes and margins
+----
+Date: 20131020
+----
+Tags: develop, phone, tools
+----
+Link: http://stackoverflow.com/questions/12837720/windows-phone-8-startscreen-tile-sizes-and-margins
+----
+Text: The exact measurements of the new Windows Phone 8 Start Screen elements.

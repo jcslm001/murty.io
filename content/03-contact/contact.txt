@@ -1,0 +1,7 @@
+Title: Contact
+----
+Text:
+
+Need some help with a web development project? Do you share my interests in PHP, JavaScript, schnitzel or Starcraft?
+
+I'm always happy to have a chat about any of these topics!

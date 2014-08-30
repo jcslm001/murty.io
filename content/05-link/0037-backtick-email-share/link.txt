@@ -1,0 +1,9 @@
+Title: A "Share to email" command for Backtick
+----
+Date: 20131111
+----
+Tags: brendan, social, tools
+----
+Link: https://gist.github.com/brendanmurty/7406373
+----
+Text: Improve Backtick with a "Share to email" command.

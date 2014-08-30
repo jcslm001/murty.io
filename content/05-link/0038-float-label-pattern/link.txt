@@ -1,0 +1,9 @@
+Title: Float Label Pattern
+----
+Date: 20131111
+----
+Tags: design, inspiration
+----
+Link: http://bradfrostweb.com/blog/post/float-label-pattern/
+----
+Text: Brad Frost explores a new solution for a modern form element design.

@@ -1,0 +1,17 @@
+Design & Development
+----
+Brendan Murty - twitter.com/brendanmurty
+
+Tools
+----
+0 to 255 - 0to255.com
+Digital Ocean - digitalocean.com
+Font Awesome - github.com/fortawesome/font-awesome/
+Paint.net - getpaint.net
+Sublime Text - sublimetext.com
+
+Inspiration
+----
+Base16 - github.com/chriskempson/base16
+Todd Motto - toddmotto.com
+Rdio - rdio.com

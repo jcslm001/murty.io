@@ -1,0 +1,9 @@
+Title: Rename a Windows 8 network
+----
+Date: 20131211
+----
+Tags: windows
+----
+Link: http://superuser.com/a/663940
+----
+Text: Sid Shetye explains how to rename your networks in Windows 8, no more "Network 2"!

@@ -1,0 +1,9 @@
+Title: Hide Twitter auto-expanded media
+----
+Date: 20131106
+----
+Tags: social, tools
+----
+Link: http://userstyles.org/styles/94601/twitter-hide-auto-expanded-media
+----
+Text: Revert the Twitter inline media feature back to the old, click to reveal style.

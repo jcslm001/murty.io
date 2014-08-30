@@ -1,0 +1,9 @@
+Title: Four letter words
+----
+Date: 20140307
+----
+Tags: inspiration
+----
+Link: http://signalvnoise.com/posts/439-four-letter-words
+----
+Text: Jason Fried's classic post about dirty four letter words to be wary of when working with others.

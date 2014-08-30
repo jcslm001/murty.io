@@ -1,0 +1,9 @@
+Title: Understanding Easing
+----
+Date: 20131206
+----
+Tags: design, develop, ui
+----
+Link: https://medium.com/design-ux/bea05243fe3
+----
+Text: Suresh V. Selvaraj explains how easing animations helps to produce a more natural result.

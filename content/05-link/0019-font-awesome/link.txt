@@ -1,0 +1,9 @@
+Title: Font Awesome
+----
+Date: 20131028
+----
+Tags: design, tools
+----
+Link: http://fortawesome.github.io/Font-Awesome/
+----
+Text: Scalable vector icons that can instantly be customised with the power of CSS.

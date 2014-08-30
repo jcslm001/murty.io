@@ -1,0 +1,9 @@
+Title: Paul Thurrot's Supersite for Windows
+----
+Date: 20131028
+----
+Tags: windows
+----
+Link: http://winsupersite.com/
+----
+Text: Paul Thurrot's blog about Windows based hardware and software such as Surface, Windows Phone or Windows 8.

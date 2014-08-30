@@ -1,0 +1,9 @@
+Title: URL Rewriting for the Fearful
+----
+Date: 20131201
+----
+Tags: develop
+----
+Link: http://24ways.org/2013/url-rewriting-for-the-fearful/
+----
+Text: Drew McLellan explains the art of URL rewriting on Apache-based web servers.  

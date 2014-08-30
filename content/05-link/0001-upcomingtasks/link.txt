@@ -1,0 +1,9 @@
+Title: UpcomingTasks
+----
+Date: 20120901
+----
+Tags: australia, brendan, upcomingtasks
+----
+Link: http://upcomingtasks.com
+----
+Text: The simplified way to manage your Basecamp tasks when you’re away from your computer.

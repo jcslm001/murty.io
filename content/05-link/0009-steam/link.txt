@@ -1,0 +1,9 @@
+Title: Steam
+----
+Date: 20130610
+----
+Tags: games, tools
+----
+Link: http://store.steampowered.com/
+----
+Text: Steam is an entertainment platform which allows you to buy games and media once and use them on any device that can run the Steam application.

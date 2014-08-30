@@ -1,0 +1,9 @@
+Title: Kaleidoscope for Mac
+----
+Date: 20131111
+----
+Tags: design, develop, mac, tools
+----
+Link: http://www.kaleidoscopeapp.com/
+----
+Text: Use Kaleidoscope to spot the differences in text, images, and folders.

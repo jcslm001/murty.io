@@ -1,0 +1,9 @@
+Title: JavaScript: Taking Off the Training Wheels
+----
+Date: 20131206
+----
+Tags: javascript
+----
+Link: http://24ways.org/2013/javascript-taking-off-the-training-wheels/
+----
+Text: Tom Ashworth offers some guidance on how to learn more about JavaScript.

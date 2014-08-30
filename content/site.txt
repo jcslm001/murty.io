@@ -1,0 +1,11 @@
+﻿Title: Brendan Murty
+----
+Author: Brendan Murty
+----
+Description: A dedicated, self-taught web developer based in Sydney.
+----
+Copyright: Copyright (date: Year) Brendan Murty. 
+----
+Credits: Powered by (link:http://getkirby.com/ text:Kirby), designed and developed by (link:/about text:Brendan).
+----
+About: (link:/about text:Brendan) is a dedicated, self-taught web developer based in (link:https://maps.google.com.au/maps?q=Sydney,+New+South+Wales,+Australia text:Sydney).

@@ -1,0 +1,94 @@
+Title: Resumé
+----
+Text:
+
+Senior Web Developer
+Based in Sydney, Australia
+[brendanmurty.com](http://brendanmurty.com/)
+[brendan@brendanmurty.com](mailto:brendan@brendanmurty.com)
+
+### Work skills
+
+- Five years of consistent commercial experience in the web development industry
+- Experienced in multiple programming languages such as JavaScript, PHP and ASP
+- Advanced skills in suitable JavaScript and jQuery use
+- Implementation of websites using various CMSs including Siteflex, WordPress, Perch and Kirby
+- Experience with interfacing with third party REST APIs such as Basecamp and Google Maps
+- Setting up websites using IIS 7 and Apache servers
+- Enjoys improving and simplifying office processes
+- Always focuses on documenting code appropriately while working
+- Optimisation of websites for performance
+- Keen eye for small details
+- Eager to learn new skills
+- Advanced skills in both Windows and Mac environments
+
+### I am
+
+- Passionate
+- Honest
+- Punctual
+- Reliable
+- Dedicated
+- Flexible
+
+### Experience
+
+#### UpcomingTasks
+01/09/2012 - Present
+*Web Developer, Support, Creator*
+[upcomingtasks.com](http://upcomingtasks.com/)
+
+- Interfacing with the Basecamp API via a custom PHP function
+- Building the complete code structure
+- Mobile first responsive design and development
+- User interface design
+- Adding new features
+- Providing support to users
+- Diagnosing and fixing bugs
+- Blog posts
+
+#### Solutions Outsourced
+
+01/08/2009 - Present
+Current Position: *Lead Developer: Siteflex Classic*
+Previous Positions: *Siteflex Training Co-ordinator*, *Siteflex Support*, *Front-end Web Developer*
+[solutionsoutsourced.com.au](http://solutionsoutsourced.com.au/)
+[siteflex.com.au](http://siteflex.com.au/)
+
+- Leading a team of web developers who contribute to the Siteflex Classic platform
+- Fixing bugs and building new features on the Siteflex Classic platform
+- Back-end, front-end and user interface development for the Siteflex Classic platform
+- Assisting the Siteflex Support team manage client requests and explain current features
+
+#### PBA Consulting Surveyors
+
+01/04/2004 - 31/07/2009
+*Field Assistant*
+[pbasurvey.com.au](http://pbasurvey.com.au/)
+
+- Locating and creating survey marks
+- Detail, construction, boundary and monitoring surveys
+- Organising files and plans
+- Answering the phone and communicating with clients
+- Creating, designing and delivering plans
+- Creating and maintaining the company’s website
+
+#### Cecil D Barker & Co. Surveyors
+
+30/03/2004 - 10/06/2003
+*Field Assistant*
+
+- Locating and creating survey marks
+- Detail, boundary and monitoring surveys
+- General office duties
+
+#### Education
+
+2009 - Present: Self-taught web developer
+2007 – 2009: Surveying Certificate 3 (TAFE)
+2000 – 2002: HSC at St Mary’s Senior High
+1997 – 2000: School Certificate at Blaxland High
+
+***
+
+*Further details and references available upon request.*
