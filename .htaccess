@@ -1,9 +1,4 @@
-# Redirects
-
-Redirect 301 /readme.md https://github.com/brendanmurty/website/blob/master/readme.md
-Redirect 301 /license.md https://github.com/brendanmurty/website/blob/master/license.md
-
-# Kirby clean URLs, redirects and defaults
+# Clean URLs, redirects and defaults
 
 AddDefaultCharset UTF-8
 <IfModule mod_rewrite.c>
@@ -18,9 +13,11 @@ RewriteRule ^panel/(.*) panel/index.php [L]
 RewriteRule ^blog/rss.php feed.xml [R=301,L]
 RewriteRule ^blog/(.*) post/$1 [R=301,L]
 RewriteRule ^topic:(.*) tag:$1 [R=301,L]
-RewriteRule ^work resume [R=301,L]
-RewriteRule ^cv resume [R=301,L]
-RewriteRule ^find search [R=301,L]
+RewriteRule ^work /resume [R=301,L]
+RewriteRule ^cv /resume [R=301,L]
+RewriteRule ^find /search [R=301,L]
+RewriteRule ^readme.md https://github.com/brendanmurty/website/blob/master/readme.md [R=301,L]
+RewriteRule ^license.md https://github.com/brendanmurty/website/blob/master/license.md [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*) index.php [L]
