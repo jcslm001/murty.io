@@ -3,9 +3,9 @@ brendanmurty.com
 
 ## About ##
 
-Here's my personal website built on [Kirby](https://github.com/bastianallgeier/kirby) with [Sublime Text](http://www.sublimetext.com) and hosted by [Digital Ocean](http://digitalocean.com).
+Here's my entire [personal website](http://brendanmurty.com) built on [Kirby CMS](https://github.com/bastianallgeier/kirbycms), coded in [Sublime Text](http://www.sublimetext.com) and hosted by [Digital Ocean](http://digitalocean.com).
 
-I've also built a customised [pulse feed](/site/snippets/libs_list.php#L3) on the [home page](/site/templates/home.php#L9) to show my recent public activity on [Twitter](https://twitter.com/brendanmurty), [GitHub](https://github.com/brendanmurty) and [Instagram](http://instagram.com/highhorser).
+I've built a customised [pulse feed](/site/snippets/libs_list.php#L3) on the [home page](/site/templates/home.php#L9) to show my recent public activity on [Twitter](https://twitter.com/brendanmurty), [GitHub](https://github.com/brendanmurty) and [Instagram](http://instagram.com/highhorser).
 
 ## Why ##
 
