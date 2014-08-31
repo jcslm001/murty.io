@@ -18,5 +18,3 @@ I hope a budding web developer can learn something new from what I've done here 
 ## License ##
 
 All files in this repository are licensed under the [CSS-Tricks License](/license.md). This was created by [Chris Coyier](https://github.com/chriscoyier/) and his attitude on the open web should be an inspiration for us all.
-
-The files in the */content/* and */assets/images/* directories contain my own personal opinions and image content, please don't use these without my permission.
