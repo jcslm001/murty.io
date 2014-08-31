@@ -36,7 +36,7 @@
 				</ul>
 			</div>
 			<div class="credits">
-				<?php echo kirbytext($site->copyright().' '.$site->credits()) ?>
+				<?php echo kirbytext($site->copyright()) ?>
 			</div>
 		</footer>
 	</section>

@@ -4,8 +4,6 @@ Author: Brendan Murty
 ----
 Description: A dedicated, self-taught web developer based in Sydney.
 ----
-Copyright: Copyright (date: Year) Brendan Murty. 
-----
-Credits: Powered by (link:http://getkirby.com/ text:Kirby), designed and developed by (link:/about text:Brendan).
+Copyright: This is an open source website so feel free to (link:https://github.com/brendanmurty/website text:explore the code) and (link:https://github.com/brendanmurty/website/blob/master/license.md text:read the license).
 ----
 About: (link:/about text:Brendan) is a dedicated, self-taught web developer based in (link:https://maps.google.com.au/maps?q=Sydney,+New+South+Wales,+Australia text:Sydney).
