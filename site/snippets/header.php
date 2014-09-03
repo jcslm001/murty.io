@@ -1,7 +1,7 @@
 <?
 
 // Site settings and general variables
-$css_update_date = "20140830a";
+$css_update_date = "20140903a";
 $js_update_date = "20140823f";
 $nl = "\r\n";
 $page_type = "";
@@ -45,25 +45,7 @@ if($page->title()=='Link'){ go('/links'); }
 // Setup about text for the header and customise page titles
 $header_about_content = '<h2>'.html($page->title()).'</h2>';
 if($page_type=='home'){
-	$header_about_content = array(
-		"I'm a passionate web developer",
-		"I'm currently the Lead Developer of <a href=\"http://siteflex.com.au/\">Siteflex</a> Classic",
-		"I created <a href=\"http://upcomingtasks.com/\">UpcomingTasks</a> to simplify Basecamp use on smaller devices",
-		"I'm a <a href=\"http://islamurty.com\">proud father</a>",
-		"I prefer quality over quantity",
-		"I have a keen eye for detail",
-		"I'm a <a href=\"http://windows.com\">Windows</a> user",
-		"I'm an early adopter",
-		"I'm a <a href=\"http://steamcommunity.com/id/brendanmurty/\">PC gamer</a>",
-		"I use <a href=\"https://basecamp.com/\">Basecamp</a> daily",
-		"I live in <a href=\"https://maps.google.com.au/maps?q=Sydney,+New+South+Wales,+Australia&amp;hl=en&amp;sll=-33.868135,151.207581&amp;sspn=2.125404,1.461182&amp;oq=Sydney,+New+South+Wales,+A&amp;hnear=Sydney+New+South+Wales&amp;t=m&amp;z=9\">Sydney, Australia</a>",
-		"I love to make complicated interfaces easy to use",
-		"I enjoy working with third-party APIs",
-		"I work hard to improve my knowledge every day",
-		"I have an interest in web design and typography",
-		"I use <a href=\"https://github.com/brendanmurty\">GitHub</a> to keep a history of changes to my websites"
-	);
-	$header_about_content = "<p>".$header_about_content[array_rand($header_about_content)]."</p>";
+	$header_about_content='';
 }elseif(param('tag')){
 	$header_about_content='<h2 class="lighter">Tagged <em>'.tag_title(param('tag')).'</em></h2>';
 }elseif($page_name=='about' || $page_name=='contact'){
