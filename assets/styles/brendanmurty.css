@@ -79,7 +79,7 @@ section#about .lighter{color:#666}
 section#about em{color:#555 !important;font-style:normal}
 section#about a:active, section#about a:hover, section#about a:focus{text-decoration:underline}
 section#about p, section#about h2{margin:0;font-weight:400;font-size:30px;line-height:35px}
-section#content{clear:both;width:100%;padding-top:2%;float:left;background:#fff}
+section#content{clear:both;width:100%;float:left;background:#fff}
 .type_home section#content,.name_posts section#content,.name_links section#content,.type_tag-list section#content{background:#E8E6DF}
 article{padding:2% 20%;width:60%;margin:0;float:left}
 header h1{margin:0;display:block;overflow:hidden;float:left;clear:none;max-width:70%}
@@ -188,7 +188,6 @@ ul.item-listing li.more a:hover{background:#000}
 /* Item Listing: Grid view */
 
 .name_github article, .name_instagram article, .name_tweets article, .name_posts article, .name_links article, .type_tag-list article, .type_home article, .name_search article{width:96%;padding:2%}
-.type_home article{padding-top:0}
 ul.item-listing.grid{width:100%;max-width:1300px;margin:0 auto}
 ul.item-listing.grid li{width:23%;margin:0 2% 2% 0}
 ul.item-listing.grid a{width:100%;display:block}
@@ -197,7 +196,7 @@ ul.item-listing.grid a:active em,ul.item-listing.grid a:hover em{background-colo
 ul.item-listing.grid img{width:100%;height:auto;display:block;min-height:300px}
 ul.item-listing.grid span{height:390px;font-size:20px;line-height:30px;padding:12px 5% 0;width:90%;display:block;color:#222;background-color:#fff;word-wrap:break-word;overflow:hidden}
 ul.item-listing.grid .instagram span{height:90px;font-size:16px;line-height:22px}
-ul.item-listing.grid em{color:#fff;font-style:normal;font-size:14px;width:94%;display:block;background-color:#3FB9D1;padding:0 3%;line-height:35px}
+ul.item-listing.grid em{color:#fff;font-style:normal;font-size:16px;width:92%;display:block;background-color:#3FB9D1;padding:0 4%;line-height:47px}
 ul.item-listing.grid i{color:#fff;float:none;margin:1px 7px 0 0}
 @media only screen and (max-width:1200px){
 	ul.item-listing.grid li{width:31%}
