@@ -2,12 +2,13 @@ Title: About
 ----
 Text:
 
-I'm currently working as *Lead Developer: [Siteflex](http://siteflex.com.au/) Classic* where I oversee and develop features for the Siteflex [web management platform](http://www.siteflex.com.au/). In some [spare time](http://www.solutionsoutsourced.com.au/blog/n/tinker-time-produces-a-new-app-upcomingtasks-121017), I created a free web-based [Basecamp](https://basecamp.com/) client called [UpcomingTasks](http://upcomingtasks.com) to easily manage tasks on smaller devices.
+I'm the *Lead Developer* of *[Siteflex](http://siteflex.com.au/) Classic* and my roles include managing and developing features for the Siteflex [web management platform](http://www.siteflex.com.au/). In some [spare time](http://www.solutionsoutsourced.com.au/blog/n/tinker-time-produces-a-new-app-upcomingtasks-121017), I created a free web-based [Basecamp](https://basecamp.com/) client called [UpcomingTasks](http://upcomingtasks.com) to easily manage tasks on smaller devices.
 
 I share my thoughts and favourite links on [Twitter](https://twitter.com/brendanmurty), post some photos to [Instagram](http://instagram.com/highhorser), track music statistics on [Last.fm](http://www.last.fm/user/brendanmurty) and share my code on [GitHub](https://github.com/brendanmurty). I enjoy spending time with [family](http://islamurty.com/) and friends, [playing games](http://steamcommunity.com/id/brendanmurty) and reviewing [schnitzels](http://schnitmydadsays.com/).
 
 ### Career timeline
 
+- Sep 2014: Open sourced [this website](https://github.com/brendanmurty/website) and [UpcomingTasks](https://github.com/brendanmurty/upcomingtasks)
 - Jul 2014: New position at [Solutions Outsourced](http://solutionsoutsourced.com.au/) -  Lead Developer: [Siteflex](http://siteflex.com.au/) Classic
 - Jun 2012: New position at [Solutions Outsourced](http://solutionsoutsourced.com.au/) - [Siteflex](http://siteflex.com.au/) back-end developer
 - Sep 2012: [UpcomingTasks](http://upcomingtasks.com/) released to the public as a free service for Basecamp users
@@ -22,7 +23,7 @@ I share my thoughts and favourite links on [Twitter](https://twitter.com/brendan
 - Dec 2009: Completed Surveying Certificate 3 at [TAFE Ultimo](http://www.sydneytafe.edu.au/future-students/ultimo-college/ultimo-college)
 - Dec 2007: Twitter account created - [brendanmurty](https://twitter.com/brendanmurty)
 - May 2007: Domain registered - [bcmurty.com](http://bcmurty.com/)
-- Jan 2007: Web Development hobby begins
+- Jan 2007: Web development hobby begins
 - Jan 2004: [PBA Consulting Surveyors](http://pbasurvey.com.au/) - Surveyor's Assistant
 - Dec 2003: Cecil D Barker & Co. Surveyors - Left company
 - Jun 2003: Cecil D Barker & Co. Surveyors - Surveyor's Assistant
