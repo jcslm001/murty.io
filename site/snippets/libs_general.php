@@ -32,7 +32,7 @@ function date_human($item_date){
 	$interval = date_diff(date_create(date('j M y')), date_create($item_date));
 	$date_diff = $interval->format('%a');
 	$date_data = str_replace('+', '', $interval->format('%R%a'));
-	if($date_date == 0){
+	if($date_data == 0){
 		$date = 'today';
 	}elseif($date_data == -1){
 		$date = 'yesterday';
