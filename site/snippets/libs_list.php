@@ -100,7 +100,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						$item_content = '';
 						$i++;
 					}elseif($event['type'] == 'WatchEvent'){
-						$event_date = date('j M y', strtotime($event['created_at']));
+						$event_date = date_human(date('j M y', strtotime($event['created_at'])));
 						$event_date_specific = date('D M d H:i:s Y', strtotime($event['created_at']));
 						$event_url = $event['repo']['url'];
 						$event_url = str_replace('api.github.com/repos', 'github.com', $event_url);
