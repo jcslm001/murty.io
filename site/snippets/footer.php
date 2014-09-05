@@ -35,6 +35,14 @@
 					<li><a href="/posts"><span class="number"><?php echo page_count($pages, 'post') ?></span><span class="title">Posts</span></a></li>
 				</ul>
 			</div>
+			<div class="social">
+				<ul>
+					<li><a href="https://twitter.com/brendanmurty" title="View my Twitter profile"><i class="icon icon-twitter"></i></a></li>
+					<li><a href="http://instagram.com/highhorser" title="View my Instagram posts"><i class="icon icon-instagram"></i></a></li>
+					<li><a href="https://github.com/brendanmurty" title="View my code on GitHub"><i class="icon icon-github"></i></a></li>
+					<li class="last"><a href="http://www.last.fm/user/brendanmurty" title="View my music habits on Last.fm"><i class="icon icon-music"></i></a></li>
+				</ul>
+			</div>
 			<div class="credits">
 				<?php echo kirbytext($site->copyright()) ?>
 			</div>
