@@ -161,7 +161,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 			if($liked){
 				foreach($liked->data as $like){
 					if($like){
-						$like_date = date('j M y', $like->created_time);
+						$like_date = date_human(date('j M y', $like->created_time));
 						$like_date_specific = date('D M d H:i:s Y', $like->created_time);
 						$items[$i]['date'] = $like_date_specific;
 						$items[$i]['content'] = '<li class="instagram instagram-liked"><a href="'.$like->link.'" title="View this post on Instagram"><img src="'.$like->images->standard_resolution->url.'" /><span>';
