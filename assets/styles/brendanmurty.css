@@ -156,8 +156,8 @@ ul.tags li{list-style:none outside none;margin:0 0 6px 0;clear:both}
 .post ul.tags,ul.item-listing ul.tags{margin:0;clear:none;float:left}
 .post ul.tags li,ul.item-listing ul.tags li{float:left;clear:none;margin:0}
 .post ul.tags li a,ul.item-listing ul.tags a{padding:0 4px;display:block}
-ul.item-listing .type{background:#e4e4e4;color:#2EA8C0;width:100px;height:100px;border-radius: 100px;clear:left;float:left;margin: 10px 2.5% 0 0;overflow:hidden}
-ul.item-listing .type:hover{background:#cbcbcb}
+ul.item-listing .type{background:#333;color:#2EA8C0;width:100px;height:100px;border-radius: 100px;clear:left;float:left;margin: 10px 2.5% 0 0;overflow:hidden}
+ul.item-listing .type:hover{color:#2B9CB2}
 ul.item-listing .type a{text-decoration:none !important;color:#2EA8C0 !important}
 ul.item-listing .type i{font-size:60px;line-height:102px;text-align:center;display:block;float:none;color:#2EA8C0;margin:0}
 ul.item-listing .info{display:block;clear:right;margin:0}
@@ -171,7 +171,7 @@ ul.item-listing .about .separator,article.item .about .separator{color:#888;marg
 ul.item-listing .about .separator.empty,article.item .about .separator.empty{margin-left:-3px}
 ul.item-listing .about .separator.second-last,article.item .about .separator.second-last{margin-left:3px}
 ul.item-listing .about .date .separator,article.item .about .date .separator{margin:0 0 0 3px}
-ul.item-listing-search,p.item-listing-search-empty{margin-top:20px;float:left}
+p.item-listing-search-empty{text-align:center}
 .type_home article p{margin:0 0 3px}
 .type_home aside{float:left;display:block}
 .type_home aside ul{margin:0;padding:0}
