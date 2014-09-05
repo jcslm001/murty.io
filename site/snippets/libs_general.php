@@ -32,27 +32,18 @@ function date_human($item_date){
 	$interval = date_diff(date_create(date('j M y')), date_create($item_date));
 	$date_diff = $interval->format('%a');
 	$date_data = str_replace('+', '', $interval->format('%R%a'));
-	if($date_data < 0){
+	if($date_date == 0){
+		$date = 'today';
+	}elseif($date_data == -1){
+		$date = 'yesterday';
+	}elseif($date_data < -1 && $date_data > -15){
 		$date = $interval->format('%a').' day';
 		if($date_diff != 1){
 			$date .= 's';
 		}
 		$date .= ' ago';
-	}elseif($date_data >= 1){
-		if($date_data == 1){
-			$date .= 'tomorrow';
-		}elseif($date_data > 1 && $date_data < 8){
-			$date .= 'on '.date('l', strtotime($item_date));
-		}elseif($date_data >= 8 && $date_data < 22){
-			$date .= 'in '.$date_diff.' day';
-			if($date_diff!=1){
-				$date .= 's';
-			}
-		}else{
-			$date .= 'on '.date('j F', strtotime($item_date));
-		}
 	}else{
-		$date .= 'today';
+		$date .= 'on '.$item_date;
 	}
 	return $date;
 }

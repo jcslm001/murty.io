@@ -62,7 +62,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 		$tweets = twitter_tweets_data('brendanmurty', '5', '');
 		if($tweets){
 			foreach($tweets as $tweet){
-				$item_date = date('j M y', strtotime($tweet->{'created_at'}));
+				$item_date = date_human(date('j M y', strtotime($tweet->{'created_at'})));
 				$item_date_specific = date('D M d H:i:s Y', strtotime($tweet->{'created_at'}));
 				$items[$i]['date'] = $item_date_specific;
 				$items[$i]['content'] = '<li class="twitter"><a href="https://twitter.com/brendanmurty/status/'.$tweet->{'id_str'}.'" title="View this post on Twitter"><span>'.$tweet->{'text'}.'</span><em><i class="icon icon-twitter"></i>Posted to Twitter '.$item_date.'</em></a></li>';
@@ -81,7 +81,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 			if($events){
 				foreach($events as $event){
 					if($event['type'] == 'PushEvent' && isset($event['payload']['commits'])){
-						$event_date = date('j M y', strtotime($event['created_at']));
+						$event_date = date_human(date('j M y', strtotime($event['created_at'])));
 						$event_date_specific = date('D M d H:i:s Y', strtotime($event['created_at']));
 						$event_message = $event['payload']['commits']['0']['message'];
 						$event_url = $event['payload']['commits']['0']['url'];
@@ -140,7 +140,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 				$i = 0;
 				foreach($instagram_results->data as $post){
 					if($post){
-						$post_date = date('j M y', $post->created_time);
+						$post_date = date_human(date('j M y', $post->created_time));
 						$post_date_specific = date('D M d H:i:s Y', $post->created_time);
 						$items[$i]['date'] = $post_date_specific;
 						$items[$i]['content'] = '<li class="instagram instagram-post"><a href="'.$post->link.'" title="View this post on Instagram"><img src="'.$post->images->standard_resolution->url.'" /><span>';
