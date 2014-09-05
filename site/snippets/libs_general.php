@@ -43,7 +43,7 @@ function date_human($item_date){
 		}
 		$date .= ' ago';
 	}else{
-		$date .= 'on '.$item_date;
+		$date .= $item_date;
 	}
 	return $date;
 }
