@@ -2,7 +2,7 @@
 
 function __autoload($class_name){
 	// Automatically load object-oriented classes
-	// Example: '$testing = new \Testing\Begin();' would load '/html/site/classes/Testing/Begin.php'
+	// Example: '$testing = new \Testing\Begin();' would load '/site/classes/Testing/Begin.php'
 	
 	$class_path = './site/classes/'.str_replace('\\', '/', $class_name).'.php';
 	if(file_exists($class_path)) require_once $class_path;
@@ -19,7 +19,7 @@ function blurb($content, $length){
 }
 
 function is_dev(){
-	// Check for developer mode
+	// Check query string for developer mode
 	if((isset($_GET['dev']) && $_GET['dev']==1)){
 		return true;
 	}else{
@@ -28,7 +28,8 @@ function is_dev(){
 }
 
 function date_human($item_date){
-	// Create a human friendly date from the "1 Sep 14" format - like "today", "yesterday" or "10 days ago"
+	// Create a human friendly date
+	// Example: 'date_human("1 Sep 14");' would return 'today', 'yesterday', '10 days ago', etc
 	$interval = date_diff(date_create(date('j M y')), date_create($item_date));
 	$date_diff = $interval->format('%a');
 	$date_data = str_replace('+', '', $interval->format('%R%a'));
