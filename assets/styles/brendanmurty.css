@@ -222,8 +222,8 @@ ul.item-listing.grid i{color:#fff;float:none;margin:1px 7px 0 0}
 .type_legal #container{background:#fff none 0 0 no-repeat;color:#000;padding-top:1%;height:auto}
 .type_legal header{background:transparent none 0 0 no-repeat;height:auto;padding:0;margin:0 auto;text-align:left;width:100%;max-width:700px;float:none}
 .type_legal footer{display:none}
-.type_legal #content,.type_legal header,.type_legal #about{max-width:700px;margin:0 auto 2%;float:none;padding:0;background-color:transparent}
-.type_legal #about{background:transparent;color:#333;text-align:left;padding:0;width:100% !important}
+.type_legal #content,.type_legal header,.type_legal #about{max-width:700px;margin:0 auto 2%;float:none;padding:0;background-color:transparent;color:#000}
+.type_legal #about{background:transparent;color:#333;text-align:left;padding:0;margin-bottom:20px;width:100%}
 .type_legal article{margin:0;padding:0;width:100%;background:transparent}
 .type_legal h1,.type_legal h2,.type_legal h3,.type_legal h4,.type_legal a,.type_legal a:focus,.type_legal a:hover,.type_legal a:visited,.type_legal #about h2{color:#000 !important}
 .type_legal h1 a{color:#000 !important;background:transparent !important;padding:0 !important;text-shadow:none}
