@@ -149,7 +149,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						}else{
 							$items[$i]['content'] .= 'Post by @'.$username;
 						}
-						$items[$i]['content'] .= '</span><em><i class="icon icon-instagram"></i>Posted to Instagram '.$post_date.'</em></a></li>';
+						$items[$i]['content'] .= '</span><em><i class="icon icon-instagram"></i>Posted '.$post_date.'</em></a></li>';
 						$i++;
 					}
 				}
