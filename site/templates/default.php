@@ -14,8 +14,12 @@ if($site->uri()->path()->first()=='resume'){
     foreach($tags as $tag){
         $tag_name=$tag->name();
         $tag_title=tag_title($tag_name);
+        $tag_count=$tag->results().' item';
+        if($tag_count!=1){
+            $tag_count.='s';
+        }
         $h.='<li><a href="/tag:'.$tag_name.'" title="View all items tagged '.$tag_title.'"><span>'.$tag_title.'</span>';
-        $h.='<em><i class="icon icon-tag""></i>Tag</em></a></li>';
+        $h.='<em><i class="icon icon-tag""></i>'.$tag_count.'</em></a></li>';
     }
     $h.='</ul>';
     echo $h;

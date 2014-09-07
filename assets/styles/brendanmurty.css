@@ -164,7 +164,7 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 
 	/* Grid view for item lists (Home, Posts, Links) */
 
-	.name_posts article, .name_links article, .type_tag-list article, .type_home article, .name_search article{width:96%;padding:2%}
+	.name_posts article, .name_links article, .name_tags article, .type_tag-list article, .type_home article, .name_search article{width:96%;padding:2%}
 	ul.item-listing.grid{width:100%;max-width:1300px;margin:0 auto}
 	ul.item-listing.grid li{width:23%;margin:0 2% 2% 0}
 	ul.item-listing.grid a{width:100%;display:block}
@@ -172,6 +172,7 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	ul.item-listing.grid a:active em,ul.item-listing.grid a:hover em{background-color:#2B9CB2}
 	ul.item-listing.grid img{width:100%;height:auto;display:block;min-height:300px}
 	ul.item-listing.grid span{height:390px;font-size:20px;line-height:30px;padding:12px 5% 0;width:90%;display:block;color:#fff;background-color:#333;word-wrap:break-word;overflow:hidden}
+	ul.item-listing-tags.grid span{height:80px}
 	ul.item-listing.grid .instagram span{height:90px;font-size:16px;line-height:22px}
 	ul.item-listing.grid em{color:#fff;font-style:normal;font-size:16px;width:92%;display:block;background-color:#3FB9D1;padding:0 4%;line-height:47px}
 	ul.item-listing.grid i{color:#fff;float:none;margin:1px 7px 0 0}
