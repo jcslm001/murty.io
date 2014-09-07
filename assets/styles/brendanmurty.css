@@ -99,7 +99,7 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	#container nav a.current{color:#fff;text-decoration:none;cursor:default}
 	#container nav.actions{padding-top:0;background:#222}
 	#container nav.actions a{color:#fff;background:#3fb9d1;text-transform:none;padding:8px 15px 6px;margin:0 20px 20px 0;border-radius:2px;border-bottom:2px solid #2790A5}
-	#container nav.actions a:active,nav.actions a:focus,nav.actions a:hover{text-decoration:none;background-color:#2790a5}
+	#container nav.actions a:active,#container nav.actions a:focus,#container nav.actions a:hover{text-decoration:none;background-color:#2790a5}
 	footer{color:#f5f5f5;text-align:left}
 	footer div.half{float:left;clear:none;width:49%}
 	footer div.half.statistics{margin-left:2%;text-align:right}
@@ -219,10 +219,10 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	/* Alterations for certain screen sizes */
 
 	@media only screen and (max-width:2000px){
-		header,footer,nav,article,section#about,#container nav.actions{width:50%;padding:2% 25%}
+		header,footer,article,section#about,#container nav{width:50%;padding:2% 25%}
 	}
 	@media only screen and (max-width:1400px){
-		header,footer,nav,article,section#about,#container nav.actions{width:70%;padding:2% 15%}
+		header,footer,nav,article,section#about,#container nav{width:70%;padding:2% 15%}
 	}
 	@media only screen and (max-width:1200px){
 		header,footer,nav,article,section#about{width:80%;padding:3% 10%}
@@ -230,7 +230,7 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 		ul.item-listing.grid img{max-height:300px}
 	}
 	@media only screen and (max-width:1000px){
-		header,footer,nav,article,section#about,#container nav.actions{width:96%;padding:4% 2%;text-align:left}
+		header,footer,nav,article,section#about,#container nav{width:96%;padding:4% 2%;text-align:left}
 		.type_home article{padding-top:2%}
 		footer div.half{width:100%;margin:0;float:none;clear:both;text-align:center}
 		footer ul.stats li{margin-top:4%}
