@@ -8,16 +8,6 @@ function __autoload($class_name){
 	if(file_exists($class_path)) require_once $class_path;
 }
 
-function blurb($content, $length){
-	// Shorten a string to a fixed width
-	$content_length = mb_strlen($content);
-	if($content_length >= $length){
-		return mb_substr($content, 0, $length-3).'...';
-	}else{
-		return $content;
-	}
-}
-
 function is_dev(){
 	// Check query string for developer mode
 	if((isset($_GET['dev']) && $_GET['dev']==1)){

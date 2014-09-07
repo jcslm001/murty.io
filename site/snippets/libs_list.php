@@ -91,7 +91,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						$item_content = '<li class="github github-commit"><a href="'.$event_url.'" title="View this commit on GitHub">';
 						$item_content .= '<span>'.$event['repo']['name'];
 						if($event_message){
-							$item_content .= ': '.blurb($event_message, 120);
+							$item_content .= ': '.excerpt($event_message, 120);
 						}
 						$item_content .= '</span><em><i class="icon icon-github"></i>Authored '.$event_date.'</em></a></li>';
 
@@ -116,7 +116,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						}
 						if($repo){
 							if(array_key_exists('description', $repo)){
-								if($repo['description'] != '') $item_content .= ': '.blurb($repo['description'], 120);
+								if($repo['description'] != '') $item_content .= ': '.excerpt($repo['description'], 120);
 							}
 						}
 						$item_content .= '</span><em><i class="icon icon-github"></i>Starred '.$event_date.'</em></a></li>';
@@ -145,7 +145,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						$items[$i]['date'] = $post_date_specific;
 						$items[$i]['content'] = '<li class="instagram instagram-post"><a href="'.$post->link.'" title="View this post on Instagram"><img src="'.$post->images->standard_resolution->url.'" /><span>';
 						if($post->caption && array_key_exists('text', $post->caption)){
-							$items[$i]['content'] .= blurb($post->caption->text, 90);
+							$items[$i]['content'] .= excerpt($post->caption->text, 90);
 						}else{
 							$items[$i]['content'] .= 'Post by @'.$username;
 						}
@@ -166,7 +166,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						$items[$i]['date'] = $like_date_specific;
 						$items[$i]['content'] = '<li class="instagram instagram-liked"><a href="'.$like->link.'" title="View this post on Instagram"><img src="'.$like->images->standard_resolution->url.'" /><span>';
 						if($like->caption && array_key_exists('text', $like->caption)){
-							$items[$i]['content'] .= blurb($like->caption->text, 90);
+							$items[$i]['content'] .= excerpt($like->caption->text, 90);
 						}else{
 							$items[$i]['content'] .= 'Post by @'.$like->user->username;
 						}
