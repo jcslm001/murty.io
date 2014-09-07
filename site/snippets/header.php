@@ -1,7 +1,7 @@
 <?
 
 // Site settings and general variables
-$css_update_date = "20140906d";
+$css_update_date = "20140907a";
 $js_update_date = "20140906a";
 $nl = "\r\n";
 $page_type = "";
@@ -68,9 +68,6 @@ if($page->isVisible() || $page_name=="home" || $page_name=="links"){
 	$page_meta_robots = "index,follow";
 }
 
-// Setup a profile image
-$profile_image_path = '/assets/images/common/brendan-and-isla.jpg';
-
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,7 +84,6 @@ $profile_image_path = '/assets/images/common/brendan-and-isla.jpg';
 <meta property="og:description" content="<?= $page_description ?>" />
 <meta property="og:url" content="<?php echo html($page->url()) ?>" />
 <meta property="og:image" content="<?= $page_image ?>" />
-<meta property="fb:app_id" content="132863483529350" />
 <link href="http://fonts.googleapis.com/css?family=Merriweather:400,700|Merriweather+Sans:400,700" rel="stylesheet" type="text/css">
 <? echo css('assets/styles/brendanmurty.css?v='.$css_update_date); ?>
 <!--[if IE 7]><link rel="stylesheet" href="/assets/styles/font-awesome-ie7.min.css"><![endif]-->
@@ -135,7 +131,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 					<?php if($header_subheader_content!='') echo $header_subheader_content; ?></span>
 				</a>
 			</h1>
-			<a class="face" href="/about" title="Learn more about Brendan"><img src="<?= $profile_image_path ?>" alt="Image of Brendan Murty"></a>
+			<a class="profile" href="/about" title="Learn more about Brendan"><img src="/assets/images/common/brendan-and-isla.jpg" alt="Image of Brendan Murty"></a>
 		</header>
 		<nav><?php echo list_pages($pages,$site) ?></nav>
 		<?php if($header_about_content!='') echo '<section id="about">'.$header_about_content.'</section>'; ?>

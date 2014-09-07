@@ -65,7 +65,7 @@ function page_type($page_object){
 			$r='post';
 		}
 	}elseif($page_object->title()=='Resumé' || $page_object->title()=='Terms of Engagement'){
-		$r='legal';
+		$r='formal';
 	}else{
 		if(param('tag')){
 			$r='tag-list';
