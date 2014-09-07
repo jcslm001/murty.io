@@ -14,8 +14,6 @@ snippet('libs_tags');
 snippet('libs_page');
 snippet('libs_list');
 snippet('libs_twitter');
-snippet('libs_github');
-snippet('libs_instagram');
 
 // Extract the details of this page
 $page_title=page_title(html($page->title()).' - '.html($site->title()),$page,$site);
