@@ -74,7 +74,7 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	.first{margin-top:0;padding-top:0}
 	.left{float:left}
 	.right{float:right}
-	.noselect,nav,.post-listing li,aside.info,section#about{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;cursor:default}
+	.noselect,nav,.post-listing li,section#about{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;cursor:default}
 	pre{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#e4e4e4;color:#222;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}
 	pre code{width:100%;font:normal 18px/23px "Source Code Pro",sans-serif}
 	blockquote{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#e4e4e4;color:#222}
@@ -91,7 +91,7 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	header h1 span{text-align:left;color:#fff;clear:left;display:block;margin:10px 0 0;font-size:22px;font-weight:400;line-height:26px}
 	header h1,header h1 a,header h1 a:active,header h1 a:focus,header h1 a:visited{color:#fff}
 	header h1 a:hover{color:#fff;text-decoration:underline}
-	header h1 a:active,header h1 a:focus,header h1 a:hover{color:#2790a5}
+	header h1 a:focus span,header h1 a:hover span{text-decoration:none}
 	header .profile{float:right;height:100px;width:100px}
 	header .profile img{width:100px;height:100px;border-radius:100px}
 	#container nav{clear:both;float:left;margin:0;width:60%;padding:2% 20%;background:#2B9CB2;font:normal 400 16px/30px "Merriweather Sans"}
@@ -141,20 +141,13 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	ul.item-listing .instagram .description img{width:275px;height:275px;display:block}
 	ul.item-listing .instagram .description span{display:inline-block;background-color:#e4e4e4;width:255px;padding:10px;font-size:14px;line-height:20px}
 	ul.post-listing li.featured .image img{border-radius:90px}
-	aside.info{margin:5px 0px 20px;padding:0;width:100%;clear:both;float:left;color:#888;font-size:18px}
-	aside.info a,aside.info a:active,aside.info a:visited,ul.item-listing .tags a,ul.item-listing .tags a:active,ul.item-listing .tags a:visited,article.item .about a,article.item .about a:active,article.item .about a:visited{color:#888}
-	ul.item-listing .tags a,article.item .about a{-ms-word-break:break-all;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto}
-	aside.info a:hover,aside.info a:focus,aside.info a:active,ul.item-listing .tags a:hover,ul.item-listing .tags a:focus,ul.item-listing .tags a:active,article.item .about a:hover,article.item .about a:focus{color:#909090}
-	aside.info i,ul.item-listing i{margin:1px 5px 0 0;float:left;color:#888}
+	ul.item-listing-tags a,ul.item-listing-tags a:active,ul.item-listing-tags a:visited,article.item .about a,article.item .about a:active,article.item .about a:visited{color:#888}
+	ul.item-listing-tags a,article.item .about a{-ms-word-break:break-all;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto}
+	ul.item-listing-tags a:hover,ul.item-listing-tags a:focus,ul.item-listing-tags a:active,article.item .about a:hover,article.item .about a:focus{color:#909090}
+	ul.item-listing i{margin:1px 5px 0 0;float:left;color:#888}
 	ul.item-listing li.tags i{margin-right:2px}
-	aside.info li.tags i,ul.item-listing .tags-container i{margin-right:1px}
-	aside.info ul{margin:0;padding:0;clear:none}
-	aside.info ul > li,ul.item-listing .about li,article.item .about li{margin:0 15px 0 0;line-height:18px;clear:none;float:left;list-style:none outside none}
-	ul.tags{float:none;margin:10px 0 0}
-	ul.tags li{list-style:none outside none;margin:0 0 6px 0;clear:both}
-	.post ul.tags,ul.item-listing ul.tags{margin:0;clear:none;float:left}
-	.post ul.tags li,ul.item-listing ul.tags li{float:left;clear:none;margin:0}
-	.post ul.tags li a,ul.item-listing ul.tags a{padding:0 4px;display:block}
+	ul.item-listing-tags-container i{margin-right:1px}
+	ul.item-listing .about li,article.item .about li{margin:0 15px 0 0;line-height:18px;clear:none;float:left;list-style:none outside none}
 	ul.item-listing .info{display:block;clear:right;margin:0}
 	ul.item-listing-tags .info{line-height:100px}
 	ul.item-listing .info p{clear:none;float:none}
@@ -249,8 +242,6 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 		ul.post-listing{margin:0}
 		ul.post-listing li.featured .image{display:none}
 		ul.post-listing li.featured .info{max-width:100%;width:100%;margin:0}
-		aside.info p,aside.info ul,aside.info ul > li{clear:both;float:none;margin:0}
-		aside.info ul > li{margin:0 0 10px}
 		.name_about img.profile,.name_contact img.profile{margin:0 auto 2%;float:none;clear:none;display:block}
 		.name_about p,.name_contact p{clear:both}
 		ul.item-listing.grid li{width:100%;margin:0 0 4%}
@@ -260,7 +251,7 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	@media only screen and (max-width:600px){
 		body{font-size:18px;line-height:26px}
 		header nav a{margin-right:4%}
-		aside.info,header nav a{font-size:18px}
+		header nav a{font-size:18px}
 		.type_home .posts li.more a{width:96%}
 		ul.item-listing .type{height:50px;width:50px;border-radius:50px;margin-top:6px}
 		ul.item-listing .type i{font-size:25px;line-height:52px}

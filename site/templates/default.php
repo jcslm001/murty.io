@@ -10,14 +10,12 @@ if($site->uri()->path()->first()=='resume'){
     // All tags list
     $items=$pages->find('link/','post/');
     $tags=tagcloud($items,array('field'=>'tags','sort'=>'name','sortdir'=>'asc'));
-    $h='<ul class="tags item-listing item-listing-tags">';
+    $h='<ul class="item-listing item-listing-tags grid">';
     foreach($tags as $tag){
-        $name=$tag->name();
-        $link='/tag:'.$name;
-        $title=tag_title($name);
-        $link_description='View all items tagged '.$title;
-        $h.='<li><div class="type"><a href="'.$link.'" title="'.$link_description.'"><i class="icon icon-tag""></i></a></div>';
-        $h.='<div class="info"><a href="'.$link.'" title="'.$link_description.'" class="title">'.$title.'</a></div></li>';
+        $tag_name=$tag->name();
+        $tag_title=tag_title($tag_name);
+        $h.='<li><a href="/tag:'.$tag_name.'" title="View all items tagged '.$tag_title.'"><span>'.$tag_title.'</span>';
+        $h.='<em><i class="icon icon-tag""></i>Tag</em></a></li>';
     }
     $h.='</ul>';
     echo $h;
