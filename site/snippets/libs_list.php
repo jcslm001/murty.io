@@ -43,9 +43,9 @@ function list_items($pages_object,$type='all',$mode='all'){
 		$l='<li class="'.$item_type.'"><a href="'.$item->url().'" title="'.$link_description.'">';
 		$l.='<span>'.html($item->title());
 		if($item_type=='link'){
-			$l.=': '.excerpt(html($item->text()),50);
+			$l.=': '.excerpt(html($item->text()), 120);
 		}else{
-			$l.=': '.excerpt($item->text(),50);
+			$l.=': '.excerpt($item->text(), 120);
 		}
 		$l.='</span><em><i class="icon icon-'.$icon.'"></i>Posted '.$item_date.'</em></a></li>'.$nl;
 
@@ -145,7 +145,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						$items[$i]['date'] = $post_date_specific;
 						$items[$i]['content'] = '<li class="instagram instagram-post"><a href="'.$post->link.'" title="View this post on Instagram"><img src="'.$post->images->standard_resolution->url.'" /><span>';
 						if($post->caption && array_key_exists('text', $post->caption)){
-							$items[$i]['content'] .= $post->caption->text;
+							$items[$i]['content'] .= blurb($post->caption->text, 90);
 						}else{
 							$items[$i]['content'] .= 'Post by @'.$username;
 						}
@@ -166,7 +166,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						$items[$i]['date'] = $like_date_specific;
 						$items[$i]['content'] = '<li class="instagram instagram-liked"><a href="'.$like->link.'" title="View this post on Instagram"><img src="'.$like->images->standard_resolution->url.'" /><span>';
 						if($like->caption && array_key_exists('text', $like->caption)){
-							$items[$i]['content'] .= $like->caption->text;
+							$items[$i]['content'] .= blurb($like->caption->text, 90);
 						}else{
 							$items[$i]['content'] .= 'Post by @'.$like->user->username;
 						}
