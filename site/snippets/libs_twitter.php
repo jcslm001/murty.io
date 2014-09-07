@@ -324,10 +324,10 @@ function twitter_tweets_list($username='brendanmurty', $amount='20', $options=''
         foreach($tweet_data as $tweet){
             
             // Format the Tweet date to match other items on this site, assuming this PHP install and the Twitter user are in the same timezone
-            $tweet_date=date('j M y', strtotime($tweet->{'created_at'}));
+            $tweet_date=date_human(date('j M y', strtotime($tweet->{'created_at'})));
 
             // Construct an item for the item list
-            $tweet_list .= '<li class="twitter"><a href="https://twitter.com/brendanmurty/status/'.$tweet->{'id_str'}.'" title="View this post on Twitter"><span>'.$tweet->{'text'}.'</span><em><i class="icon icon-twitter"></i>Posted to Twitter '.$tweet_date.'</em></a></li>';
+            $tweet_list .= '<li class="twitter"><a href="https://twitter.com/brendanmurty/status/'.$tweet->{'id_str'}.'" title="View this post on Twitter"><span>'.$tweet->{'text'}.'</span><em><i class="icon icon-twitter"></i>Posted '.$tweet_date.'</em></a></li>';
         }
 
         return '<ul class="item-listing item-listing-twitter grid">'.$tweet_list.'</ul>';

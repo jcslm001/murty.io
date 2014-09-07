@@ -19,7 +19,7 @@ function github_user_activity_public($username='brendanmurty', $options=''){
 
 			if($event['type'] == 'PushEvent' && isset($event['payload']['commits'])){
 
-				$event_date = date('j M y', strtotime($event['created_at']));
+				$event_date = date_human(date('j M y', strtotime($event['created_at'])));
 				$event_message = $event['payload']['commits']['0']['message'];
 				$event_url = $event['payload']['commits']['0']['url'];
 				$event_url = str_replace('api.github.com/repos', 'github.com', $event_url);
@@ -30,11 +30,11 @@ function github_user_activity_public($username='brendanmurty', $options=''){
 				if($event_message){
 					$event_list .= ': '.blurb($event_message, 120);
 				}
-				$event_list .= '</span><em><i class="icon icon-github"></i>Authored on GitHub '.$event_date.'</em></a></li>';
+				$event_list .= '</span><em><i class="icon icon-github"></i>Authored '.$event_date.'</em></a></li>';
 
 			}elseif($event['type'] == 'WatchEvent'){
 
-				$event_date = date('j M y', strtotime($event['created_at']));
+				$event_date = date_human(date('j M y', strtotime($event['created_at'])));
 				$event_url = $event['repo']['url'];
 				$event_url = str_replace('api.github.com/repos', 'github.com', $event_url);
 
@@ -51,7 +51,7 @@ function github_user_activity_public($username='brendanmurty', $options=''){
 						if($repo['description'] != '') $event_list .= ': '.blurb($repo['description'], 120);
 					}
 				}
-				$event_list .= '</span><em><i class="icon icon-github"></i>Starred on GitHub '.$event_date.'</em></a></li>';
+				$event_list .= '</span><em><i class="icon icon-github"></i>Starred '.$event_date.'</em></a></li>';
 
 			}
 

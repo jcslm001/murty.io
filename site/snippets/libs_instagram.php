@@ -28,7 +28,7 @@ function instagram_user_activity_public($username='highhorser', $options=''){
 				}else{
 					$post_items .= 'Post by @'.$username;
 				}
-				$post_items .= '</span><em><i class="icon icon-instagram"></i>Posted to Instagram '.date('j M y', $post->created_time).'</em></a></li>';
+				$post_items .= '</span><em><i class="icon icon-instagram"></i>Posted '.date_human(date('j M y', $post->created_time)).'</em></a></li>';
 
 			}
 
@@ -55,7 +55,7 @@ function instagram_user_activity_public($username='highhorser', $options=''){
 					}else{
 						$post_items .= 'Post by @'.$like->user->username;
 					}
-					$post_items .= '</span><em><i class="icon icon-instagram"></i>Liked on Instagram '.date('j M y', $like->created_time).'</em></a></li>';
+					$post_items .= '</span><em><i class="icon icon-instagram"></i>Liked '.date_human(date('j M y', $like->created_time)).'</em></a></li>';
 
 				}
 
