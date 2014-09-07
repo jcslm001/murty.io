@@ -219,7 +219,6 @@ function list_pages($pages_object,$site_object){
 		if($u==$current) $p.=' class="current"';
 		$p.='>'.$t.'</a>';
 	}
-	$p.='<a href="/feed.xml" title="Link to RSS feed">Subscribe</a>';
 	return $p;
 }
 

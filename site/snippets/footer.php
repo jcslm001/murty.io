@@ -14,6 +14,7 @@
 		}elseif($page_name=='about'){
 			$nav_actions  = '<a href="/contact">Contact me</a>';
 			$nav_actions .= '<a href="/resume">View my resumé</a>';
+			$nav_actions .= '<a href="/feed.xml">Subscribe to RSS feed</a>';
 		}elseif($page_name=='contact'){
 			$nav_actions  = '<a href="mailto:brendan@brendanmurty.com">Send me an email</a>';
 			$nav_actions .= '<a href="http://twitter.com/brendanmurty">Chat with me on Twitter</a>';
