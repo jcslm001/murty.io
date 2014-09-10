@@ -38,10 +38,10 @@
 			</div>
 			<div class="social">
 				<ul>
-					<li><a href="https://twitter.com/brendanmurty" title="View my Twitter profile"><i class="icon icon-twitter"></i></a></li>
-					<li><a href="http://instagram.com/highhorser" title="View my Instagram posts"><i class="icon icon-instagram"></i></a></li>
-					<li><a href="https://github.com/brendanmurty" title="View my code on GitHub"><i class="icon icon-github"></i></a></li>
-					<li class="last"><a href="http://www.rdio.com/people/brendanmurty" title="See my music library on Rdio"><i class="icon icon-music"></i></a></li>
+					<li><a href="https://twitter.com/brendanmurty" title="View my Twitter profile"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="http://instagram.com/highhorser" title="View my Instagram posts"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="https://github.com/brendanmurty" title="View my code on GitHub"><i class="fa fa-github"></i></a></li>
+					<li class="last"><a href="http://www.rdio.com/people/brendanmurty" title="See my music library on Rdio"><i class="fa fa-music"></i></a></li>
 				</ul>
 			</div>
 			<div class="credits">

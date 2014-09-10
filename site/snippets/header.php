@@ -1,7 +1,7 @@
 <?
 
 // Site settings and general variables
-$css_update_date = "20140907e";
+$css_update_date = "20140910a";
 $js_update_date = "20140906a";
 $nl = "\r\n";
 $page_type = "";
@@ -86,7 +86,7 @@ if($page->isVisible() || $page_name=="home" || $page_name=="links"){
 <meta property="og:image" content="<?= $page_image ?>" />
 <link href="http://fonts.googleapis.com/css?family=Merriweather:400,700|Merriweather+Sans:400,700" rel="stylesheet" type="text/css">
 <? echo css('assets/styles/brendanmurty.css?v='.$css_update_date); ?>
-<!--[if IE 7]><link rel="stylesheet" href="/assets/styles/font-awesome-ie7.min.css"><![endif]-->
+<? echo css('assets/styles/font-awesome.min.css'); ?>
 <link rel="shortcut icon" href="/assets/images/common/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/assets/images/common/apple-touch-icon-precomposed.png">
 <link rel="alternate" type="application/rss+xml" href="<?php echo url('/feed.xml') ?>" title="Brendan Murty" />

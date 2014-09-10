@@ -19,7 +19,7 @@ if($site->uri()->path()->first()=='resume'){
             $tag_count.='s';
         }
         $h.='<li><a href="/tag:'.$tag_name.'" title="View all items tagged '.$tag_title.'"><span>'.$tag_title.'</span>';
-        $h.='<em><i class="icon icon-tag""></i>'.$tag_count.'</em></a></li>';
+        $h.='<em><i class="fa fa-tag""></i>'.$tag_count.'</em></a></li>';
     }
     $h.='</ul>';
     echo $h;

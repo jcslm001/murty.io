@@ -46,7 +46,7 @@
 		}else{
 			$s.=': '.excerpt($item->text(),50);
 		}
-		$s.='</span><em><i class="icon icon-'.$icon.'"></i>'.$item_footer.'</em></a></li>'.$nl;
+		$s.='</span><em><i class="fa fa-'.$icon.'"></i>'.$item_footer.'</em></a></li>'.$nl;
 
 	  }
 	  echo $s;
