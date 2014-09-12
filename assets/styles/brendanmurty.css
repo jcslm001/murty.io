@@ -164,7 +164,6 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 
 	/* Grid view for item lists (Home, Posts, Links) */
 
-	.name_posts article, .name_links article, .name_tags article, .type_tag-list article, .type_home article, .name_search article{width:96%;padding:2%}
 	ul.item-listing.grid{width:100%;max-width:1300px;margin:0 auto}
 	ul.item-listing.grid li{width:23%;margin:0 2% 2% 0}
 	ul.item-listing.grid a{width:100%;display:block}
@@ -219,13 +218,17 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	/* Alterations for certain screen sizes */
 
 	@media only screen and (max-width:3000px){
-		header,footer,article,section#about,#container nav{width:40%;padding:2% 30%}
+		header,footer,article,section#about,#container nav{width:44%;padding:2% 28%}
 	}
 	@media only screen and (max-width:2000px){
 		header,footer,article,section#about,#container nav{width:50%;padding:2% 25%}
 	}
+	@media only screen and (max-width:1600px){
+		.name_posts article, .name_links article, .name_tags article, .type_tag-list article, .type_home article, .name_search article{width:96%;padding:2%}
+	}
 	@media only screen and (max-width:1400px){
 		header,footer,nav,article,section#about,#container nav{width:70%;padding:2% 15%}
+
 	}
 	@media only screen and (max-width:1200px){
 		header,footer,nav,article,section#about{width:80%;padding:3% 10%}
