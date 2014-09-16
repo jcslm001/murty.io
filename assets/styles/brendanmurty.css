@@ -240,8 +240,9 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 		.type_home article{padding-top:2%}
 		footer div.half{width:100%;margin:0;float:none;clear:both;text-align:center}
 		footer ul.stats li{margin-top:4%}
-		ul.item-listing.grid li{width:48%}
-		ul.item-listing.grid img{max-height:none}
+		ul.item-listing.grid li{width:100%;margin:0 0 4%}
+		ul.item-listing.grid span{height:auto;padding:4%;width:92%}
+		ul.item-listing.grid .instagram span{height:auto}
 	}
 	@media only screen and (max-width:760px){
 		.type_home .contact a{font-size:38px;padding:4px 4px 1px}
@@ -251,9 +252,6 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 		ul.post-listing li.featured .info{max-width:100%;width:100%;margin:0}
 		.name_about img.profile,.name_contact img.profile{margin:0 auto 2%;float:none;clear:none;display:block}
 		.name_about p,.name_contact p{clear:both}
-		ul.item-listing.grid li{width:100%;margin:0 0 4%}
-		ul.item-listing.grid span{height:auto;padding:4%;width:92%}
-		ul.item-listing.grid .instagram span{height:auto}
 	}
 	@media only screen and (max-width:600px){
 		body{font-size:18px;line-height:26px}
