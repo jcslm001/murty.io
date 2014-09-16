@@ -243,6 +243,7 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 		ul.item-listing.grid li{width:100%;margin:0 0 4%}
 		ul.item-listing.grid span{height:auto;padding:4%;width:92%}
 		ul.item-listing.grid .instagram span{height:auto}
+		ul.item-listing.grid img{max-height:none}
 	}
 	@media only screen and (max-width:760px){
 		.type_home .contact a{font-size:38px;padding:4px 4px 1px}
