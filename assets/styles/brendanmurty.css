@@ -101,15 +101,15 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	#container nav.actions a{color:#fff;background:#3fb9d1;text-transform:none;padding:8px 15px 6px;margin:0 20px 20px 0;border-radius:2px;border-bottom:2px solid #2790A5}
 	#container nav.actions a:active,#container nav.actions a:focus,#container nav.actions a:hover{text-decoration:none;background-color:#2790a5}
 	footer{color:#f5f5f5;text-align:left}
-	footer div.half{float:left;clear:none;width:49%}
-	footer div.half.statistics{margin-left:2%;text-align:right}
+	footer div.half{float:left;clear:none;width:50%;margin:0}
+	footer div.half.statistics{text-align:right}
 	footer div.about p{margin:0 0 10px}
 	footer div.about a{color:#f5f5f5;text-decoration:underline}
 	footer div.credits{width:100%;clear:both;margin-top:3%;float:left;font-size:14px;color:#bae6ef}
 	footer div.credits p{text-align:center;margin:0}
 	footer div.credits a{color:#bae6ef;text-decoration:underline}
 	footer ul{margin:0;padding:0}
-	footer ul.stats li{list-style:none outside none;float:left;margin:0 0 4% 2%;width:31%}
+	footer ul.stats li{list-style:none outside none;float:left;margin:0 0 4% 3%;width:31%}
 	footer ul.stats li:first-child{margin-left:0}
 	footer ul.stats a{color:#bae6ef;text-decoration:none}
 	footer ul.stats .number{font-size:200%;color:#fff;clear:right;display:block;margin:0 0 4px}
@@ -239,6 +239,7 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 		header,footer,nav,article,section#about,#container nav{width:96%;padding:4% 2%;text-align:left}
 		.type_home article{padding-top:2%}
 		footer div.half{width:100%;margin:0;float:none;clear:both;text-align:center}
+		footer div.half.statistics{margin:0;text-align:center}
 		footer ul.stats li{margin-top:4%}
 		ul.item-listing.grid li{width:100%;margin:0 0 4%}
 		ul.item-listing.grid span{height:auto;padding:4%;width:92%}
