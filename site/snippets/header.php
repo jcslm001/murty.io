@@ -85,8 +85,8 @@ if($page->isVisible() || $page_name=="home" || $page_name=="links"){
 <meta property="og:url" content="<?php echo html($page->url()) ?>" />
 <meta property="og:image" content="<?= $page_image ?>" />
 <link href="http://fonts.googleapis.com/css?family=Merriweather:400,700|Merriweather+Sans:400,700" rel="stylesheet" type="text/css">
-<? echo css('assets/styles/brendanmurty.css?v='.$css_update_date); ?>
-<? echo css('assets/styles/font-awesome.min.css'); ?>
+<link rel="stylesheet" href="/assets/styles/brendanmurty.css?v=<?= $css_update_date ?>" />
+<link rel="stylesheet" href="/assets/styles/font-awesome.min.css" />
 <link rel="shortcut icon" href="/assets/images/common/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/assets/images/common/apple-touch-icon-precomposed.png">
 <link rel="alternate" type="application/rss+xml" href="<?php echo url('/feed.xml') ?>" title="Brendan Murty" />
