@@ -115,7 +115,7 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	footer ul.stats .number{font-size:200%;color:#fff;clear:right;display:block;margin:0 0 4px}
 	footer ul.stats .title{font-size:80%;text-transform:uppercase}
 	footer ul.stats a:hover .title{text-decoration:underline}
-	footer .social{margin:0 auto;width:220px}
+	footer .social{margin:0 auto;width:340px}
 	footer .social li{list-style:none outside none;float:left;margin:0 20px 0 0;font-size:30px;width:40px}
 	footer .social li.last{margin-right:0}
 	footer .social a{color:#fff}
@@ -226,10 +226,6 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	@media only screen and (max-width:1600px){
 		.name_posts article, .name_links article, .name_tags article, .type_tag-list article, .type_home article, .name_search article{width:96%;padding:2%}
 	}
-	@media only screen and (max-width:1400px){
-		header,footer,nav,article,section#about,#container nav{width:70%;padding:2% 15%}
-
-	}
 	@media only screen and (max-width:1200px){
 		header,footer,nav,article,section#about{width:80%;padding:3% 10%}
 		ul.item-listing.grid li{width:31%}
@@ -289,6 +285,7 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	@media only screen and (max-width:380px){
 		header h1{line-height:100px;font-size:22px;width:65%;max-width:65%}
 		header h1 span{display:none}
+		footer .social{width:100%;margin:0 0 0 2%}
 	}
 	@media only screen and (max-width:300px){
 		ul.item-listing .about,header .profile,ul.item-listing .type{display:none}
