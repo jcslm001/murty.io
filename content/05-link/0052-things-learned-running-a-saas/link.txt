@@ -1,9 +1,0 @@
-Title: Things learned running a SaaS
-----
-Date: 20131129
-----
-Tags: develop
-----
-Link: http://mir.aculo.us/2013/11/27/5-things-ive-learned-in-5-years-of-running-a-saas/
-----
-Text: Thomas Fuchs writes about his experiences running an online service.  

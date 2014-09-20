@@ -1,9 +1,0 @@
-Title: Subtle Patterns
-----
-Date: 20131111
-----
-Tags: design, tools
-----
-Link: http://subtlepatterns.com/
-----
-Text: Free textures for your next web project.

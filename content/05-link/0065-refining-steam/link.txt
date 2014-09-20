@@ -1,9 +1,0 @@
-Title: Refining Steam
-----
-Date: 20140113
-----
-Tags: ux, games
-----
-Link: http://jaymachalani.com/blog/2014/1/6/refining-steam
-----
-Text: Jay Machalani explains his proposed solutions to improve Steam clients.

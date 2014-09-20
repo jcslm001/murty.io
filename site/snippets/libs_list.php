@@ -87,7 +87,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						$event_url = $event['payload']['commits']['0']['url'];
 						$event_url = str_replace('api.github.com/repos', 'github.com', $event_url);
 						$event_url = str_replace('/commits', '/commit', $event_url);
-						
+
 						$item_content = '<li class="github github-commit"><a href="'.$event_url.'" title="View this commit on GitHub">';
 						$item_content .= '<span>'.$event['repo']['name'];
 						if($event_message){

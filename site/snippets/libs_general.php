@@ -3,7 +3,7 @@
 function __autoload($class_name){
 	// Automatically load object-oriented classes
 	// Example: '$testing = new \Testing\Begin();' would load '/site/classes/Testing/Begin.php'
-	
+
 	$class_path = './site/classes/'.str_replace('\\', '/', $class_name).'.php';
 	if(file_exists($class_path)) require_once $class_path;
 }
@@ -23,6 +23,7 @@ function date_human($item_date){
 	$interval = date_diff(date_create(date('j M y')), date_create($item_date));
 	$date_diff = $interval->format('%a');
 	$date_data = str_replace('+', '', $interval->format('%R%a'));
+	$date = '';
 	if($date_data == 0){
 		$date = 'today';
 	}elseif($date_data == -1){

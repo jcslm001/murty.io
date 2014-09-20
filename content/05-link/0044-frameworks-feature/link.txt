@@ -1,9 +1,0 @@
-Title: Frameworks don’t have much to do with how easy it is to add a feature
-----
-Date: 20131121
-----
-Tags: develop, inspiration
-----
-Link: http://mir.aculo.us/2013/11/18/why-frameworks-dont-have-much-to-do-with-how-easy-it-is-to-add-a-feature/
-----
-Text: Thomas Fuchs explains the considerations involved when adding new features to software.

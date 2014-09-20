@@ -1,9 +1,0 @@
-Title: Guide to Windows Phone 8 Update 3
-----
-Date: 20140113
-----
-Tags: windows, phone
-----
-Link: http://winsupersite.com/windows-phone/complete-guide-windows-phone-8-update-3-and-lumia-black
-----
-Text: Paul Thurrott details the software updates coming to Windows Phone 8 in Update 3 and Nokia's Lumia Black.

@@ -95,7 +95,7 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	header .profile{float:right;height:100px;width:100px}
 	header .profile img{width:100px;height:100px;border-radius:100px}
 	#container nav{clear:both;float:left;margin:0;width:60%;padding:2% 20%;background:#2B9CB2;font:normal 400 16px/30px "Merriweather Sans"}
-	#container nav a{text-transform:uppercase;color:#bae6ef;margin-right:25px;display:inline-block}
+	#container nav a{text-transform:uppercase;color:#bae6ef;margin-right:35px;display:inline-block}
 	#container nav a.current{color:#fff;text-decoration:none;cursor:default}
 	#container nav.actions{padding-top:0;background:#222}
 	#container nav.actions a{color:#fff;background:#3fb9d1;text-transform:none;padding:8px 15px 6px;margin:0 20px 20px 0;border-radius:2px;border-bottom:2px solid #2790A5}

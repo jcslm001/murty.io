@@ -1,9 +1,0 @@
-Title: Backtick
-----
-Date: 20131106
-----
-Tags: chrome, productivity, tools
-----
-Link: http://web.appstorm.net/reviews/chrome/backtick-keyboard-commands-meet-bookmarklets/
-----
-Text: Keyboard commands meet bookmarklets with the Backtick extension for Chrome.

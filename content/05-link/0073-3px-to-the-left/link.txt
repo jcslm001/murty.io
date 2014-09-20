@@ -1,9 +1,0 @@
-Title: Why you should move that button 3px to the left
-----
-Date: 20140307
-----
-Tags: design
-----
-Link: http://www.gv.com/lib/design-details
-----
-Text: Braden Kowitz shares his views on design details. I couldn't have worded it better really.

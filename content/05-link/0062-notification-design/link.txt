@@ -1,9 +1,0 @@
-Title: Notification Design Strategies
-----
-Date: 20131211
-----
-Tags: ux
-----
-Link: http://www.uxbooth.com/articles/notification-design-strategies/
-----
-Text: Katharine Bierce discusses some popular strategies to improve your email notifications.

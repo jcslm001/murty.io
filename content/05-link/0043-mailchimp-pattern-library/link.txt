@@ -1,9 +1,0 @@
-Title: MailChimp Pattern Library
-----
-Date: 20131111
-----
-Tags: design, inspiration, tools
-----
-Link: http://ux.mailchimp.com/patterns
-----
-Text: Learn how MailChimp solves design and usability challenges that arise in their product.

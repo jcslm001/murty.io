@@ -1,9 +1,0 @@
-Title: We Work Remotely
-----
-Date: 20131111
-----
-Tags: design, develop, tools
-----
-Link: http://37signals.com/svn/posts/3671-our-new-job-board-weworkremotelycom
-----
-Text: Learn more about the new remote job board by 37signals.
