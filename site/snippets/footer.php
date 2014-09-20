@@ -32,7 +32,6 @@
 			<div class="half statistics">
 				<ul class="stats">
 					<li><a href="https://twitter.com/brendanmurty"><span class="number"><?php echo twitter_follower_count('brendanmurty', '') ?></span><span class="title">Followers</span></a></li>
-					<li><a href="/links"><span class="number"><?php echo page_count($pages, 'link') ?></span><span class="title">Links</span></a></li>
 					<li><a href="/posts"><span class="number"><?php echo page_count($pages, 'post') ?></span><span class="title">Posts</span></a></li>
 				</ul>
 			</div>

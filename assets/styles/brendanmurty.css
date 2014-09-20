@@ -109,7 +109,7 @@ header,nav,section,article,aside,footer,hgroup{display:block}
 	footer div.credits p{text-align:center;margin:0}
 	footer div.credits a{color:#bae6ef;text-decoration:underline}
 	footer ul{margin:0;padding:0}
-	footer ul.stats li{list-style:none outside none;float:left;margin:0 0 4% 3%;width:31%}
+	footer ul.stats li{list-style:none outside none;float:left;margin:0 0 4% 3%;width:47%}
 	footer ul.stats li:first-child{margin-left:0}
 	footer ul.stats a{color:#bae6ef;text-decoration:none}
 	footer ul.stats .number{font-size:200%;color:#fff;clear:right;display:block;margin:0 0 4px}
