@@ -2,8 +2,8 @@
 ----
 Author: Brendan Murty
 ----
-Description: A dedicated, self-taught web developer based in Sydney.
+Description: A self-taught Senior Web Developer based in Sydney
 ----
 Copyright: This is an open source website so feel free to (link:https://github.com/brendanmurty/website text:explore the code) and (link:https://github.com/brendanmurty/website/blob/master/license.md text:read the license).
 ----
-About: (link:/about text:Brendan) is a dedicated, self-taught web developer based in (link:https://maps.google.com.au/maps?q=Sydney,+New+South+Wales,+Australia text:Sydney).
+About: (link:/about text:Brendan) is a self-taught Senior Web Developer based in Sydney.
