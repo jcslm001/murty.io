@@ -1,7 +1,7 @@
 <?
 
 // Site settings and general variables
-$css_update_date = "20140924a";
+$css_update_date = "20140924b";
 $js_update_date = "20140906a";
 $nl = "\r\n";
 $page_type = "";
@@ -77,7 +77,7 @@ if($page->isVisible() || $page_name=="home" || $page_name=="links"){
 <meta name="author" content="<?php echo $site->author() ?>">
 <meta name="description" content="<?= $page_description ?>" />
 <meta name="robots" content="<?= $page_meta_robots ?>" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 <meta name="google-site-verification" content="PDu5txmerBIQFL25egiXIxNeijFAFkVAH88blb0nGcU" />
 <meta property="og:locale" content="en_GB" />
 <meta property="og:type" content="article" />
