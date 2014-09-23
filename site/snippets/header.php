@@ -111,15 +111,6 @@ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async
 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
-(function(){
-	if("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)){
-		var msViewportStyle = document.createElement("style");
-		msViewportStyle.appendChild(
-			document.createTextNode("@-ms-viewport{width:auto !important;height:auto !important}")
-		);
-		document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
-	}
-})();
 </script>
 </head>
 <body<?php echo $body_extra ?>>
