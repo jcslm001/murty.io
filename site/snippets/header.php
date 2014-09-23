@@ -1,7 +1,7 @@
 <?
 
 // Site settings and general variables
-$css_update_date = "20140920c";
+$css_update_date = "20140924a";
 $js_update_date = "20140906a";
 $nl = "\r\n";
 $page_type = "";
