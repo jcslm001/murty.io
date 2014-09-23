@@ -73,6 +73,7 @@ if($page->isVisible() || $page_name=="home" || $page_name=="links"){
 <head>
 <title><?= $page_title ?></title>
 <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="author" content="<?php echo $site->author() ?>">
 <meta name="description" content="<?= $page_description ?>" />
 <meta name="robots" content="<?= $page_meta_robots ?>" />
