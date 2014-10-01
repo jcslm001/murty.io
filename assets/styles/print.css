@@ -1,0 +1,24 @@
+/* Styling for print output */
+
+@media print{
+	body{background:#fff;color:#000;margin:0;padding:0}
+	#container{background:none;color:#000;padding:0;width:100%}
+	nav,footer,header h1 span,.post-listing .image,.type_post header h2,.type_post header h3,form .button,.tags,a.print,a.email{display:none}
+	h1,h2,h3,h4,.post-listing .info{width:100%;max-width:100%;color:#000}
+	h1{margin:0 0 5px}
+	h1 a,h2 a,h3 a,h4 a{text-decoration:none}
+	h2,h3,h4{margin:10px 0 15px}
+	p,h2,h3{orphans:3;widows:3}
+	h2,h3{page-break-after:avoid}
+	ul,ol{margin:0 0 15px 20px}
+	li{margin:0 0 5px 0}
+	a,a:visited{color:#000}
+	article h3 a{text-decoration:none}
+	article a{text-decoration:underline}
+	.post-listing .info{margin:0}
+	pre,blockquote,form .text{border:1px solid #999;color:#000;background:transparent;page-break-inside:avoid}
+	img{page-break-inside:avoid;max-width:100%}
+	hr{background:transparent;height:1px}
+	em{font-style:italic}
+	@page{margin:0.5cm}
+}

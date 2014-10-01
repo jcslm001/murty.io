@@ -1,7 +1,7 @@
 <?
 
 // Site settings and general variables
-$css_update_date = "20140924b";
+$css_update_date = "20141002a";
 $js_update_date = "20140906a";
 $nl = "\r\n";
 $page_type = "";
@@ -77,7 +77,9 @@ if($page->isVisible() || $page_name=="home" || $page_name=="links"){
 <meta name="author" content="<?php echo $site->author() ?>">
 <meta name="description" content="<?= $page_description ?>" />
 <meta name="robots" content="<?= $page_meta_robots ?>" />
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="480">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 <meta name="google-site-verification" content="PDu5txmerBIQFL25egiXIxNeijFAFkVAH88blb0nGcU" />
 <meta property="og:locale" content="en_GB" />
 <meta property="og:type" content="article" />
@@ -86,7 +88,8 @@ if($page->isVisible() || $page_name=="home" || $page_name=="links"){
 <meta property="og:url" content="<?php echo html($page->url()) ?>" />
 <meta property="og:image" content="<?= $page_image ?>" />
 <link href="http://fonts.googleapis.com/css?family=Merriweather:400,700|Merriweather+Sans:400,700" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="/assets/styles/brendanmurty.css?v=<?= $css_update_date ?>" />
+<link rel="stylesheet" media="only screen" href="/assets/styles/screen.css?v=<?= $css_update_date ?>" />
+<link rel="stylesheet" media="only print" href="/assets/styles/print.css?v=<?= $css_update_date ?>" />
 <link rel="stylesheet" href="/assets/styles/font-awesome.min.css" />
 <link rel="shortcut icon" href="/assets/images/common/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/assets/images/common/apple-touch-icon-precomposed.png">
@@ -102,7 +105,6 @@ document.createElement('footer');
 document.createElement('hgroup');
 </script>
 <![endif]-->
-<? echo js('assets/scripts/brendanmurty.js?v='.$js_update_date); ?>
 <script type="text/javascript">
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-710527-4']);
@@ -112,7 +114,17 @@ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async
 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
+(function(){
+	if("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)){
+		var msViewportStyle = document.createElement("style");
+		msViewportStyle.appendChild(
+			document.createTextNode("@-ms-viewport{width:auto !important;height:auto !important}")
+		);
+		document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+	}
+})();
 </script>
+<? echo js('assets/scripts/brendanmurty.js?v='.$js_update_date); ?>
 </head>
 <body<?php echo $body_extra ?>>
 	<section id="container">
