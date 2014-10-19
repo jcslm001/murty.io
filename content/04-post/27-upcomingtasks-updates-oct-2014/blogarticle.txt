@@ -13,12 +13,10 @@ I've made a few updates to [UpcomingTasks](http://upcomingtasks.com/) over the l
 If your account only has one project, such as [Basecamp Personal](https://basecamp.com/personal) accounts, UpcomingTasks will now tweak some features to improve the experience. A new *Project* link in the menu takes you directly to your project and the name of the project will no longer crowd up your task lists.
 
 ![Task List](/assets/images/upcomingtasks-oct2014-list.png)
-![Task View](/assets/images/upcomingtasks-oct2014-task.png)
-![Menu Open](/assets/images/upcomingtasks-oct2014-menu.png)
 
 #### A more welcoming home page
 
-The welcome page that is shown to users before they login has been updated to describe some key features and showcase them in new screenshots.
+The page that is shown to users before they login has been updated to describe some key features and showcase them in new screenshots.
 
 ![Welcome Page](/assets/images/upcomingtasks-oct2014-welcome.png)
 
