@@ -21,8 +21,6 @@ if ( get("method") ) {
 	snippet('libs_page');
 	snippet('libs_list');
 	snippet('libs_twitter');
-	snippet('libs_github');
-	snippet('libs_instagram');
 
 	// Output the relevant content
 
