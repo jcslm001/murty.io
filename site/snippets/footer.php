@@ -41,8 +41,7 @@
 					<li><a href="http://instagram.com/highhorser" title="View my Instagram posts"><i class="fa fa-instagram"></i></a></li>
 					<li><a href="https://github.com/brendanmurty" title="View my code on GitHub"><i class="fa fa-github"></i></a></li>
 					<li><a href="http://www.last.fm/user/brendanmurty" title="See my music statistics on Last.fm"><i class="fa fa-music"></i></a></li>
-					<li><a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam"><i class="fa fa-gamepad"></i></a></li>
-					<li class="last"><a href="https://pinboard.in/u:brendanmurty" title="View my bookmarks on Pinboard"><i class="fa fa-link"></i></a></li>
+					<li class="last"><a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam"><i class="fa fa-gamepad"></i></a></li>
 				</ul>
 			</div>
 			<div class="credits">

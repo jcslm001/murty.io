@@ -105,7 +105,7 @@ footer ul.stats a{color:#bae6ef;text-decoration:none}
 footer ul.stats .number{font-size:200%;color:#fff;clear:right;display:block;margin:0 0 4px}
 footer ul.stats .title{font-size:80%;text-transform:uppercase}
 footer ul.stats a:hover .title{text-decoration:underline}
-footer .social{margin:0 auto;width:340px}
+footer .social{margin:0 auto;width:280px}
 footer .social li{list-style:none outside none;float:left;margin:0 20px 0 0;font-size:30px;width:40px}
 footer .social li.last{margin-right:0}
 footer .social a{color:#fff}
