@@ -5,7 +5,7 @@ Text:
 Senior Web Developer
 Based in Sydney, Australia
 [brendanmurty.com](http://brendanmurty.com/)
-[github.com/brendanmurty](https://github.com/brendanmurty)
+[bitbucket.org/brendanmurty](https://bitbucket.org/brendanmurty)
 [brendan@brendanmurty.com](mailto:brendan@brendanmurty.com)
 
 ### Work skills

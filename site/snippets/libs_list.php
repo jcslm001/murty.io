@@ -70,65 +70,6 @@ function list_items($pages_object,$type='all',$mode='all'){
 			}
 		}
 
-		// GitHub
-		$github = new \Github\Client();
-		if($github){
-			try{
-				$events = $github->api('user')->publicEvents('brendanmurty');
-			}catch(Exception $e){
-				$events = '';
-			}
-			if($events){
-				foreach($events as $event){
-					if($event['type'] == 'PushEvent' && isset($event['payload']['commits'])){
-						$event_date = date_human(date('j M y', strtotime($event['created_at'])));
-						$event_date_specific = date('D M d H:i:s Y', strtotime($event['created_at']));
-						$event_message = $event['payload']['commits']['0']['message'];
-						$event_url = $event['payload']['commits']['0']['url'];
-						$event_url = str_replace('api.github.com/repos', 'github.com', $event_url);
-						$event_url = str_replace('/commits', '/commit', $event_url);
-
-						$item_content = '<li class="github github-commit"><a href="'.$event_url.'" title="View this commit on GitHub">';
-						$item_content .= '<span>'.$event['repo']['name'];
-						if($event_message){
-							$item_content .= ': '.excerpt($event_message, 120);
-						}
-						$item_content .= '</span><em><i class="fa fa-github"></i>Authored '.$event_date.'</em></a></li>';
-
-						$items[$i]['date'] = $event_date_specific;
-						$items[$i]['content'] = $item_content;
-						$item_content = '';
-						$i++;
-					}elseif($event['type'] == 'WatchEvent'){
-						$event_date = date_human(date('j M y', strtotime($event['created_at'])));
-						$event_date_specific = date('D M d H:i:s Y', strtotime($event['created_at']));
-						$event_url = $event['repo']['url'];
-						$event_url = str_replace('api.github.com/repos', 'github.com', $event_url);
-						$event_repo = $event['repo']['name'];
-
-						$item_content = '<li class="github github-star"><a href="'.$event_url.'" title="View this repository on GitHub">';
-						$item_content .= '<span>'.$event['repo']['name'];
-						$repo_parts = explode('/', $event['repo']['name']);
-						try{
-							$repo = $github->api('repo')->show($repo_parts[0], $repo_parts[1]);
-						}catch(Exception $e){
-							$repo = '';
-						}
-						if($repo){
-							if(array_key_exists('description', $repo)){
-								if($repo['description'] != '') $item_content .= ': '.excerpt($repo['description'], 120);
-							}
-						}
-						$item_content .= '</span><em><i class="fa fa-github"></i>Starred '.$event_date.'</em></a></li>';
-
-						$items[$i]['date'] = $event_date_specific;
-						$items[$i]['content'] = $item_content;
-						$i++;
-					}
-				}
-			}
-		}
-
 		// Instagram
 		$instagram = new \Instagram($GLOBALS['auth_instagram_client'], $GLOBALS['auth_instagram_secret'], '');
 		if($instagram){

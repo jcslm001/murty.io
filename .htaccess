@@ -16,8 +16,8 @@ RewriteRule ^topic:(.*) tag:$1 [R=301,L]
 RewriteRule ^work /resume [R=301,L]
 RewriteRule ^cv /resume [R=301,L]
 RewriteRule ^find /search [R=301,L]
-RewriteRule ^readme.md https://github.com/brendanmurty/website/blob/master/readme.md [R=301,L]
-RewriteRule ^license.md https://github.com/brendanmurty/website/blob/master/license.md [R=301,L]
+RewriteRule ^readme.md https://bitbucket.org/brendanmurty/website/src/master/readme.md [R=301,L]
+RewriteRule ^license.md https://bitbucket.org/brendanmurty/website/src/master/license.md [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*) index.php [L]
