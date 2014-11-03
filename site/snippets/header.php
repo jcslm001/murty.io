@@ -82,6 +82,7 @@ if($page->isVisible() || $page_name=="home" || $page_name=="links"){
 <meta name="mobileoptimized" content="480">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 <meta name="google-site-verification" content="PDu5txmerBIQFL25egiXIxNeijFAFkVAH88blb0nGcU" />
+<meta name="p:domain_verify" content="bc7a37f5bb3bd7ed682192fab9cecd32"/>
 <meta property="og:locale" content="en_GB" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="<?= $page_title ?>" />
