@@ -5,7 +5,7 @@ brendanmurty.com
 
 Here's my entire [personal website](http://brendanmurty.com) built on [Kirby CMS](https://github.com/bastianallgeier/kirbycms), coded in [Sublime Text](http://www.sublimetext.com) and hosted by [Digital Ocean](http://digitalocean.com).
 
-I've built a customised pulse feed on the home page to show my recent public activity on [Twitter](https://twitter.com/brendanmurty) and [Instagram](http://instagram.com/highhorser).
+I've built a customised [pulse feed](https://github.com/brendanmurty/website/tree/master/site/snippets/libs_list.php#L3) on the [home page](https://github.com/brendanmurty/website/tree/master/site/templates/home.php#L9) to show my recent public activity on [Twitter](https://twitter.com/brendanmurty), [GitHub](https://github.com/brendanmurty) and [Instagram](http://instagram.com/highhorser).
 
 ## Why ##
 
@@ -17,8 +17,8 @@ I hope a budding web developer can learn something new from what I've done here 
 
 ## Contribute ##
 
-If you have an idea for an update or have found a bug, please [submit a new issue](https://bitbucket.org/brendanmurty/website/issues/new). I'm also tracking my work on the website in the [issues section](https://bitbucket.org/brendanmurty/website/issues).
+If you have an idea for an update or have found a bug, please [submit a new issue](https://github.com/brendanmurty/website/issues/new?assignee=brendanmurty). I'm also tracking my work on the website in the [issues section](https://github.com/brendanmurty/website/issues).
 
 ## License ##
 
-All files in this repository are licensed under the [CSS-Tricks License](https://bitbucket.org/brendanmurty/website/src/master/license.md). This was created by [Chris Coyier](https://github.com/chriscoyier/) and his attitude on the open web should be an inspiration for us all.
+All files in this repository are licensed under the [CSS-Tricks License](https://github.com/brendanmurty/website/tree/master/license.md). This was created by [Chris Coyier](https://github.com/chriscoyier/) and his attitude on the open web should be an inspiration for us all.
