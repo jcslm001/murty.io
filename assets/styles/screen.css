@@ -180,7 +180,7 @@ ul.item-listing.grid i{color:#fff;float:none;margin:1px 7px 0 0}
 .type_formal header h1{line-height:100px}
 .type_formal h2{margin-top:0}
 .type_formal article a{text-decoration:underline}
-.type_formal header h2,.type_formal header h3,.type_formal nav{display:none}
+.type_formal header h2,.type_formal header h3,.type_formal nav,.type_formal header h1 span{display:none}
 .type_formal header h1{margin:0;width:auto;min-width:330px}
 .type_formal article ul{margin:0 0 30px 40px}
 .type_formal hr{background:#ccc}
@@ -260,7 +260,8 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	ul.post-listing li.featured .image{display:none}
 	ul.post-listing li.featured .info{max-width:100%;margin-left:0}
 	.type_formal header{text-align:left}
-	.type_formal header .profile{float:left}
+	.type_formal header h1{line-height:50px}
+	.type_formal header .profile{float:left;margin:0 0 20px}
 	a.print{display:none}
 	h1{font-size:26px;line-height:32px}
 	h2{font-size:24px;line-height:28px}
