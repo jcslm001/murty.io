@@ -2,7 +2,7 @@ Title: About
 ----
 Text:
 
-I'm a Senior Web Developer currently working as *Lead Developer: [Siteflex](http://siteflex.com.au/) Classic* where my roles include managing client and internal requests, fixing bugs and developing features for the Siteflex [web management platform](http://www.siteflex.com.au/).
+I'm a Senior Web Developer with over five years of commercial experience in many areas of website development. I'm proficient with various front-end and back-end platforms and programming languages and strive to learn improved methods and techniques to solve complex problems for clients.
 
 In some [spare time](http://www.solutionsoutsourced.com.au/blog/n/tinker-time-produces-a-new-app-upcomingtasks-121017), I created a free [open-source](https://github.com/brendanmurty/upcomingtasks) responsive [Basecamp](https://basecamp.com/) client called [UpcomingTasks](http://upcomingtasks.com) to easily manage tasks on smaller devices.
 
@@ -13,23 +13,21 @@ I enjoy spending time with [family](http://islamurty.com/) and friends, [playing
 ### Career timeline
 
 - Sep 2014: Open sourced [this website](https://github.com/brendanmurty/website) and [UpcomingTasks](https://github.com/brendanmurty/upcomingtasks)
-- Jul 2014: New position at [Solutions Outsourced](http://solutionsoutsourced.com.au/) -  Lead Developer: [Siteflex](http://siteflex.com.au/) Classic
-- Jun 2012: New position at [Solutions Outsourced](http://solutionsoutsourced.com.au/) - [Siteflex](http://siteflex.com.au/) back-end developer
+- Jul 2014: New role at [Solutions Outsourced](http://solutionsoutsourced.com.au/) -  Lead Developer: [Siteflex](http://siteflex.com.au/) Classic
+- Jun 2012: New role at [Solutions Outsourced](http://solutionsoutsourced.com.au/) - [Siteflex](http://siteflex.com.au/) back-end developer
 - Sep 2012: [UpcomingTasks](http://upcomingtasks.com/) released to the public as a free service for Basecamp users
 - Jun 2012: Domain registered - [upcomingtasks.com](http://upcomingtasks.com/)
 - Jan 2012: Interest in [Basecamp](https://basecamp.com/) begins
-- Dec 2010: New position at [Solutions Outsourced](http://solutionsoutsourced.com.au/) - Front-end web developer and [Siteflex training](http://www.solutionsoutsourced.com.au/siteflex-training) manager
+- Dec 2010: New role at [Solutions Outsourced](http://solutionsoutsourced.com.au/) - Front-end web developer and [Siteflex training](http://www.solutionsoutsourced.com.au/siteflex-training) manager
 - Apr 2010: Domain registered - [islamurty.com](http://islamurty.com/)
-- Oct 2009: New position at [Solutions Outsourced](http://solutionsoutsourced.com.au/) - Front-end web developer and [Siteflex](http://siteflex.com.au/) support
+- Oct 2009: New role at [Solutions Outsourced](http://solutionsoutsourced.com.au/) - Front-end web developer and [Siteflex](http://siteflex.com.au/) support
 - Sep 2009: New job at [Solutions Outsourced](http://solutionsoutsourced.com.au/) - Front-end web developer
-- Jul 2009: [PBA Consulting Surveyors](http://pbasurvey.com.au/) - Left company
 - May 2009: Domain registered - [brendanmurty.com](http://brendanmurty.com/)
 - Dec 2009: Completed Surveying Certificate 3 at [TAFE Ultimo](http://www.sydneytafe.edu.au/future-students/ultimo-college/ultimo-college)
 - Dec 2007: Twitter account created - [brendanmurty](https://twitter.com/brendanmurty)
 - May 2007: Domain registered - [bcmurty.com](http://bcmurty.com/)
 - Jan 2007: Web development hobby begins
 - Jan 2004: [PBA Consulting Surveyors](http://pbasurvey.com.au/) - Surveyor's Assistant
-- Dec 2003: Cecil D Barker & Co. Surveyors - Left company
 - Jun 2003: Cecil D Barker & Co. Surveyors - Surveyor's Assistant
 - Dec 2002: [St. Marys Senior High School](http://web2.stmaryssen-h.schools.nsw.edu.au/site/) - Completed Higher School Certificate
 - Dec 1999: [Blaxland High School](http://www.blaxlandhigh.com.au/) - Completed School Certificate
