@@ -253,17 +253,18 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	ul.item-listing .title{line-height:55px}
 	ul.item-listing > li:first-child{margin-top:0}
 	ul.item-listing .about .date .separator,article.item .about .date .separator{display:none;margin:0}
+	.type_formal #container{width:96%;padding:1% 2% 2%}
+	.type_formal header{text-align:left}
+	.type_formal header h1{line-height:50px;font-size:26px;width:100%}
+	.type_formal header .profile{float:left;margin:0 0 20px}
 }
 @media only screen and (max-width:480px){
 	#container{width:100%;padding:0;text-align:left}
-	.type_formal #container{width:96%;padding:1% 2% 2%}
 	ul.post-listing li.featured .image{display:none}
 	ul.post-listing li.featured .info{max-width:100%;margin-left:0}
-	.type_formal header{text-align:left}
-	.type_formal header h1{line-height:50px}
-	.type_formal header .profile{float:left;margin:0 0 20px}
 	a.print{display:none}
 	h1{font-size:26px;line-height:32px}
+	.type_formal header h1{line-height:50px;font-size:26px}
 	h2{font-size:24px;line-height:28px}
 	h3,.post-listing li a strong{font-size:20px;line-height:24px}
 	h4{font-size:18px;line-height:22px}
@@ -278,9 +279,9 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	header h1 span{display:none}
 	footer .social{width:100%;margin:0 0 0 2%}
 }
-@media only screen and (max-width:300px){
+@media only screen and (max-width:330px){
 	ul.item-listing .about,header .profile,ul.item-listing .type{display:none}
 	ul.item-listing .description{margin-top:10px;float:left}
-	header h1{line-height:50px}
+	header h1{line-height:50px;width:100%;max-width:100%}
 	footer ul.stats li{margin:4% 0 0;width:100%}
 }
