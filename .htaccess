@@ -9,10 +9,9 @@ RewriteRule ^site/(.*) error [R=301,L]
 RewriteRule ^kirby/(.*) error [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^panel/(.*) panel/index.php [L]
-RewriteRule ^blog/rss.php feed.xml [R=301,L]
-RewriteRule ^blog/(.*) post/$1 [R=301,L]
-RewriteRule ^topic:(.*) tag:$1 [R=301,L]
+RewriteRule ^blog/rss.php /feed.xml [R=301,L]
+RewriteRule ^blog/(.*) /post/$1 [R=301,L]
+RewriteRule ^topic:(.*) /tag:$1 [R=301,L]
 RewriteRule ^work /resume [R=301,L]
 RewriteRule ^cv /resume [R=301,L]
 RewriteRule ^find /search [R=301,L]
