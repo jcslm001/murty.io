@@ -1,7 +1,7 @@
 <?
 
 // Site settings and general variables
-$css_update_date = "20141211b";
+$css_update_date = "20141212a";
 $js_update_date = "20140906a";
 $nl = "\r\n";
 $page_type = "";
@@ -132,10 +132,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	<section id="container">
 		<header>
 			<h1>
-				<a href="http://brendanmurty.com/" title="Go to the home page">
-					<?php echo html($site->title()) ?>
-					<?php if($header_subheader_content!='') echo $header_subheader_content; ?></span>
-				</a>
+				<a href="http://brendanmurty.com/" title="Go to the home page"><?php echo html($site->title()) ?></a>
+				<?php if($header_subheader_content!='') echo $header_subheader_content; ?>
 			</h1>
 			<a class="profile" href="/about" title="Learn more about Brendan"><img src="/assets/images/common/brendan-and-isla.jpg" alt="Image of Brendan Murty"></a>
 		</header>

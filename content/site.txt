@@ -4,6 +4,6 @@ Author: Brendan Murty
 ----
 Description: Web Developer
 ----
-Copyright: This is an open source website so feel free to (link:https://github.com/brendanmurty/website text:explore the code) and (link:https://github.com/brendanmurty/website/blob/master/license.md text:read the license).
+Copyright: (link:https://github.com/brendanmurty/website text:View Source)
 ----
 About: (link:/about text:Brendan) is a Web Developer based in Sydney.

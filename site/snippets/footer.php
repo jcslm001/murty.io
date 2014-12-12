@@ -26,14 +26,8 @@
 		if($page_name!='link' && $page_name!='search' && $page_name!='contact') echo '<nav>'.list_pages($pages,$site).'</nav>';
 		?>
 		<footer>
-			<div class="half about">
+			<div class="about">
 				<?php echo kirbytext($site->about()) ?>
-			</div>
-			<div class="half statistics">
-				<ul class="stats">
-					<li><a href="https://twitter.com/brendanmurty"><span class="number"><?php echo twitter_follower_count('brendanmurty', '') ?></span><span class="title">Followers</span></a></li>
-					<li><a href="/posts"><span class="number"><?php echo page_count($pages, 'post') ?></span><span class="title">Posts</span></a></li>
-				</ul>
 			</div>
 			<div class="social">
 				<ul>
