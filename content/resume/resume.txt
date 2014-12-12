@@ -2,7 +2,7 @@ Title: Resumé
 ----
 Text:
 
-Senior Web Developer
+Web Developer
 Based in Sydney, Australia
 [brendan@brendanmurty.com](mailto:brendan@brendanmurty.com)
 [brendanmurty.com](http://brendanmurty.com/)
