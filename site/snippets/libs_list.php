@@ -198,7 +198,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 function list_pages($pages_object,$site_object){
 	$current=$site_object->uri()->path()->first();
 	$pages=$pages_object->visible();
-	$p='';
+	$p='<ul>';
 	foreach($pages as $page){
 		$u=str_replace('http://brendanmurty.com/','',$page->url());
 		$t=$page->title();
@@ -215,10 +215,16 @@ function list_pages($pages_object,$site_object){
 			$u='tags';
 			$t='Tags';
 		}
-		$p.='<a href="/'.$u.'"';
+		$p.='<li';
 		if($u==$current) $p.=' class="current"';
-		$p.='>'.$t.'</a>';
+		$p.='><a href="/'.$u.'">'.$t.'</a></li>';
 	}
+	$p.='<li><a href="https://twitter.com/brendanmurty" title="View my Twitter profile"><i class="fa fa-twitter"></i></a></li>';
+	$p.='<li><a href="http://instagram.com/highhorser" title="View my Instagram posts"><i class="fa fa-instagram"></i></a></li>';
+	$p.='<li><a href="https://github.com/brendanmurty" title="View my code on GitHub"><i class="fa fa-github"></i></a></li>';
+	$p.='<li><a href="http://www.last.fm/user/brendanmurty" title="See my music statistics on Last.fm"><i class="fa fa-music"></i></a></li>';
+	$p.='<li class="last"><a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam"><i class="fa fa-gamepad"></i></a></li>';
+	$p.='</ul>';
 	return $p;
 }
 

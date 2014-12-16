@@ -85,8 +85,13 @@ header h1 a:focus span,header h1 a:hover span{text-decoration:none}
 header .profile{float:right;height:100px;width:100px}
 header .profile img{width:100px;height:100px;border-radius:100px}
 #container nav{clear:both;float:left;margin:0;width:60%;padding:2% 20%;background:#2B9CB2;font:normal 400 16px/30px "Merriweather Sans"}
-#container nav a{text-transform:uppercase;color:#bae6ef;margin-right:35px;display:inline-block}
-#container nav a.current{color:#fff;text-decoration:none;cursor:default}
+#container nav ul{margin:0;padding:0}
+#container nav li{margin:0;padding:0;float:left}
+#container nav a{color:#bae6ef;margin-right:35px;display:inline-block}
+#container nav .current a{color:#fff;text-decoration:none;cursor:default}
+#container nav .last a{margin-right:0}
+#container nav a:active, #container nav a:focus, #container nav a:hover{color:#fff;text-decoration:none}
+#container nav i{font-size:22px;line-height:30px}
 #container nav.actions{padding-top:0;background:#222}
 #container nav.actions a{color:#fff;background:#3fb9d1;text-transform:none;padding:8px 15px 6px;margin:0 20px 20px 0;border-radius:2px;border-bottom:2px solid #2790A5}
 #container nav.actions a:active,#container nav.actions a:focus,#container nav.actions a:hover{text-decoration:none;background-color:#2790a5}
@@ -96,7 +101,7 @@ footer .credits,footer .about{width:100%;clear:both;float:left;text-align:center
 footer .about{margin:0 0 3%}
 footer .about p{margin:0}
 footer .about a{color:#f5f5f5;text-decoration:underline}
-footer .credits{margin:3% 0 0;font-size:14px;color:#bae6ef}
+footer .credits{margin:0;font-size:14px;color:#bae6ef}
 footer .credits p{text-align:center;margin:0}
 footer .credits a{color:#bae6ef;text-decoration:underline}
 footer ul{margin:0;padding:0}
@@ -106,11 +111,6 @@ footer ul.stats a{color:#bae6ef;text-decoration:none}
 footer ul.stats .number{font-size:200%;color:#fff;clear:right;display:block;margin:0 0 4px}
 footer ul.stats .title{font-size:80%;text-transform:uppercase}
 footer ul.stats a:hover .title{text-decoration:underline}
-footer .social{margin:0 auto;width:280px}
-footer .social li{list-style:none outside none;float:left;margin:0 20px 0 0;font-size:30px;width:40px}
-footer .social li.last{margin-right:0}
-footer .social a{color:#fff}
-footer .social a:active,footer .social a:focus,footer .social a:hover,footer .social a:visited{color:#fff;text-decoration:none}
 form{clear:both;width:310px;margin:10px auto 20px;height:50px}
 form input.text{padding:11px;margin-right:5px;width:70%;max-width:250px;float:left;border:0 none;border-bottom:2px solid #A0A0A0;background:#e4e4e4;color:#222;border-radius:2px}
 #content a.button{display:block;float:left;height:auto;width:auto;margin-left:15px;background:#3fb9d1;color:#fff;padding:0 15px;height:42px;line-height:42px;border-radius:2px;border-bottom:2px solid #2790A5}
@@ -274,10 +274,8 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	ul.item-listing .title{margin-top:14px;line-height:24px}
 	ul.item-listing .about{clear:both;margin:10px 0;float:left;height:auto}
 	footer .about{margin:0 0 5%}
-	footer .credits{margin:5% 0 0}
 }
 @media only screen and (max-width:380px){
-	footer .social{width:100%;margin:0 0 0 2%}
 	ul.item-listing .about,header .profile,ul.item-listing .type{display:none}
 	ul.item-listing .description{margin-top:10px;float:left}
 	header h1{line-height:50px;width:100%;max-width:100%}

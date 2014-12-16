@@ -15,7 +15,7 @@
 	?>
 	<form action="<?php echo thisURL() ?>" name="searchform" id="searchform">
 		<input type="text" class="text" value="<?= $field_value ?>" name="term" onclick="this.select();" />
-		<a class="button" href="#" onclick="searchform.submit();return false;"><i class="icon-search"></i></a>
+		<a class="button" href="#" onclick="searchform.submit();return false;"><i class="fa fa-search"></i></a>
 	</form>
 	<?php
 	if($results){
