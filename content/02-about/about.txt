@@ -12,6 +12,7 @@ I enjoy spending time with [family](http://islamurty.com/) and friends, [playing
 
 ### Career timeline
 
+- Jan 2015: New job at [Sentral Education](http://www.sentral.com.au/) - PHP Developer
 - Sep 2014: Open sourced [this website](https://github.com/brendanmurty/website) and [UpcomingTasks](https://github.com/brendanmurty/upcomingtasks)
 - Jul 2014: New role at [Solutions Outsourced](http://solutionsoutsourced.com.au/) -  Lead Developer: [Siteflex](http://siteflex.com.au/) Classic
 - Jun 2012: New role at [Solutions Outsourced](http://solutionsoutsourced.com.au/) - [Siteflex](http://siteflex.com.au/) back-end developer
