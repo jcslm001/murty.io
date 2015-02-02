@@ -10,7 +10,7 @@ Based in Sydney, Australia
 
 ### Work skills
 
-- Five years of consistent commercial experience in the web development industry
+- Over five years of consistent commercial experience in the web development industry
 - Experienced in multiple programming languages such as JavaScript, PHP and ASP
 - Advanced skills in suitable JavaScript and jQuery use
 - Implementation of websites using various CMSs including Siteflex, WordPress, Perch and Kirby
@@ -33,6 +33,17 @@ Based in Sydney, Australia
 - Flexible
 
 ### Experience
+
+#### Sentral Education
+05/01/2015 - Present
+*PHP Developer*
+[sentral.com.au](http://www.sentral.com.au/)
+
+- Helping with customer support requests
+- Improving existing product features
+- Developing new product features
+- Documenting code and writing test cases
+- Collaborating with team members
 
 #### UpcomingTasks
 01/09/2012 - Present
