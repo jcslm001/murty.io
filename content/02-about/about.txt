@@ -9,26 +9,3 @@ In some [spare time](http://www.solutionsoutsourced.com.au/blog/n/tinker-time-pr
 I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos to [Instagram](http://instagram.com/highhorser), track music statistics on [Last.fm](http://www.last.fm/user/brendanmurty), manage my code on [GitHub](https://github.com/brendanmurty) and find inspiration on [Pinterest](http://www.pinterest.com/brendanmurty).
 
 I enjoy spending time with [family](http://islamurty.com/) and friends, [playing games](http://steamcommunity.com/id/brendanmurty) and reviewing [schnitzels](http://schnitmydadsays.com/).
-
-### Career timeline
-
-- Jan 2015: New job at [Sentral Education](http://www.sentral.com.au/) - PHP Developer
-- Sep 2014: Open sourced [this website](https://github.com/brendanmurty/website) and [UpcomingTasks](https://github.com/brendanmurty/upcomingtasks)
-- Jul 2014: New role at [Solutions Outsourced](http://solutionsoutsourced.com.au/) -  Lead Developer: [Siteflex](http://siteflex.com.au/) Classic
-- Jun 2012: New role at [Solutions Outsourced](http://solutionsoutsourced.com.au/) - [Siteflex](http://siteflex.com.au/) back-end developer
-- Sep 2012: [UpcomingTasks](http://upcomingtasks.com/) released to the public as a free service for Basecamp users
-- Jun 2012: Domain registered - [upcomingtasks.com](http://upcomingtasks.com/)
-- Jan 2012: Interest in [Basecamp](https://basecamp.com/) begins
-- Dec 2010: New role at [Solutions Outsourced](http://solutionsoutsourced.com.au/) - Front-end web developer and [Siteflex training](http://www.solutionsoutsourced.com.au/siteflex-training) manager
-- Apr 2010: Domain registered - [islamurty.com](http://islamurty.com/)
-- Oct 2009: New role at [Solutions Outsourced](http://solutionsoutsourced.com.au/) - Front-end web developer and [Siteflex](http://siteflex.com.au/) support
-- Sep 2009: New job at [Solutions Outsourced](http://solutionsoutsourced.com.au/) - Front-end web developer
-- May 2009: Domain registered - [brendanmurty.com](http://brendanmurty.com/)
-- Dec 2009: Completed Surveying Certificate 3 at [TAFE Ultimo](http://www.sydneytafe.edu.au/future-students/ultimo-college/ultimo-college)
-- Dec 2007: Twitter account created - [brendanmurty](https://twitter.com/brendanmurty)
-- May 2007: Domain registered - [bcmurty.com](http://bcmurty.com/)
-- Jan 2007: Web development hobby begins
-- Jan 2004: [PBA Consulting Surveyors](http://pbasurvey.com.au/) - Surveyor's Assistant
-- Jun 2003: Cecil D Barker & Co. Surveyors - Surveyor's Assistant
-- Dec 2002: [St. Marys Senior High School](http://web2.stmaryssen-h.schools.nsw.edu.au/site/) - Completed Higher School Certificate
-- Dec 1999: [Blaxland High School](http://www.blaxlandhigh.com.au/) - Completed School Certificate
