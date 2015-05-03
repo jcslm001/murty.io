@@ -1,7 +1,7 @@
 <?
 
 // Site settings and general variables
-$css_update_date = "20141216a";
+$css_update_date = "20150503a";
 $js_update_date = "20140906a";
 $nl = "\r\n";
 $page_type = "";
@@ -56,12 +56,6 @@ if($page_type=='home'){
 	$header_about_content = '<h2 class="lighter">Search for <em>'.$_GET['term'].'</em></h2>';
 }
 
-// Setup the site subheading
-$header_subheader_content = '<span>'.html($site->description()).'</span>';
-if($page_type=='legal'){
-	$header_subheader_content = '';
-}
-
 // Setup the robots Meta Tag content
 $page_meta_robots = "noindex,follow";
 if($page->isVisible() || $page_name=="home" || $page_name=="links"){
@@ -80,7 +74,7 @@ if($page->isVisible() || $page_name=="home" || $page_name=="links"){
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="480">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-<meta name="theme-color" content="#2EA8C0">
+<meta name="theme-color" content="#2B9CB2">
 <meta name="google-site-verification" content="PDu5txmerBIQFL25egiXIxNeijFAFkVAH88blb0nGcU" />
 <meta name="p:domain_verify" content="bc7a37f5bb3bd7ed682192fab9cecd32"/>
 <meta property="og:locale" content="en_GB" />
@@ -130,13 +124,47 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </head>
 <body<?php echo $body_extra ?>>
 	<section id="container">
+		<nav>
+			<?php echo list_pages($pages,$site) ?>
+		</nav>
+
+		<?php if ($page_type == 'home') { ?>
 		<header>
-			<h1>
-				<a href="http://brendanmurty.com/" title="Go to the home page"><?php echo html($site->title()) ?></a>
-				<?php if($header_subheader_content!='') echo $header_subheader_content; ?>
-			</h1>
-			<a class="profile" href="/about" title="Learn more about Brendan"><img src="/assets/images/common/brendan_murty.jpg" height="100" width="100" /></a>
+			<a class="profile" href="/about" title="Learn more about me">
+				<img src="/assets/images/common/brendan-and-isla.jpg" height="200" width="200" />
+			</a>
+
+			<h2>
+				Web Developer
+			</h2>
+
+			<h3>
+				Over five years of commercial <a href="/about" title="Learn more about me">experience</a>.
+			<h3>
+
+			<ul class="social">
+				<li>
+					<a href="mailto:brendan@brendanmurty.com" title="Send me an email"><i class="fa fa-envelope-o"></i></a>
+				</li>
+				<li>
+					<a href="https://twitter.com/brendanmurty" title="View my Twitter profile"><i class="fa fa-twitter"></i></a>
+				</li>
+				<li>
+					<a href="http://instagram.com/highhorser" title="View my Instagram posts"><i class="fa fa-instagram"></i></a>
+				</li>
+				<li>
+					<a href="https://github.com/brendanmurty" title="View my code on GitHub"><i class="fa fa-github"></i></a>
+				</li>
+				<li>
+					<a href="http://www.last.fm/user/brendanmurty" title="See my music statistics on Last.fm"><i class="fa fa-music"></i></a>
+				</li>
+				<li>
+					<a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam"><i class="fa fa-gamepad"></i></a>
+				</li>
+			</ul>
 		</header>
-		<nav><?php echo list_pages($pages,$site) ?></nav>
-		<?php if($header_about_content!='') echo '<section id="about">'.$header_about_content.'</section>'; ?>
+		<? } ?>
+
+		<?php if($header_about_content != '') { echo '<section id="about">' . $header_about_content . '</section>'; } ?>
+
 		<section id="content">

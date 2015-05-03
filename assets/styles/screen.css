@@ -43,7 +43,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 
 /* General */
 
-html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;background:#2EA8C0;height:100%;overflow-x:hidden}
+html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;background:#2B9CB2;height:100%;overflow-x:hidden}
 body{background-color:transparent;color:#222;font:normal 400 16px/25px "Merriweather",sans-serif;padding:0;overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased}
 h1,h2,h3,h4{font-family:"Merriweather Sans";font-weight:400;margin:5px 0 15px;padding:0;clear:both}
 h1{font-size:50px;line-height:50px;font-family:"Merriweather";font-weight:700;margin-top:0}
@@ -52,8 +52,8 @@ h3{font-size:25px;line-height:28px}
 h4{font-size:20px;line-height:25px}
 p{margin:0 0 20px;clear:both}
 a{color:#3fb9d1;outline:0;text-decoration:none}
-a:active,a:focus,a:hover,a:visited{color:#3fb9d1;text-decoration:underline}
-article a:visited{color:#83d2e1}
+a:active,a:focus,a:hover,a:visited{color:#2ea8c0;text-decoration:underline}
+article a:visited{color:#2790a5}
 article h1 a,article h2 a,article h3 a{color:#fff}
 img{height:auto;overflow-x:hidden}
 ol{list-style:decimal outside none;margin:0 0 15px 30px}
@@ -69,36 +69,53 @@ pre{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#333;color:#fff;wh
 pre code{width:100%;font:normal 18px/23px "Source Code Pro",sans-serif}
 blockquote{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#333;color:#fff}
 #container{width:100%;height:100%;padding:0;overflow-x:hidden;margin:0 auto;-webkit-overflow-scrolling:touch}
-header,footer{background:#2EA8C0;padding:1% 20%;width:60%;margin:0;clear:both;float:left}
-section#about{background:#333;color:#fff;padding:2% 20%;width:60%;margin:0;clear:both;float:left;text-align:center;font-family:"Merriweather Sans"}
+section#about{background-color:#2EA8C0;border-bottom:2px solid #5ac3d8;color:#fff;padding:2% 20%;width:60%;margin:0;clear:both;float:left;text-align:center;font-family:"Merriweather Sans"}
 section#about .lighter{color:#888}
 section#about em{color:#fff;font-style:normal}
 section#about a:active, section#about a:hover, section#about a:focus{text-decoration:underline}
 section#about p, section#about h2{margin:0;font-weight:400;font-size:30px;line-height:35px}
-section#content{clear:both;width:100%;float:left;background:#222;color:#fff}
+section#content{clear:both;width:100%;float:left;background:#fff;color:#222}
 article{padding:2% 20%;width:60%;margin:0;float:left}
-header h1{margin:0;display:block;overflow:hidden;float:left;clear:none;width:75%}
-header h1 span{text-align:left;color:#d6f0f5;clear:left;display:block;margin:15px 0 0;font-size:22px;font-weight:400;line-height:26px}
-header h1,header h1 a,header h1 a:active,header h1 a:focus,header h1 a:visited{color:#fff}
-header h1 a:hover{color:#fff;text-decoration:underline}
-header h1 a:focus span,header h1 a:hover span{text-decoration:none}
-header .profile{float:right;height:100px;width:100px}
-header .profile img{width:100px;height:100px;border-radius:100px}
+
+/* Header */
+
+header, footer{background:#2EA8C0;padding:1% 20%;width:60%;margin:0;clear:both;float:left}
+.type_home header{padding:6%;width:88%;border-bottom:2px solid #5ac3d8}
+header .profile{display:block;height:200px;width:200px;margin:0 auto}
+header .profile img{width:200px;height:200px;border-radius:200px;border:2px solid #5ac3d8}
+header h2{text-align:center;color:#fff;margin-top:40px}
+header h3{text-align:center;color:#bae6ef}
+header h3 a, header h3 a:active, header h3 a:focus, header h3 a:hover, header h3 a:visited{color:#bae6ef;text-decoration:underline}
+header .social{width:360px;margin:50px auto 0}
+header .social li{list-style:none outside none;float:left;width:60px;text-align:center;margin:0;padding:0}
+header .social li a{font-size:30px}
+header .social li a:active, header .social li a:visited{color:#bae6ef;text-decoration:none}
+header .social li a:focus, header .social li a:hover{color:#fff;text-decoration:none}
+
+/* Navigation */
+
 #container nav{clear:both;float:left;margin:0;width:60%;padding:2% 20%;background:#2B9CB2;font:normal 400 16px/30px "Merriweather Sans"}
-#container nav ul{margin:0;padding:0}
+#container nav.actions{text-align:center}
+#container nav h1{font-size:25px;float:left;clear:none;line-height:30px;margin:0}
+#container nav h1 a, #container nav h1 a:active, #container nav h1 a:visited{color:#fff}
+#container nav h1 a:focus, #container nav h1 a:hover{text-decoration:underline}
+#container nav ul{margin:-30px 0 0;padding:0;float:right}
 #container nav li{margin:0;padding:0;float:left}
 #container nav a{color:#bae6ef;margin-right:35px;display:inline-block}
 #container nav .current a{color:#fff;text-decoration:none;cursor:default}
 #container nav .last a{margin-right:0}
 #container nav a:active, #container nav a:focus, #container nav a:hover{color:#fff;text-decoration:none}
 #container nav i{font-size:22px;line-height:30px}
-#container nav.actions{padding-top:0;background:#222}
+#container nav.actions{padding-top:0;background:#fff}
 #container nav.actions a{color:#fff;background:#3fb9d1;text-transform:none;padding:8px 15px 6px;margin:0 20px 20px 0;border-radius:2px;border-bottom:2px solid #2790A5}
 #container nav.actions a:active,#container nav.actions a:focus,#container nav.actions a:hover{text-decoration:none;background-color:#2790a5}
-footer{color:#f5f5f5;text-align:left}
+
+/* Footer */
+
+footer{color:#f5f5f5;background-color:#2EA8C0;border-top:2px solid #5ac3d8;text-align:left}
 footer .half{float:left;clear:none;width:50%;margin:0}
 footer .credits,footer .about{width:100%;clear:both;float:left;text-align:center}
-footer .about{margin:0 0 3%}
+footer .about{margin:0 0 20px}
 footer .about p{margin:0}
 footer .about a{color:#f5f5f5;text-decoration:underline}
 footer .credits{margin:0;font-size:14px;color:#bae6ef}
@@ -111,10 +128,16 @@ footer ul.stats a{color:#bae6ef;text-decoration:none}
 footer ul.stats .number{font-size:200%;color:#fff;clear:right;display:block;margin:0 0 4px}
 footer ul.stats .title{font-size:80%;text-transform:uppercase}
 footer ul.stats a:hover .title{text-decoration:underline}
+
+/* Forms and Buttons */
+
 form{clear:both;width:310px;margin:10px auto 20px;height:50px}
-form input.text{padding:11px;margin-right:5px;width:70%;max-width:250px;float:left;border:0 none;border-bottom:2px solid #A0A0A0;background:#e4e4e4;color:#222;border-radius:2px}
+form input.text{padding:11px 11px 13px;margin-right:5px;width:70%;max-width:250px;float:left;border:0 none;border-bottom:2px solid #A0A0A0;background:#e4e4e4;color:#222;border-radius:2px}
 #content a.button{display:block;float:left;height:auto;width:auto;margin-left:15px;background:#3fb9d1;color:#fff;padding:0 15px;height:42px;line-height:42px;border-radius:2px;border-bottom:2px solid #2790A5}
 #content a.button:active,#content a.button:focus,#content a.button:hover{background:#2790a5;color:#fff;text-decoration:none}
+
+/* Content lists */
+
 ul.item-listing{margin:0 0 10px;padding:0}
 ul.item-listing > li,article.item .about > li{width:100%;margin:20px 0 0;list-style:none outside none;float:left}
 article.item .about > li{width:auto}
@@ -152,22 +175,19 @@ ul.item-listing .about .separator.empty,article.item .about .separator.empty{mar
 ul.item-listing .about .separator.second-last,article.item .about .separator.second-last{margin-left:3px}
 ul.item-listing .about .date .separator,article.item .about .date .separator{margin:0 0 0 3px}
 p.item-listing-search-empty{text-align:center}
-
-/* Grid view for item lists (Home, Posts, Links) */
-
 ul.item-listing.grid{width:100%;max-width:1300px;margin:0 auto}
 ul.item-listing.grid li{width:23%;margin:0 2% 2% 0}
 ul.item-listing.grid a{width:100%;display:block}
 ul.item-listing.grid a:active,ul.item-listing.grid a:hover{text-decoration:none}
 ul.item-listing.grid a:active em,ul.item-listing.grid a:hover em{background-color:#2B9CB2}
 ul.item-listing.grid img{width:100%;height:auto;display:block;min-height:300px}
-ul.item-listing.grid span{height:390px;font-size:20px;line-height:30px;padding:12px 5% 0;width:90%;display:block;color:#fff;background-color:#333;word-wrap:break-word;overflow:hidden}
+ul.item-listing.grid span{height:390px;font-size:20px;line-height:30px;padding:12px 5% 0;width:90%;display:block;color:#222;background-color:#d6f0f5;word-wrap:break-word;overflow:hidden}
 ul.item-listing-tags.grid span{height:80px}
 ul.item-listing.grid .instagram span{height:90px;font-size:16px;line-height:22px}
 ul.item-listing.grid em{color:#fff;font-style:normal;font-size:16px;width:92%;display:block;background-color:#3FB9D1;padding:0 4%;line-height:47px}
 ul.item-listing.grid i{color:#fff;float:none;margin:1px 7px 0 0}
 
-/* Formal pages (Resumé, Terms) */
+/* Formal pages */
 
 .type_formal{background:#fff none 0 0 no-repeat;color:#000;height:auto}
 .type_formal #container{background:#fff none 0 0 no-repeat;color:#000;padding-top:1%;height:auto}
@@ -192,7 +212,7 @@ ul.item-listing.grid i{color:#fff;float:none;margin:1px 7px 0 0}
 section#content.loading{height:600px}
 section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animation: fadein 3s;-ms-animation: fadein 3s;-o-animation: fadein 3s;animation: fadein 3s}
 .spinner{margin:40px auto 0;width:50px;height:40px;text-align:center;font-size:10px}
-.spinner > div{background-color:#2EA8C0;height:100%;width:6px;margin-right:3px;display:inline-block;-webkit-animation:stretchdelay 1.2s infinite ease-in-out;animation:stretchdelay 1.2s infinite ease-in-out}
+.spinner > div{background-color:#5ac3d8;height:100%;width:6px;margin-right:3px;display:inline-block;-webkit-animation:stretchdelay 1.2s infinite ease-in-out;animation:stretchdelay 1.2s infinite ease-in-out}
 .spinner .rect2{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}
 .spinner .rect3{-webkit-animation-delay:-1.0s;animation-delay:-1.0s}
 .spinner .rect4{-webkit-animation-delay:-0.9s;animation-delay:-0.9s}
@@ -240,6 +260,8 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	ul.post-listing li.featured .info{max-width:100%;width:100%;margin:0}
 	.name_about img.profile,.name_contact img.profile{margin:0 auto 2%;float:none;clear:none;display:block}
 	.name_about p,.name_contact p{clear:both}
+	#container nav h1, #container nav ul{float:none;clear:both;width:100%;margin:0}
+	#container nav h1{margin-bottom:10px}
 }
 @media only screen and (max-width:600px){
 	body{font-size:18px;line-height:26px}

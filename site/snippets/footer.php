@@ -21,9 +21,6 @@
 			$nav_actions .= '<a href="/about">More about me</a>';
 		}
 		if($nav_actions!='') echo '<nav class="actions">'.$nav_actions.'</nav>';
-
-		// Show another main navigation bar here if relevant
-		if($page_name!='link' && $page_name!='search' && $page_name!='contact') echo '<nav>'.list_pages($pages,$site).'</nav>';
 		?>
 		<footer>
 			<div class="about">
