@@ -103,7 +103,7 @@ header .social li a:focus, header .social li a:hover{color:#fff;text-decoration:
 #container nav li{margin:0;padding:0;float:left}
 #container nav a{color:#bae6ef;margin-right:35px;display:inline-block}
 #container nav .current a{color:#fff;text-decoration:none;cursor:default}
-#container nav .last a{margin-right:0}
+#container nav .last a, #container nav li:last-child a{margin-right:0}
 #container nav a:active, #container nav a:focus, #container nav a:hover{color:#fff;text-decoration:none}
 #container nav i{font-size:22px;line-height:30px}
 #container nav.actions{padding-top:0;background:#fff}
@@ -260,8 +260,10 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	ul.post-listing li.featured .info{max-width:100%;width:100%;margin:0}
 	.name_about img.profile,.name_contact img.profile{margin:0 auto 2%;float:none;clear:none;display:block}
 	.name_about p,.name_contact p{clear:both}
-	#container nav h1, #container nav ul{float:none;clear:both;width:100%;margin:0}
-	#container nav h1{margin-bottom:10px}
+	#container nav{position:relative;left:-50%;padding:4% 0;width:100%}
+	#container nav h1, #container nav ul{float:none;clear:both;width:100%;margin:0;position:relative;text-align:center;left:50%}
+	#container nav h1{margin-bottom:10px;}
+	#container nav li{float:none;display:inline-block}
 }
 @media only screen and (max-width:600px){
 	body{font-size:18px;line-height:26px}
