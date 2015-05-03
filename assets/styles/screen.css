@@ -298,8 +298,9 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	footer .about{margin:0 0 5%}
 }
 @media only screen and (max-width:380px){
-	ul.item-listing .about,header .profile,ul.item-listing .type{display:none}
+	ul.item-listing .about,ul.item-listing .type{display:none}
 	ul.item-listing .description{margin-top:10px;float:left}
 	header h1{line-height:50px;width:100%;max-width:100%}
+	header .social{width:100%}
 	footer ul.stats li{margin:4% 0 0;width:100%}
 }
