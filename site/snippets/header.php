@@ -18,7 +18,7 @@ snippet('libs_twitter');
 // Extract the details of this page
 $page_title=page_title(html($page->title()).' - '.html($site->title()), $page, $site);
 $page_description=page_description(html($site->description()), $page);
-$page_image=page_first_image('http://brendanmurty.com/assets/images/common/brendan-and-isla.jpg', $page);
+$page_image=page_first_image('http://brendanmurty.com/assets/images/common/brendan-murty.jpg', $page);
 $page_type=page_type($page);
 $page_name=$site->uri()->path()->first();
 if($page_name=='') $page_name = 'home';
@@ -131,7 +131,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 		<?php if ($page_type == 'home') { ?>
 		<header>
 			<a class="profile" href="/about" title="Learn more about me">
-				<img src="/assets/images/common/brendan-and-isla.jpg" height="200" width="200" />
+				<img src="/assets/images/common/brendan-murty.jpg" height="200" width="200" />
 			</a>
 
 			<h2>
