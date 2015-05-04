@@ -97,7 +97,7 @@ header .social li a:focus, header .social li a:hover{color:#fff;text-decoration:
 #container nav{clear:both;float:left;margin:0;width:60%;padding:2% 20%;background:#2B9CB2;font:normal 400 16px/30px "Merriweather Sans"}
 #container nav.actions{text-align:center}
 #container nav h1{font-size:25px;float:left;clear:none;line-height:30px;margin:0}
-#container nav h1 a, #container nav h1 a:active, #container nav h1 a:visited{color:#fff}
+#container nav h1 a, #container nav h1 a:active, #container nav h1 a:visited{color:#fff;margin:0}
 #container nav h1 a:focus, #container nav h1 a:hover{text-decoration:underline}
 #container nav ul{margin:-30px 0 0;padding:0;float:right}
 #container nav li{margin:0;padding:0;float:left}
