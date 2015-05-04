@@ -1,7 +1,7 @@
 <?
 
 // Site settings and general variables
-$css_update_date = "20150503d";
+$css_update_date = "20150504a";
 $js_update_date = "20140906a";
 $nl = "\r\n";
 $page_type = "";
@@ -124,7 +124,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </head>
 <body<?php echo $body_extra ?>>
 	<section id="container">
-		<nav>
+		<nav class="pages">
 			<?php echo list_pages($pages,$site) ?>
 		</nav>
 

@@ -260,10 +260,10 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	ul.post-listing li.featured .info{max-width:100%;width:100%;margin:0}
 	.name_about img.profile,.name_contact img.profile{margin:0 auto 2%;float:none;clear:none;display:block}
 	.name_about p,.name_contact p{clear:both}
-	#container nav{position:relative;left:-50%;padding:4% 0;width:100%}
-	#container nav h1, #container nav ul{float:none;clear:both;width:100%;margin:0;position:relative;text-align:center;left:50%}
-	#container nav h1{margin-bottom:10px;}
-	#container nav li{float:none;display:inline-block}
+	#container nav.pages{position:relative;left:-50%;padding:4% 0;width:100%}
+	#container nav.pages h1, #container nav.pages ul{float:none;clear:both;width:100%;margin:0;position:relative;text-align:center;left:50%}
+	#container nav.pages h1{margin-bottom:10px;}
+	#container nav.pages li{float:none;display:inline-block}
 }
 @media only screen and (max-width:600px){
 	body{font-size:18px;line-height:26px}
