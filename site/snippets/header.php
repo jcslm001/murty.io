@@ -1,7 +1,7 @@
 <?
 
 // Site settings and general variables
-$css_update_date = "20150504b";
+$css_update_date = "20150516a";
 $js_update_date = "20140906a";
 $nl = "\r\n";
 $page_type = "";
@@ -144,16 +144,16 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 			<ul class="social">
 				<li>
-					<a href="mailto:brendan@brendanmurty.com" title="Send me an email"><i class="fa fa-envelope-o"></i></a>
+					<a href="mailto:brendan@brendanmurty.com" title="Send me an email"><i class="fa fa-envelope"></i></a>
+				</li>
+				<li>
+					<a href="https://github.com/brendanmurty" title="View my code on GitHub"><i class="fa fa-github"></i></a>
 				</li>
 				<li>
 					<a href="https://twitter.com/brendanmurty" title="View my Twitter profile"><i class="fa fa-twitter"></i></a>
 				</li>
 				<li>
 					<a href="http://instagram.com/highhorser" title="View my Instagram posts"><i class="fa fa-instagram"></i></a>
-				</li>
-				<li>
-					<a href="https://github.com/brendanmurty" title="View my code on GitHub"><i class="fa fa-github"></i></a>
 				</li>
 				<li>
 					<a href="http://www.last.fm/user/brendanmurty" title="See my music statistics on Last.fm"><i class="fa fa-music"></i></a>

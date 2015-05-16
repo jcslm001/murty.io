@@ -44,9 +44,9 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 /* General */
 
 html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;background:#2B9CB2;height:100%;overflow-x:hidden}
-body{background-color:transparent;color:#222;font:normal 400 16px/25px "Merriweather",sans-serif;padding:0;overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased}
-h1,h2,h3,h4{font-family:"Merriweather Sans";font-weight:400;margin:5px 0 15px;padding:0;clear:both}
-h1{font-size:50px;line-height:50px;font-family:"Merriweather";font-weight:700;margin-top:0}
+body{background-color:transparent;color:#222;font:normal 400 16px/25px "Merriweather Sans",sans-serif;padding:0;overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Merriweather";font-weight:400;margin:5px 0 15px;padding:0;clear:both}
+h1{font-size:50px;line-height:50px;font-weight:700;margin-top:0}
 h2{font-size:28px;line-height:32px}
 h3{font-size:25px;line-height:28px}
 h4{font-size:20px;line-height:25px}
@@ -74,21 +74,21 @@ section#about .lighter{color:#888}
 section#about em{color:#fff;font-style:normal}
 section#about a:active, section#about a:hover, section#about a:focus{text-decoration:underline}
 section#about p, section#about h2{margin:0;font-weight:400;font-size:30px;line-height:35px}
-section#content{clear:both;width:100%;float:left;background:#fff;color:#222}
+section#content{clear:both;width:100%;float:left;background:#f5f5f5;color:#222}
 article{padding:2% 20%;width:60%;margin:0;float:left}
 
 /* Header */
 
 header, footer{background:#2EA8C0;padding:1% 20%;width:60%;margin:0;clear:both;float:left}
-.type_home header{padding:6% 6% 5%;width:88%;border-bottom:2px solid #5ac3d8}
+.type_home header{padding:6% 6% 5%;width:88%}
 header .profile{display:block;height:200px;width:200px;margin:0 auto}
-header .profile img{width:200px;height:200px;border-radius:200px;border:2px solid #5ac3d8}
+header .profile img{width:200px;height:200px;border-radius:200px;border:3px solid #5ac3d8}
 header h2{text-align:center;color:#fff;margin-top:40px}
 header h3{text-align:center;color:#bae6ef}
 header h3 a, header h3 a:active, header h3 a:focus, header h3 a:hover, header h3 a:visited{color:#bae6ef;text-decoration:underline}
-header .social{width:360px;margin:50px auto 0}
-header .social li{list-style:none outside none;float:left;width:60px;height:60px;line-height:60px;text-align:center;margin:0;padding:0}
-header .social li a{font-size:30px}
+header .social{width:420px;margin:50px auto 0}
+header .social li{list-style:none outside none;float:left;width:70px;height:70px;line-height:70px;text-align:center;margin:0;padding:0}
+header .social li a{font-size:35px}
 header .social li a:active, header .social li a:visited{color:#bae6ef;text-decoration:none}
 header .social li a:focus, header .social li a:hover{color:#fff;text-decoration:none}
 
@@ -96,12 +96,12 @@ header .social li a:focus, header .social li a:hover{color:#fff;text-decoration:
 
 #container nav{clear:both;float:left;margin:0;width:60%;padding:2% 20%;background:#2B9CB2;font:normal 400 16px/30px "Merriweather Sans"}
 #container nav.actions{text-align:center}
-#container nav h1{font-size:25px;float:left;clear:none;line-height:30px;margin:0}
+#container nav h1{font-size:30px;line-height:35px;margin:0;float:left;clear:none}
 #container nav h1 a, #container nav h1 a:active, #container nav h1 a:visited{color:#fff;margin:0}
 #container nav h1 a:focus, #container nav h1 a:hover{text-decoration:underline}
 #container nav ul{margin:-30px 0 0;padding:0;float:right}
 #container nav li{margin:0;padding:0;float:left}
-#container nav a{color:#bae6ef;margin-right:35px;display:inline-block}
+#container nav a{color:#bae6ef;margin-right:35px;line-height:35px;display:inline-block}
 #container nav .current a{color:#fff;text-decoration:none;cursor:default}
 #container nav .last a, #container nav li:last-child a{margin-right:0}
 #container nav a:active, #container nav a:focus, #container nav a:hover{color:#fff;text-decoration:none}
@@ -112,7 +112,7 @@ header .social li a:focus, header .social li a:hover{color:#fff;text-decoration:
 
 /* Footer */
 
-footer{color:#f5f5f5;background-color:#2EA8C0;border-top:2px solid #5ac3d8;text-align:left}
+footer{color:#f5f5f5;background-color:#2EA8C0;text-align:left}
 footer .half{float:left;clear:none;width:50%;margin:0}
 footer .credits,footer .about{width:100%;clear:both;float:left;text-align:center}
 footer .about{margin:0 0 20px}
@@ -175,13 +175,14 @@ ul.item-listing .about .separator.empty,article.item .about .separator.empty{mar
 ul.item-listing .about .separator.second-last,article.item .about .separator.second-last{margin-left:3px}
 ul.item-listing .about .date .separator,article.item .about .date .separator{margin:0 0 0 3px}
 p.item-listing-search-empty{text-align:center}
-ul.item-listing.grid{width:100%;max-width:1300px;margin:0 auto}
-ul.item-listing.grid li{width:23%;margin:0 2% 2% 0}
+ul.item-listing.grid{width:100%;margin:0 auto}
+ul.item-listing.grid li{width:23.5%;margin:0 2% 2% 0;box-shadow:0 1px 4px 0 rgba(0,0,0,0.37)}
+ul.item-listing.grid li:nth-child(4n+4){margin-right:0}
 ul.item-listing.grid a{width:100%;display:block}
 ul.item-listing.grid a:active,ul.item-listing.grid a:hover{text-decoration:none}
 ul.item-listing.grid a:active em,ul.item-listing.grid a:hover em{background-color:#2B9CB2}
 ul.item-listing.grid img{width:100%;height:auto;display:block;min-height:300px}
-ul.item-listing.grid span{height:390px;font-size:20px;line-height:30px;padding:12px 5% 0;width:90%;display:block;color:#222;background-color:#d6f0f5;word-wrap:break-word;overflow:hidden}
+ul.item-listing.grid span{height:390px;font-size:20px;line-height:30px;padding:12px 5% 0;width:90%;display:block;color:#222;background-color:#fff;word-wrap:break-word;overflow:hidden}
 ul.item-listing-tags.grid span{height:80px}
 ul.item-listing.grid .instagram span{height:90px;font-size:16px;line-height:22px}
 ul.item-listing.grid em{color:#fff;font-style:normal;font-size:16px;width:92%;display:block;background-color:#3FB9D1;padding:0 4%;line-height:47px}
@@ -238,8 +239,10 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	header,section#about,#container nav,.name_posts article, .name_links article, .name_tags article, .type_tag-list article, .type_home article, .name_search article{width:96%;padding:2%}
 }
 @media only screen and (max-width:1200px){
-	ul.item-listing.grid li{width:31%}
+	ul.item-listing.grid li{width:32%}
 	ul.item-listing.grid img{max-height:300px}
+	ul.item-listing.grid li:nth-child(4n+4){margin-right:2%}
+	ul.item-listing.grid li:nth-child(3n+3){margin-right:0}
 }
 @media only screen and (max-width:1000px){
 	header,footer,nav,article,section#about,#container nav{width:96%;padding:4% 2%;text-align:left}
@@ -247,7 +250,7 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	footer div.half{width:100%;margin:0;float:none;clear:both;text-align:center}
 	footer div.half.statistics{margin:0;text-align:center}
 	footer ul.stats li{margin-top:4%}
-	ul.item-listing.grid li{width:100%;margin:0 0 4%}
+	ul.item-listing.grid li{width:100%;margin:0 0 4% !important}
 	ul.item-listing.grid span{height:auto;padding:4%;width:92%}
 	ul.item-listing.grid .instagram span{height:auto}
 	ul.item-listing.grid img{max-height:none}
