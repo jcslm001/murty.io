@@ -70,7 +70,7 @@ pre code{width:100%;font:normal 18px/23px "Source Code Pro",sans-serif}
 blockquote{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#333;color:#fff}
 #container{width:100%;height:100%;padding:0;overflow-x:hidden;margin:0 auto;-webkit-overflow-scrolling:touch}
 section#about{background-color:#2EA8C0;border-bottom:2px solid #5ac3d8;color:#fff;padding:2% 20%;width:60%;margin:0;clear:both;float:left;text-align:center;font-family:"Merriweather Sans"}
-section#about .lighter{color:#888}
+section#about .lighter{color:#bae6ef}
 section#about em{color:#fff;font-style:normal}
 section#about a:active, section#about a:hover, section#about a:focus{text-decoration:underline}
 section#about p, section#about h2{margin:0;font-weight:400;font-size:30px;line-height:35px}
@@ -245,7 +245,7 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	ul.item-listing.grid li:nth-child(3n+3){margin-right:0}
 }
 @media only screen and (max-width:1000px){
-	header,footer,nav,article,section#about,#container nav{width:96%;padding:4% 2%;text-align:left}
+	header,footer,nav,article,section#about,#container nav{width:96%;padding:4% 2%}
 	footer div.half{width:100%;margin:0;float:none;clear:both;text-align:center}
 	footer div.half.statistics{margin:0;text-align:center}
 	footer ul.stats li{margin-top:4%}
