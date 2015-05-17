@@ -246,6 +246,9 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 }
 @media only screen and (max-width:1000px){
 	header,footer,nav,article,section#about,#container nav{width:96%;padding:4% 2%}
+	.type_home header{padding:6% 2%;width:96%}
+	.type_home article{padding-top:6%;padding-bottom:6%}
+	.spinner{margin-top:6%}
 	footer div.half{width:100%;margin:0;float:none;clear:both;text-align:center}
 	footer div.half.statistics{margin:0;text-align:center}
 	footer ul.stats li{margin-top:4%}
