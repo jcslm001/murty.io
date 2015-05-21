@@ -107,7 +107,7 @@ header .social li a:focus, header .social li a:hover{color:#fff;text-decoration:
 #container nav .last a, #container nav li:last-child a{margin-right:0}
 #container nav a:active, #container nav a:focus, #container nav a:hover{color:#fff;text-decoration:none}
 #container nav i{font-size:22px;line-height:30px}
-#container nav.actions{padding-top:0;background:#fff}
+#container nav.actions{padding-top:0;background:#f5f5f5}
 #container nav.actions a{color:#fff;background:#3fb9d1;text-transform:none;padding:8px 15px 6px;margin:0 20px 20px 0;border-radius:2px;border-bottom:2px solid #2790A5}
 #container nav.actions a:active,#container nav.actions a:focus,#container nav.actions a:hover{text-decoration:none;background-color:#2790a5}
 
