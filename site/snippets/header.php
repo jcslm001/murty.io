@@ -66,30 +66,30 @@ if($page->isVisible() || $page_name=="home" || $page_name=="links"){
 <html lang="en">
 <head>
 <title><?= $page_title ?></title>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="author" content="<?php echo $site->author() ?>">
-<meta name="description" content="<?= $page_description ?>" />
-<meta name="robots" content="<?= $page_meta_robots ?>" />
+<meta name="description" content="<?= $page_description ?>">
+<meta name="robots" content="<?= $page_meta_robots ?>">
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="480">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 <meta name="theme-color" content="#2B9CB2">
-<meta name="google-site-verification" content="PDu5txmerBIQFL25egiXIxNeijFAFkVAH88blb0nGcU" />
-<meta name="p:domain_verify" content="bc7a37f5bb3bd7ed682192fab9cecd32"/>
-<meta property="og:locale" content="en_GB" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="<?= $page_title ?>" />
-<meta property="og:description" content="<?= $page_description ?>" />
-<meta property="og:url" content="<?php echo html($page->url()) ?>" />
-<meta property="og:image" content="<?= $page_image ?>" />
+<meta name="google-site-verification" content="PDu5txmerBIQFL25egiXIxNeijFAFkVAH88blb0nGcU">
+<meta name="p:domain_verify" content="bc7a37f5bb3bd7ed682192fab9cecd32">
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="<?= $page_title ?>">
+<meta property="og:description" content="<?= $page_description ?>">
+<meta property="og:url" content="<?php echo html($page->url()) ?>">
+<meta property="og:image" content="<?= $page_image ?>">
 <link href="http://fonts.googleapis.com/css?family=Merriweather:400,700|Merriweather+Sans:400,700" rel="stylesheet" type="text/css">
-<link rel="stylesheet" media="only screen" href="/assets/styles/screen.css?v=<?= $css_update_date ?>" />
-<link rel="stylesheet" media="only print" href="/assets/styles/print.css?v=<?= $css_update_date ?>" />
-<link rel="stylesheet" href="/assets/styles/font-awesome.min.css" />
+<link rel="stylesheet" media="only screen" href="/assets/styles/screen.css?v=<?= $css_update_date ?>">
+<link rel="stylesheet" media="only print" href="/assets/styles/print.css?v=<?= $css_update_date ?>">
+<link rel="stylesheet" href="/assets/styles/font-awesome.min.css">
 <link rel="shortcut icon" href="/assets/images/common/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/assets/images/common/apple-touch-icon-precomposed.png">
-<link rel="alternate" type="application/rss+xml" href="<?php echo url('/feed.xml') ?>" title="Brendan Murty" />
+<link rel="alternate" type="application/rss+xml" href="<?php echo url('/feed.xml') ?>" title="Brendan Murty">
 <!--[if lt IE 9]>
 <script>
 document.createElement('header');
