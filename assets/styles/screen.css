@@ -179,11 +179,12 @@ p.item-listing-search-empty{text-align:center}
 ul.item-listing.grid{width:100%;margin:0 auto}
 ul.item-listing.grid li{width:23.5%;height:450px;margin:0 2% 2% 0;box-shadow:0 1px 4px 0 rgba(0,0,0,0.37)}
 ul.item-listing.grid li:nth-child(4n+4){margin-right:0}
+ul.item-listing-tags.grid li, ul.item-listing-search.grid li {height:140px}
 ul.item-listing.grid a{width:100%;display:block;text-decoration:none !important}
 ul.item-listing.grid a:active em,ul.item-listing.grid a:hover em{background-color:#2B9CB2}
 ul.item-listing.grid img{width:100%;height:auto;display:block;min-height:300px;max-height:300px}
 ul.item-listing.grid span{height:390px;font-size:20px;line-height:30px;padding:12px 5% 0;width:90%;display:block;color:#222;background-color:#fff;word-wrap:break-word;overflow:hidden}
-ul.item-listing-tags.grid span{height:80px}
+ul.item-listing-tags.grid span, ul.item-listing-search.grid span{height:80px}
 ul.item-listing.grid .instagram span{height:90px;font-size:16px;line-height:22px}
 ul.item-listing.grid em{color:#fff;font-style:normal;font-size:16px;line-height:48px;width:92%;display:block;background-color:#3FB9D1;padding:0 4%}
 ul.item-listing.grid i{color:#fff;float:none;margin:1px 7px 0 0}
