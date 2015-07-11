@@ -2,100 +2,40 @@ Title: Resumé
 ----
 Text:
 
-Web Developer
-Based in Sydney, Australia
-[brendan@brendanmurty.com](mailto:brendan@brendanmurty.com)
-[brendanmurty.com](http://brendanmurty.com/)
-[github.com/brendanmurty](https://github.com/brendanmurty)
-
-### Work skills
-
-- Over five years of consistent commercial experience in the web development industry
-- Experienced in multiple programming languages such as JavaScript, PHP and ASP
-- Advanced skills in suitable JavaScript and jQuery use
-- Implementation of websites using various CMSs including Siteflex, WordPress, Perch and Kirby
-- Experience with interfacing with third party REST APIs such as Basecamp and Google Maps
-- Setting up websites using IIS 7 and Apache servers
-- Enjoys improving and simplifying office processes
-- Always focuses on documenting code appropriately while working
-- Optimisation of websites for performance
-- Keen eye for small details
-- Eager to learn new skills
-- Advanced skills in both Windows and Mac environments
-
-### I am
-
-- Passionate
-- Honest
-- Punctual
-- Reliable
-- Dedicated
-- Flexible
+### Personality
+- *Passionate* I'm passionate about productive development practices and using suitable, well established solutions to meet development goals.
+- *Honest* Honesty is one trait I value in all areas of my life. I won't hesitate to initiate tough discussions with clients and management.
+- *Reliable* When I say I'll get something done within a certain timeframe, you can rely on me to get it completed.
+- *Dedicated* I'm self-taught and my thirst for knowledge drives my career forward. I'm always keen to discuss my thoughts on new techniques and development platforms.
+- *Flexible* I've had many varied roles in the web development industry and love to both plan the bigger picture and dive in to the intricate details.
 
 ### Experience
 
-#### Sentral Education
-05/01/2015 - Present
-*PHP Developer*
-[sentral.com.au](http://www.sentral.com.au/)
+- ![Sentral logo](/assets/images/resume/sentral.png) *PHP Developer at Sentral Education* [sentral.com.au](http://www.sentral.com.au/) I started a new job at Sentral Education in January 2015. Working with a team of talented developers, I'm working on new features on our student management software.
+- ![UpcomingTasks logo](/assets/images/resume/upcomingtasks.png) *Developer and Creator of UpcomingTasks* [upcomingtasks.com](http://upcomingtasks.com/) In September 2012, created a free open-source responsive Basecamp client called UpcomingTasks to easily manage tasks on smaller devices. It uses the Basecamp API to interface with Basecamp tasks and projects. As of December 2014, the system has around 600 active users.
+- ![Siteflex logo](/assets/images/resume/siteflex.png) *Lead Developer: Siteflex Classic at Solutions Outsourced* [solutionsoutsourced.com.au](http://solutionsoutsourced.com.au/) From September 2009 to December 2014, I worked in various development, support and training roles at Solutions Outsourced. This included working directly with clients on website projects and most recently leading development on their CMS and SMS/email marketing platform called Siteflex.
+- ![David from PBA Surveyors](/assets/images/resume/pba-survey.png) *Field Assistant at PBA Surveyors* [pbasurvey.com.au](http://pbasurvey.com.au/) From April 2004 to September 2009, I worked with a team of Cadastral and Construction Surveyors around Sydney. I also developed their company website in my free time.
 
-- Helping with customer support requests
-- Improving existing product features
-- Developing new product features
-- Documenting code and writing test cases
-- Collaborating with team members
+### Skills
 
-#### UpcomingTasks
-01/09/2012 - Present
-*Web Developer, Support, Creator*
-[upcomingtasks.com](http://upcomingtasks.com/)
+- *Project Management* I've managed development on web-based platforms, including feature scoping, task delegation, code reviews and client consultations. I believe that constant communication, honesty and transparency is important at all stages of the software development process.
+- *PHP* I've been creating and maintaining commercial web services and websites using PHP for over five years. I'm continually improving my skills including learning new OOP methods and participating in discussions on Twitter and contributing to open-source projects on GitHub.
+- *JavaScript* I've built many modern animations and interactions using JavaScript. This includes using OOP principles and frameworks where it suits the project goals.
+- *HTML5 & CSS3* I love learning about the latest techniques and opinions on how to best build a modern web site. I constantly improve my websites when new techniques as they become supported by major modern browsers.
+- *Python & Django* I'm learning more about Python and Django by creating a new web app in my free time. I'm enjoying the strict formatting and OOP rules in both the language and the framework.
 
-- Interfacing with the Basecamp API via a custom PHP function
-- Building the complete code structure
-- Mobile first responsive design and development
-- User interface design
-- Adding new features
-- Providing support to users
-- Diagnosing and fixing bugs
-- Blog posts
+### Endorsements
 
-#### Solutions Outsourced
+#### ![Picture of Brett](/assets/images/resume/brett-daniels.jpg) Brett Daniels *Lead Web Developer, Solutions Outsourced (2009-2014)*
 
-01/08/2009 - 21/11/2014
-*Lead Developer: Siteflex Classic, Siteflex Training Co-ordinator, Siteflex Support, Front-end Web Developer*
-[solutionsoutsourced.com.au](http://solutionsoutsourced.com.au/)
-[siteflex.com.au](http://siteflex.com.au/)
+> I have been most impressed with Brendan's passion, which goes hand in hand with his ability to listen and learn.
+>
+> Thanks to this, Brendan's skills have grown at an impressive rate during his employment.
+>
+> Brendan has developed the skill to look at tasks objectively, keeping calm under pressure while aiming to achieve the best results for clients. Brendan's eye for detail, in particular with regard to thorough planning and documentation, is also highly noteworthy.
 
-- Leading a team of web developers who contribute to the Siteflex Classic platform
-- Fixing bugs and building new features on the Siteflex Classic platform
-- Back-end, front-end and user interface development for the Siteflex Classic platform
-- Assisting the Siteflex Support team with client requests and explainations of current features
+### Contact
 
-#### PBA Consulting Surveyors
-
-01/04/2004 - 31/07/2009
-*Field Assistant*
-[pbasurvey.com.au](http://pbasurvey.com.au/)
-
-- Locating and creating survey marks
-- Detail, construction, boundary and monitoring surveys
-- Organising files and plans
-- Answering the phone and communicating with clients
-- Creating, designing and delivering plans
-- Creating and maintaining the company’s website
-
-#### Cecil D Barker & Co. Surveyors
-
-10/06/2003 - 30/03/2004
-*Field Assistant*
-
-- Locating and creating survey marks
-- Detail, boundary and monitoring surveys
-- General office duties
-
-#### Education
-
-2009 - Present: Self-taught web developer
-2007 – 2009: Surveying Certificate 3 (TAFE)
-2000 – 2002: HSC at St Mary’s Senior High
-1997 – 2000: School Certificate at Blaxland High
+- *[brendan@brendanmurty.com](mailto:brendan@brendanmurty.com)* Email me to see how I can help your business improve their development processes to produce better outcomes for your clients.
+- *[twitter.com/brendanmurty](http://twitter.com/brendanmurty)* I share my favourite articles and thoughts about web development on Twitter.
+- *[github.com/brendanmurty](http://github.com/brendanmurty)* I share my code, websites, editor configuration files and contribute to open-source projects on GitHub.
