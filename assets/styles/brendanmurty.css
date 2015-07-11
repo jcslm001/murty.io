@@ -190,10 +190,13 @@ ul.item-listing.grid .instagram span{height:90px;font-size:16px;line-height:22px
 ul.item-listing.grid em{color:#fff;font-style:normal;font-size:16px;line-height:48px;width:92%;display:block;background-color:#3FB9D1;padding:0 4%}
 ul.item-listing.grid i{color:#fff;float:none;margin:1px 7px 0 0}
 
+/* Formal pages */
+
+.type_formal #container nav h1{text-align:center;float:none}
+.type_formal #container nav ul,.type_formal footer{display:none}
+
 /* Resume page */
 
-.name_resume #container nav h1{text-align:center;float:none}
-.name_resume #container nav ul{display:none}
 .name_resume article a:visited{color:#3fb9d1}
 .name_resume article h3{text-align:center;margin:4% 0}
 .name_resume article h4{color:#2EA8C0;text-align:center;margin:0}
