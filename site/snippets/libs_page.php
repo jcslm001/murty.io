@@ -59,21 +59,21 @@ function page_title($default_title, $page_object, $site_object ){
 }
 
 function page_type($page_object){
-	$r='default';
+	$type = 'default';
 	if($page_object->parent()){
 		if($page_object->parent()->title()=='Posts'){
-			$r='post';
+			$type = 'post';
 		}
-	}elseif($page_object->title()=='Resumé' || $page_object->title()=='Terms of Engagement'){
-		$r='formal';
+	}elseif($page_object->uri()=='resume' || $page_object->uri()=='terms'){
+		$type = 'formal';
 	}else{
 		if(param('tag')){
-			$r='tag-list';
+			$type = 'tag-list';
 		}elseif($page_object->title()=='Home'){
-			$r='home';
+			$type = 'home';
 		}
 	}
-	return $r;
+	return $type;
 }
 
 function page_count($pages_object, $type='post'){

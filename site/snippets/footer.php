@@ -13,7 +13,7 @@
 			$nav_actions .= '<a class="facebook" href="http://www.facebook.com/sharer.php?u='.$page->url().'&amp;t='.urlencode($page->title()).'+by+Brendan+Murty">Post to Facebook</a></li>';
 		}elseif($page_name=='about'){
 			$nav_actions  = '<a href="/contact">Contact me</a>';
-			$nav_actions .= '<a href="/resume">View my resumé</a>';
+			$nav_actions .= '<a href="/resume" target="_blank">View my resumé</a>';
 		}elseif($page_name=='contact'){
 			$nav_actions  = '<a href="mailto:brendan@brendanmurty.com">Send me an email</a>';
 			$nav_actions .= '<a href="http://twitter.com/brendanmurty">Chat with me on Twitter</a>';
@@ -21,6 +21,8 @@
 			$nav_actions .= '<a href="/about">More about me</a>';
 		}
 		if($nav_actions!='') echo '<nav class="actions">'.$nav_actions.'</nav>';
+
+		if ($page_name != 'resume') {
 		?>
 		<footer>
 			<div class="about">
@@ -30,6 +32,7 @@
 				<?php echo kirbytext($site->copyright()) ?>
 			</div>
 		</footer>
+		<?php } ?>
 	</section>
 </body>
 </html>

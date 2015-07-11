@@ -49,7 +49,8 @@ h1,h2,h3,h4{font-family:"Merriweather";font-weight:400;margin:5px 0 15px;padding
 h1{font-size:50px;line-height:50px;font-weight:700;margin-top:0}
 h2{font-size:28px;line-height:32px}
 h3{font-size:25px;line-height:28px}
-h4{font-size:20px;line-height:25px}
+h4, .name_resume article li em{font-size:20px;line-height:25px}
+h5, .name_resume article h4 em{font-size:16px;line-height:25px}
 p{margin:0 0 20px;clear:both}
 a{color:#3fb9d1;outline:0;text-decoration:none}
 a:active,a:focus,a:hover,a:visited{color:#2ea8c0;text-decoration:underline}
@@ -67,7 +68,7 @@ hr{border:0 none;background-color:#222;height:2px;margin:15px 0;width:100%}
 .noselect,nav,.post-listing li,section#about{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;cursor:default}
 pre{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#333;color:#fff;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}
 pre code{width:100%;font:normal 18px/23px "Source Code Pro",sans-serif}
-blockquote{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#333;color:#fff}
+blockquote{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#e6e6e6;color:#222}
 #container{width:100%;height:100%;padding:0;overflow-x:hidden;margin:0 auto;-webkit-overflow-scrolling:touch}
 section#about{background-color:#2EA8C0;color:#fff;padding:2% 20%;width:60%;margin:0;clear:both;float:left;text-align:center;font-family:"Merriweather Sans"}
 section#about .lighter{color:#bae6ef}
@@ -83,7 +84,7 @@ article{padding:2% 20%;width:60%;margin:0;float:left}
 header, footer{background:#2EA8C0;padding:1% 20%;width:60%;margin:0;clear:both;float:left}
 .type_home header{padding:4% 6%;width:88%}
 header .profile{display:block;height:206px;width:206px;margin:0 auto}
-header .profile img{width:200px;height:200px;border-radius:200px;border:3px solid #5ac3d8}
+header .profile img, .name_resume article h4 img, .name_resume article li img{width:200px;height:200px;border-radius:200px;border:3px solid #5ac3d8}
 header h2{text-align:center;color:#fff;margin-top:40px;margin-bottom:25px}
 header h3{text-align:center;color:#bae6ef}
 header h3 a, header h3 a:active, header h3 a:focus, header h3 a:hover, header h3 a:visited{color:#bae6ef;text-decoration:underline}
@@ -189,25 +190,24 @@ ul.item-listing.grid .instagram span{height:90px;font-size:16px;line-height:22px
 ul.item-listing.grid em{color:#fff;font-style:normal;font-size:16px;line-height:48px;width:92%;display:block;background-color:#3FB9D1;padding:0 4%}
 ul.item-listing.grid i{color:#fff;float:none;margin:1px 7px 0 0}
 
-/* Formal pages */
+/* Resume page */
 
-.type_formal{background:#fff none 0 0 no-repeat;color:#000;height:auto}
-.type_formal #container{background:#fff none 0 0 no-repeat;color:#000;padding-top:1%;height:auto}
-.type_formal header{background:transparent none 0 0 no-repeat;height:auto;padding:0;margin:0 auto;text-align:left;width:100%;max-width:700px;float:none}
-.type_formal footer{display:none}
-.type_formal #content,.type_formal header,.type_formal #about{max-width:700px;margin:0 auto 2%;float:none;padding:0;background-color:transparent;color:#000}
-.type_formal #about{background:transparent;color:#333;text-align:left;padding:0;margin-bottom:20px;width:100%}
-.type_formal article{margin:0;padding:0;width:100%;background:transparent}
-.type_formal h1,.type_formal h2,.type_formal h3,.type_formal h4,.type_formal a,.type_formal a:focus,.type_formal a:hover,.type_formal a:visited,.type_formal #about h2{color:#000}
-.type_formal h1 a,.type_formal h1 a:active, .type_formal h1 a:focus, .type_formal h1 a:hover, .type_formal h1 a:visited{color:#000;text-decoration:none}
-.type_formal header h1{line-height:100px}
-.type_formal h2{margin-top:0}
-.type_formal article a{text-decoration:underline}
-.type_formal header h2,.type_formal header h3,.type_formal nav,.type_formal header h1 span{display:none}
-.type_formal header h1{margin:0;width:80%;min-width:330px;max-width:none}
-.type_formal article ul{margin:0 0 30px 40px}
-.type_formal hr{background:#ccc}
-.name_resume #content a.email,.name_resume #content a.print{text-align:center;display:block;margin:30px 5px;text-decoration:underline}
+.name_resume #container nav h1{text-align:center;float:none}
+.name_resume #container nav ul{display:none}
+.name_resume article a:visited{color:#3fb9d1}
+.name_resume article h3{text-align:center;margin:4% 0}
+.name_resume article h4{color:#2EA8C0;text-align:center;margin:0}
+.name_resume article h4 em{color:#000;clear:both;display:block;margin:10px 0;font-style:normal}
+.name_resume article h4 img{clear:both;display:block;margin:0 auto 10px}
+.name_resume article h3:first-child{margin-top:0}
+.name_resume article ul{margin:0;padding:0}
+.name_resume article li{width:49%;list-style:none outside none;margin:0 0 4%;padding:0;text-align:right;position:relative}
+.name_resume article li:nth-child(2n+2){text-align:left;left:50%}
+.name_resume article li em{color:#2EA8C0;font-style:normal;clear:both;display:block;margin:0 0 10px}
+.name_resume article li a{clear:both;display:block;margin:0 0 10px}
+.name_resume article li img{margin:0 0 20px}
+.name_resume article blockquote{width:95%;max-width:600px;padding:2%;margin:20px auto 0;border-radius:10px;box-sizing:border-box}
+.name_resume article blockquote p:last-child{margin-bottom:0}
 
 /* AJAX states and loading animations (https://github.com/tobiasahlin/SpinKit) */
 
@@ -270,6 +270,8 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	#container nav.pages h1, #container nav.pages ul{float:none;clear:both;width:100%;margin:0;position:relative;text-align:center;left:50%}
 	#container nav.pages h1{margin-bottom:10px;}
 	#container nav.pages li{float:none;display:inline-block}
+	.name_resume article ul li,.name_resume article ul li:nth-child(2n+2){width:100%;margin:0 0 4%;position:static;text-align:left;float:none}
+	.name_resume article li img,.name_resume article h4 img{margin:0 auto 20px;text-align:center;float:none;display:block}
 }
 @media only screen and (max-width:600px){
 	body{font-size:18px;line-height:26px}
@@ -287,19 +289,9 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	ul.item-listing .title{line-height:55px}
 	ul.item-listing > li:first-child{margin-top:0}
 	ul.item-listing .about .date .separator,article.item .about .date .separator{display:none;margin:0}
-	.type_formal #container{width:96%;padding:1% 2% 2%}
-	.type_formal header{text-align:left}
-	.type_formal header h1{line-height:50px;font-size:26px;width:100%}
-	.type_formal header .profile{float:left;margin:0 0 20px}
 	#container{width:100%;padding:0;text-align:left}
 	ul.post-listing li.featured .image{display:none}
 	ul.post-listing li.featured .info{max-width:100%;margin-left:0}
-	a.print{display:none}
-	h1{font-size:26px;line-height:32px}
-	.type_formal header h1{line-height:50px;font-size:26px}
-	h2{font-size:24px;line-height:28px}
-	h3,.post-listing li a strong{font-size:20px;line-height:24px}
-	h4{font-size:18px;line-height:22px}
 	section#about p,section#about h2{font-size:24px;line-height:30px}
 	article img{max-width:100%}
 	form input.text{width:65%;max-width:none}
@@ -313,4 +305,29 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	#container nav a{margin-right:25px}
 	header h1{line-height:50px;width:100%;max-width:100%}
 	footer ul.stats li{margin:4% 0 0;width:100%}
+}
+
+/* Alterations for printed pages */
+
+@media print{
+	body{background:#fff;color:#000;margin:0;padding:0}
+	#container,article,header,nav{background:transparent;color:#000;padding:0;width:100%}
+	header ul,footer,.post-listing .image,.type_post header h2,.type_post header h3,form .button,.tags{display:none}
+	header nav h1,header nav h1 a{text-align:center;color:#2EA8C0}
+	header h2,header h3{color:#000}
+	.profile img, .name_resume img{width:150px;height:150px;float:right}
+	h1,h2,h3,h4,.post-listing .info{width:100%;max-width:100%;color:#000}
+	h1{margin:0 0 5px}
+	h1 a,h2 a,h3 a,h4 a{text-decoration:none}
+	h2,h3,h4{margin:10px 0 15px}
+	p,h2,h3{orphans:3;widows:3}
+	h2,h3{page-break-after:avoid}
+	ul,ol{margin:0 0 15px 20px}
+	li{margin:0 0 5px 0}
+	a,a:visited{color:#2EA8C0;text-decoration:none}
+	pre,blockquote,form .text{page-break-inside:avoid}
+	img{page-break-inside:avoid;max-width:100%}
+	.name_resume article li{page-break-inside:avoid;width:100%;max-width:none;margin:0 0 4%;text-align:left;position:static;clear:both}
+	.name_resume article li img,.name_resume article h4 img{display:none}
+	@page{size:auto;margin:25mm 25mm 25mm 25mm}
 }

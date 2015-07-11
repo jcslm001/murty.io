@@ -1,7 +1,7 @@
 <?
 
 // Site settings and general variables
-$css_update_date = "20150629b";
+$css_update_date = "20150711a";
 $js_update_date = "20140906a";
 $nl = "\r\n";
 $page_type = "";
@@ -18,7 +18,7 @@ snippet('libs_twitter');
 // Extract the details of this page
 $page_title=page_title(html($page->title()).' - '.html($site->title()), $page, $site);
 $page_description=page_description(html($site->description()), $page);
-$page_image=page_first_image('http://brendanmurty.com/assets/images/common/brendan-murty.jpg', $page);
+$page_image=page_first_image('http://brendanmurty.com/assets/images/common/brendan_murty.jpg', $page);
 $page_type=page_type($page);
 $page_name=$site->uri()->path()->first();
 if($page_name=='') $page_name = 'home';
@@ -42,7 +42,7 @@ if($page->title()=='Link'){ go('/links'); }
 
 // Setup about text for the header and customise page titles
 $header_about_content = '<h2>'.html($page->title()).'</h2>';
-if($page_type=='home'){
+if($page_type == 'home' || $page_name == 'resume'){
 	$header_about_content='';
 }elseif(param('tag')){
 	$header_about_content='<h2 class="lighter">Tagged <em>'.tag_title(param('tag')).'</em></h2>';
@@ -84,8 +84,7 @@ if($page->isVisible() || $page_name=="home" || $page_name=="links"){
 <meta property="og:url" content="<?php echo html($page->url()) ?>">
 <meta property="og:image" content="<?= $page_image ?>">
 <link href="http://fonts.googleapis.com/css?family=Merriweather:400,700|Merriweather+Sans:400,700" rel="stylesheet" type="text/css">
-<link rel="stylesheet" media="only screen" href="/assets/styles/screen.css?v=<?= $css_update_date ?>">
-<link rel="stylesheet" media="only print" href="/assets/styles/print.css?v=<?= $css_update_date ?>">
+<link rel="stylesheet" href="/assets/styles/brendanmurty.css?v=<?= $css_update_date ?>">
 <link rel="stylesheet" href="/assets/styles/font-awesome.min.css">
 <link rel="shortcut icon" href="/assets/images/common/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/assets/images/common/apple-touch-icon-precomposed.png">
@@ -128,20 +127,18 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 			<?php echo list_pages($pages,$site) ?>
 		</nav>
 
-		<?php if ($page_type == 'home') { ?>
+		<?php if ($page_type == 'home' || $page_name == 'resume') { ?>
 		<header>
 			<a class="profile" href="/about" title="Learn more about me">
-				<img src="/assets/images/common/brendan-murty.jpg" height="200" width="200" />
+				<img src="/assets/images/common/brendan_murty.jpg" height="200" width="200" />
 			</a>
 
-			<h2>
-				Web Developer
-			</h2>
+			<h2>Web Developer</h2>
 
-			<h3>
-				Over five years of commercial <a href="/about" title="Learn more about me">experience</a>.
-			<h3>
-
+			<?php if ($page_name == 'resume') { ?>
+			<h3>Over five years of commercial experience.<h3>
+			<?php } else { ?>
+			<h3>Over five years of commercial <a href="/about" title="Learn more about me">experience</a>.<h3>
 			<ul class="social">
 				<li>
 					<a href="mailto:brendan@brendanmurty.com" title="Send me an email"><i class="fa fa-envelope"></i></a>
@@ -162,6 +159,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 					<a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam"><i class="fa fa-gamepad"></i></a>
 				</li>
 			</ul>
+			<?php } ?>
 		</header>
 		<? } ?>
 
