@@ -1,4 +1,4 @@
-<?
+<?php
 
 function list_items($pages_object,$type='all',$mode='all'){
 
@@ -195,33 +195,34 @@ function list_items($pages_object,$type='all',$mode='all'){
 	return $t;
 }
 
-function list_pages($pages_object,$site_object){
-	$current=$site_object->uri()->path()->first();
-	$pages=$pages_object->visible();
-	$p='<h1><a href="http://brendanmurty.com/" title="Go to the home page">'.$site_object->title().'</a></h1>';
-	$p.='<ul>';
-	foreach($pages as $page){
-		$u=str_replace('http://brendanmurty.com/','',$page->url());
-		$t=$page->title();
-		if($u=='' || $u=='home'){
-			$u='';
-			$t='Home';
-		}elseif($u=='post'){
-			$u='posts';
-			$t='Posts';
-		}elseif($u=='link'){
-			$u='links';
-			$t='Links';
-		}elseif($u=='tag'){
-			$u='tags';
-			$t='Tags';
+function list_pages($pages_object, $site_object) {
+	$current = $site_object->uri()->path()->first();
+	$pages = $pages_object->visible();
+	$list = '<h1><a href = "/" title = "Go to the home page">' . $site_object->title() . '</a></h1>';
+	$list .= '<ul>';
+	foreach($pages as $page) {
+		$link = str_replace('http://brendanmurty.com/', '', $page->url());
+		$title = $page->title();
+		if ($link == '' || $link == 'home') {
+			$link = '';
+			$title = 'Home';
+		} elseif ($link == 'post') {
+			$link = 'posts';
+			$title = 'Posts';
+		} elseif ($link == 'link') {
+			$link = 'links';
+			$title = 'Links';
+		} elseif ($link == 'tag') {
+			$link = 'tags';
+			$title = 'Tags';
 		}
-		$p.='<li';
-		if($u==$current) $p.=' class="current"';
-		$p.='><a href="/'.$u.'">'.$t.'</a></li>';
+		$list .= '<li';
+		if ($link == $current) {
+			$list .= ' class = "current"';
+		}
+		$list .= '><a href = "/' . $link . '">' . $title . '</a></li>';
 	}
-	$p.='</ul>';
-	return $p;
+	$list .= '</ul>';
+	return $list;
 }
-
 ?>
