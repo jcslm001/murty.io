@@ -23,7 +23,6 @@
 	<ul class="item-listing item-listing-search grid">
 	  <?php
 	  $s = '';
-	  $nl = "\r\n";
 	  foreach($results as $item){
 	  	$item_type=explode('/',$item->uri());
 		$item_type=$item_type['0'];
@@ -46,8 +45,7 @@
 		}else{
 			$s.=': '.excerpt($item->text(),50);
 		}
-		$s.='</span><em><i class="fa fa-'.$icon.'"></i>'.$item_footer.'</em></a></li>'.$nl;
-
+		$s.='</span><em><i class="fa fa-'.$icon.'"></i>'.$item_footer.'</em></a></li>';
 	  }
 	  echo $s;
 	  ?>

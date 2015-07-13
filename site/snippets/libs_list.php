@@ -1,8 +1,6 @@
 <?php
 
 function list_items($pages_object,$type='all',$mode='all'){
-
-	$nl="\r\n";
 	$i=0;
 	$l='';
 	$t='';
@@ -47,7 +45,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 		}else{
 			$l.=': '.excerpt($item->text(), 120);
 		}
-		$l.='</span><em><i class="fa fa-'.$icon.'"></i>Posted '.$item_date.'</em></a></li>'.$nl;
+		$l.='</span><em><i class="fa fa-'.$icon.'"></i>Posted '.$item_date.'</em></a></li>';
 
 		// Add this item to the items array
 		$items[$i]['date'] = $item_date_specific;
@@ -186,11 +184,11 @@ function list_items($pages_object,$type='all',$mode='all'){
 	array_multisort($items_sorted, SORT_DESC, $items);
 
 	// Construct the final list output
-	$t=$nl.'<ul class="item-listing item-listing-'.$type.' grid">'.$nl;
+	$t='<ul class="item-listing item-listing-'.$type.' grid">';
 	for ($j=0; $j < count($items); $j++){
 		$t.=$items[$j]['content'];
 	}
-	$t.='</ul>'.$nl;
+	$t.='</ul>';
 
 	return $t;
 }
@@ -198,7 +196,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 function list_pages($pages_object, $site_object) {
 	$current = $site_object->uri()->path()->first();
 	$pages = $pages_object->visible();
-	$list = '<h1><a href = "/" title = "Go to the home page">' . $site_object->title() . '</a></h1>';
+	$list = '<h1><a href="/" title="Go to the home page">' . $site_object->title() . '</a></h1>';
 	$list .= '<ul>';
 	foreach($pages as $page) {
 		$link = str_replace('http://brendanmurty.com/', '', $page->url());
@@ -218,9 +216,9 @@ function list_pages($pages_object, $site_object) {
 		}
 		$list .= '<li';
 		if ($link == $current) {
-			$list .= ' class = "current"';
+			$list .= ' class="current"';
 		}
-		$list .= '><a href = "/' . $link . '">' . $title . '</a></li>';
+		$list .= '><a href="/' . $link . '">' . $title . '</a></li>';
 	}
 	$list .= '</ul>';
 	return $list;
