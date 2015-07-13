@@ -83,7 +83,7 @@ header, footer{background:#2EA8C0;padding:1% 20%;width:60%;margin:0;clear:both;f
 .type_home header{padding:4% 6%;width:88%}
 header .profile{display:block;height:206px;width:206px;margin:0 auto}
 header .profile img, .name_resume article h4 img, .name_resume article li img{width:200px;height:200px;border-radius:200px;border:3px solid #5ac3d8}
-header h2{text-align:center;color:#fff;margin-top:40px;margin-bottom:25px}
+header h2{text-align:center;color:#fff;margin:25px 0}
 header h3{text-align:center;color:#bae6ef}
 header h3 a, header h3 a:active, header h3 a:focus, header h3 a:hover, header h3 a:visited{color:#bae6ef;text-decoration:underline}
 header .social{width:420px;margin:40px auto 0}
@@ -311,24 +311,15 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 /* Alterations for printed pages */
 
 @media print{
-	body{background:#fff;color:#000;margin:0;padding:0}
-	#container,article,header,nav{background:transparent;color:#000;padding:0;width:100%}
+	#container,article,header,nav{padding-left:0;padding-right:0;width:100%}
+	article{padding-left:2%;padding-right:2%;width:96%}
 	header ul,footer,.post-listing .image,.type_post header h2,.type_post header h3,form .button,.tags{display:none}
-	header nav h1,header nav h1 a{text-align:center;color:#2EA8C0}
-	header h2,header h3{color:#000}
-	.profile img, .name_resume img{width:150px;height:150px;float:right}
 	h1,h2,h3,h4,.post-listing .info{width:100%;max-width:100%;color:#000}
-	h1{margin:0 0 5px}
-	h1 a,h2 a,h3 a,h4 a{text-decoration:none}
-	h2,h3,h4{margin:10px 0 15px}
 	p,h2,h3{orphans:3;widows:3}
-	h2,h3{page-break-after:avoid}
-	ul,ol{margin:0 0 15px 20px}
-	li{margin:0 0 5px 0}
 	a,a:visited{color:#2EA8C0;text-decoration:none}
-	pre,blockquote,form .text{page-break-inside:avoid}
-	img{page-break-inside:avoid;max-width:100%}
-	.name_resume article li{page-break-inside:avoid;width:100%;max-width:none;margin:0 0 4%;text-align:left;position:static;clear:both}
-	.name_resume article li img,.name_resume article h4 img{display:none}
-	@page{size:auto;margin:25mm 25mm 25mm 25mm}
+	img,pre,blockquote,form .text{display:block;page-break-inside:avoid}
+	.name_resume article ul{posotion:relative;page-break-after:always;page-break-inside:avoid}
+	.name_resume article h4 img,.name_resume article li img{display:none}
+	.name_resume article ul li,.name_resume article ul li:nth-child(2n+2){display:block;page-break-inside:avoid;position:static;float:none;clear:both;width:100%;left:0;text-align:left}
+	@page{size:auto;margin:0mm 0mm 0mm 0mm}
 }
