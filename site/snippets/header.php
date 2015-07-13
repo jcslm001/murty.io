@@ -1,5 +1,4 @@
-<?
-
+<?php
 $css_update_date = "20150713";
 $js_update_date = "20140906";
 
@@ -10,7 +9,6 @@ snippet('libs_page');
 snippet('libs_list');
 snippet('libs_twitter');
 
-// Extract the details of this page
 $page_title = page_title(html($page->title()).' - '.html($site->title()), $page, $site);
 $page_description = page_description(html($site->description()), $page);
 $page_image = page_first_image('http://brendanmurty.com/assets/images/common/brendan_murty.jpg', $page);
@@ -20,42 +18,32 @@ if (!$page_name) {
 	$page_name = 'home';
 }
 
-// Tweaks to the body tag
 $body_extra = '';
 if($page->title() == 'Find' && !isset($_GET['term'])){
 	// Focus the search field on the search page
 	$body_extra.=' onload="document.forms.searchform.term.focus();"';
 }
+$body_extra .= ' class="type_' . $page_type . ' name_' . $page_name . '"';
 
-// Add a type class to the body
-$body_extra .= ' class="type_' . $page_type . ' name_' . $page_name;
-if(is_dev()) {
-	$body_extra .= ' dev';
-}
-$body_extra .= '"';
-
-// Redirect post and link empty item pages
-if($page->title() == 'Post'){
-	go('/posts');
-}
-if($page->title() == 'Link'){
-	go('/links');
+// Redirect "/post" to "/posts" when a certain post isn't requested
+if ($page_name == "post" && $page->title() == "Post") {
+	go("posts");
 }
 
 // Setup about text for the header and customise page titles
 $header_about_content = '<h2>'.html($page->title()).'</h2>';
-if($page_type == 'home' || $page_name == 'resume'){
-	$header_about_content='';
-}elseif(param('tag')){
-	$header_about_content='<h2 class="lighter">Tagged <em>'.tag_title(param('tag')).'</em></h2>';
-}elseif($page_name=='about' || $page_name == 'contact'){
-	$header_about_content = '<h2>'.ucfirst($page_name).' Brendan</h2>';
-}elseif($page_name=='link'){
-	$header_about_content='<h2 class="lighter">Link: <em>'.html($page->title()).'</em></h2>';
-}elseif($page_name=='post'){
-	$header_about_content='<h2 class="lighter">Post: <em>'.html($page->title()).'</em></h2>';
-}elseif(isset($_GET['term']) && $_GET['term'] != ''){
-	$header_about_content = '<h2 class="lighter">Search for <em>'.$_GET['term'].'</em></h2>';
+if ($page_type == 'home' || $page_name == 'resume') {
+	$header_about_content = '';
+} elseif (param('tag')) {
+	$header_about_content='<h2 class="lighter">Tagged <em>' . tag_title(param('tag')) . '</em></h2>';
+} elseif ($page_name == 'about' || $page_name == 'contact') {
+	$header_about_content = '<h2>' . ucfirst($page_name) . ' Brendan</h2>';
+} elseif ($page_name == 'link') {
+	$header_about_content = '<h2 class="lighter">Link: <em>' . html($page->title()) . '</em></h2>';
+} elseif ($page_name == 'post') {
+	$header_about_content='<h2 class="lighter">Post: <em>' . html($page->title()) . '</em></h2>';
+} elseif (isset ($_GET['term']) && $_GET['term'] != '') {
+	$header_about_content = '<h2 class="lighter">Search for <em>' . $_GET['term'] . '</em></h2>';
 }
 
 // Only index page content for visible and main pages
