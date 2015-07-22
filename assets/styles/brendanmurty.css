@@ -67,6 +67,7 @@ hr{border:0 none;background-color:#222;height:2px;margin:15px 0;width:100%}
 pre{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#333;color:#fff;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}
 pre code{width:100%;font:normal 18px/23px "Source Code Pro",sans-serif}
 blockquote{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#e6e6e6;color:#222}
+blockquote p:last-child{margin-bottom:0}
 #container{width:100%;height:100%;padding:0;overflow-x:hidden;margin:0 auto;-webkit-overflow-scrolling:touch}
 section#about{background-color:#2EA8C0;color:#fff;padding:2% 20%;width:60%;margin:0;clear:both;float:left;text-align:center;font-family:"Merriweather Sans"}
 section#about .lighter{color:#bae6ef}
@@ -208,7 +209,6 @@ ul.item-listing.grid i{color:#fff;float:none;margin:1px 7px 0 0}
 .name_resume article li a{clear:both;display:block;margin:0 0 10px}
 .name_resume article li img{margin:0 0 20px}
 .name_resume article blockquote{width:95%;max-width:600px;padding:2%;margin:20px auto 0;border-radius:10px;box-sizing:border-box}
-.name_resume article blockquote p:last-child{margin-bottom:0}
 
 /* AJAX states and loading animations (https://github.com/tobiasahlin/SpinKit) */
 
