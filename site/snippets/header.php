@@ -66,7 +66,7 @@ if($page->isVisible() || $page_name == "home"){
 <meta name="theme-color" content="#2B9CB2">
 <meta name="google-site-verification" content="PDu5txmerBIQFL25egiXIxNeijFAFkVAH88blb0nGcU">
 <meta name="p:domain_verify" content="bc7a37f5bb3bd7ed682192fab9cecd32">
-<meta property="og:locale" content="en_AU">
+<meta property="og:locale" content="en_gb">
 <meta property="og:type" content="article">
 <meta property="og:title" content="<?= $page_title ?>">
 <meta property="og:url" content="<?= html($page->url()) ?>">
