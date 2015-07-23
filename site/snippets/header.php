@@ -57,7 +57,7 @@ if($page->isVisible() || $page_name == "home"){
 <title><?= $page_title ?></title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="author" property="og:author" content="<?= $site->author() ?>">
+<meta name="author" content="<?= $site->author() ?>">
 <meta name="description" property="og:description" content="<?= $page_description ?>">
 <meta name="robots" content="<?= $page_meta_robots ?>">
 <meta name="handheldfriendly" content="true">
