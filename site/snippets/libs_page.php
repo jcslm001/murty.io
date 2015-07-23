@@ -1,20 +1,30 @@
 <?
 
-function page_description($default,$page_object){
-	$item_type=explode('/',$page_object->uri());
-	$item_type=$item_type['0'];
-	if($item_type=='post'){
-		$d=preg_replace('/\[(.*)\]/','$1',$page_object->content()->text());
-		$d=preg_replace('/\(\/assets\/images\/(.*)\)/i','',$d);
-		$d=preg_replace('/\((.*)\)/i','',$d);
-		$d=preg_replace('/\*(.*)\*/i','',$d);
-		$d=mb_substr($d,0,97).'...';
-	}elseif($item_type=='link'){
-		$d=$page_object->content()->text();
-		$d=mb_substr($d,0,97).'...';
+function page_description($page_object) {
+	// Extract the page type from the URL
+	$item_type = explode('/', $page_object->uri())['0'];
+
+	if ($item_type == 'posts') {
+		$description = 'Blog posts by written by Brendan';
+	} elseif ($item_type == 'search') {
+		$description = 'Search posts and pages';
+	} elseif ($item_type == 'home') {
+		$description = 'A passionate Sydney based web developer';
+	} else {
+		// Extract and remove links and image embeds from the page content
+		$description = preg_replace('/\[(.*)\]/', '$1', $page_object->content()->text());
+		$description = preg_replace('/\(\/assets\/images\/(.*)\)/i', '', $description);
+		$description = preg_replace('/\((.*)\)/i', '', $description);
+		$description = preg_replace('/\*(.*)\*/i', '', $description);
+
+		// Trim the content to 100 characters
+		$description = mb_substr($description, 0, 97) . '...';
 	}
-	if(!isset($d)){ $d = $default; }
-	return $d;
+
+	// Only include alphanumeric and some symbols
+	$description = preg_replace("/[^a-zA-Z0-9\.\,\?\s]/", "", $description);
+
+	return $description;
 }
 
 function page_thumbnail($page){

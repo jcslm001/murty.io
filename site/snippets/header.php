@@ -10,7 +10,7 @@ snippet('libs_list');
 snippet('libs_twitter');
 
 $page_title = page_title(html($page->title()).' - '.html($site->title()), $page, $site);
-$page_description = page_description(html($site->description()), $page);
+$page_description = page_description($page);
 $page_image = page_first_image('http://brendanmurty.com/assets/images/common/brendan_murty.jpg', $page);
 $page_type = page_type($page);
 $page_name = $site->uri()->path()->first();
@@ -58,7 +58,7 @@ if($page->isVisible() || $page_name == "home"){
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="author" content="<?= $site->author() ?>">
-<meta name="description" content="<?= $page_description ?>">
+<meta name="description" property="og:description" content="<?= $page_description ?>">
 <meta name="robots" content="<?= $page_meta_robots ?>">
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="480">
@@ -69,7 +69,6 @@ if($page->isVisible() || $page_name == "home"){
 <meta property="og:locale" content="en_GB">
 <meta property="og:type" content="article">
 <meta property="og:title" content="<?= $page_title ?>">
-<meta property="og:description" content="<?= $page_description ?>">
 <meta property="og:url" content="<?= html($page->url()) ?>">
 <meta property="og:image" content="<?= $page_image ?>">
 <link href="http://fonts.googleapis.com/css?family=Merriweather:400,700|Merriweather+Sans:400,700" rel="stylesheet" type="text/css">
