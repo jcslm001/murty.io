@@ -31,14 +31,14 @@ function list_items($pages_object,$type='all',$mode='all'){
 		$item_type=$item_type['0'];
 		$item_date=date_human($item->date('j M y'));
 		$item_date_specific=$item->date('D M d H:i:s Y');
-		$link=$item->url();
+		$link=str_replace('http://brendanmurty.com', '', $item->url());
 		$link_description='Read the full length post';
 		$icon='file-text';
 		if($item_type=='link'){
 			$link_description='View this link\'s details';
 			$icon='link';
 		}
-		$l='<li class="'.$item_type.'"><a href="'.$item->url().'" title="'.$link_description.'">';
+		$l='<li class="'.$item_type.'"><a href="'.$link.'" title="'.$link_description.'">';
 		$l.='<span>'.html($item->title());
 		if($item_type=='link'){
 			$l.=': '.excerpt(html($item->text()), 120);
@@ -194,31 +194,30 @@ function list_items($pages_object,$type='all',$mode='all'){
 }
 
 function list_pages($pages_object, $site_object) {
-	$current = $site_object->uri()->path()->first();
+	$current = '/' . $site_object->uri()->path()->first();
 	$pages = $pages_object->visible();
 	$list = '<h1><a href="/" title="Go to the home page">' . $site_object->title() . '</a></h1>';
 	$list .= '<ul>';
 	foreach($pages as $page) {
-		$link = str_replace('http://brendanmurty.com/', '', $page->url());
+		$link = str_replace('http://brendanmurty.com', '', $page->url());
 		$title = $page->title();
-		if ($link == '' || $link == 'home') {
-			$link = '';
-			$title = 'Home';
-		} elseif ($link == 'post') {
-			$link = 'posts';
-			$title = 'Posts';
-		} elseif ($link == 'link') {
-			$link = 'links';
-			$title = 'Links';
-		} elseif ($link == 'tag') {
-			$link = 'tags';
-			$title = 'Tags';
+		if ($link != '/' && $link != '/home') {
+			if ($link == '/post') {
+				$link = '/posts';
+				$title = 'Posts';
+			} elseif ($link == '/link') {
+				$link = '/links';
+				$title = 'Links';
+			} elseif ($link == '/tag') {
+				$link = '/tags';
+				$title = 'Tags';
+			}
+			$list .= '<li';
+			if ($link == $current) {
+				$list .= ' class="current"';
+			}
+			$list .= '><a href="' . $link . '">' . $title . '</a></li>';
 		}
-		$list .= '<li';
-		if ($link == $current) {
-			$list .= ' class="current"';
-		}
-		$list .= '><a href="/' . $link . '">' . $title . '</a></li>';
 	}
 	$list .= '</ul>';
 	return $list;
