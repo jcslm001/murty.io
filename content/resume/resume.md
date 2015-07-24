@@ -3,6 +3,7 @@ Title: Resumé
 Text:
 
 ### Personality
+
 - *Passionate* I'm passionate about productive development practices and using suitable, well established solutions to meet development goals.
 - *Honest* Honesty is one trait I value in all areas of my life. I won't hesitate to initiate tough discussions with clients and management.
 - *Reliable* When I say I'll get something done within a certain timeframe, you can rely on me to get it completed.
