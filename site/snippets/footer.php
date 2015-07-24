@@ -15,10 +15,7 @@
 			$nav_actions  = '<a href="/contact">Contact me</a>';
 			$nav_actions .= '<a href="/resume" target="_blank">View my resumé</a>';
 		}elseif($page_name=='contact'){
-			$nav_actions  = '<a href="mailto:brendan@brendanmurty.com">Send me an email</a>';
-			$nav_actions .= '<a href="http://twitter.com/brendanmurty">Chat with me on Twitter</a>';
-			$nav_actions .= '<a href="/resume" target="_blank">View my resumé</a>';
-			$nav_actions .= '<a href="/about">More about me</a>';
+			$nav_actions  = '<a href="mailto:brendan@brendanmurty.com">Email me</a>';
 		}
 		if($nav_actions!='') echo '<nav class="actions">'.$nav_actions.'</nav>';
 
