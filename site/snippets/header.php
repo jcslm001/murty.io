@@ -129,7 +129,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 					<a href="https://twitter.com/brendanmurty" title="View my Twitter profile"><i class="fa fa-twitter"></i></a>
 				</li>
 				<li>
-					<a href="http://instagram.com/highhorser" title="View my Instagram posts"><i class="fa fa-instagram"></i></a>
+					<a href="https://instagram.com/brendan.murty" title="View my Instagram posts"><i class="fa fa-instagram"></i></a>
 				</li>
 				<li>
 					<a href="http://www.last.fm/user/brendanmurty" title="See my music statistics on Last.fm"><i class="fa fa-music"></i></a>

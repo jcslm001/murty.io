@@ -131,7 +131,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 		$instagram = new \Instagram($GLOBALS['auth_instagram_client'], $GLOBALS['auth_instagram_secret'], '');
 		if($instagram){
 
-			// Show posts by "highhorser"
+			// Show posts by "brendan.murty"
 			$instagram_results = $instagram->getUserMedia('990505523', '10');
 			if($instagram_results){
 				$post_items = '';
@@ -153,7 +153,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 				}
 			}
 
-			// Show posts liked by "highhorser"
+			// Show posts liked by "brendan.murty"
 			$instagram->setAccessToken($GLOBALS['auth_instagram_user']);
 			$liked = $instagram->getUserLikes('10');
 			if($liked){
