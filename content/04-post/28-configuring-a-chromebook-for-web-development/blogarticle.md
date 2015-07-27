@@ -2,7 +2,7 @@ Title: Configuring a Chromebook for web development
 ----
 Date: 20150722
 ----
-Tags: development, tools
+Tags: develop, tools
 ----
 Text:
 
@@ -61,4 +61,3 @@ If you'd prefer a traditional text editor, you can install one from the Web Stor
 #### Ready to go!
 
 You now have a cheap, portable device to develop your next web app on!
-
