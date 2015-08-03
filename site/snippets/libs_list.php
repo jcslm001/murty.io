@@ -196,7 +196,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 function list_pages($pages_object, $site_object) {
 	$current = '/' . $site_object->uri()->path()->first();
 	$pages = $pages_object->visible();
-	$list = '<h1><a href="/" title="Go to the home page">' . $site_object->title() . '</a></h1>';
+	$list = '<h1><a href="/" title="Go to the home page" aria-label="Go to the home page">' . $site_object->title() . '</a></h1>';
 	$list .= '<ul>';
 	foreach($pages as $page) {
 		$link = str_replace('http://brendanmurty.com', '', $page->url());
@@ -216,7 +216,8 @@ function list_pages($pages_object, $site_object) {
 			if ($link == $current) {
 				$list .= ' class="current"';
 			}
-			$list .= '><a href="' . $link . '">' . $title . '</a></li>';
+			$link_description = 'Go to the ' . $title . ' page';
+			$list .= '><a href="' . $link . '" title="' . $link_description . '" aria-label="' . $link_description . '">' . $title . '</a></li>';
 		}
 	}
 	$list .= '</ul>';

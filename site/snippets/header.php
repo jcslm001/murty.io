@@ -117,7 +117,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 			<?php if ($page_name == 'resume') { ?>
 			<h3>Over five years of commercial experience.<h3>
 			<?php } else { ?>
-			<h3>Over five years of commercial <a href="/about" title="Learn more about me">experience</a>.<h3>
+			<h3>Over five years of commercial <a href="/about" title="Learn more about me" aria-label="Learn more about me">experience</a>.</h3>
 			<ul class="social">
 				<li>
 					<a href="mailto:brendan@brendanmurty.com" title="Send me an email" aria-label="Send me an email"><span class="fa fa-envelope"></span></a>
