@@ -39,13 +39,13 @@
 				$item_footer='Page';
 			}
 		}
-		$s.='<li class="'.$item_type.'"><a href="'.$item->url().'" title="'.$link_description.'"><span>'.html($item->title());
+		$s.='<li class="'.$item_type.'"><a href="'.$item->url().'" title="'.$link_description.'"><span class="summary">'.html($item->title());
 		if($item_type=='link'){
 			$s.=': '.excerpt(html($item->text()),50);
 		}else{
 			$s.=': '.excerpt($item->text(),50);
 		}
-		$s.='</span><em><span class="fa fa-'.$icon.'"></span>'.$item_footer.'</em></a></li>';
+		$s.='</span><span class="label"><span class="fa fa-'.$icon.'"></span>'.$item_footer.'</span></a></li>';
 	  }
 	  echo $s;
 	  ?>

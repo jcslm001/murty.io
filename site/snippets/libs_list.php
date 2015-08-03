@@ -39,13 +39,13 @@ function list_items($pages_object,$type='all',$mode='all'){
 			$icon='link';
 		}
 		$l='<li class="'.$item_type.'"><a href="'.$link.'" title="'.$link_description.'">';
-		$l.='<span>'.html($item->title());
+		$l.='<span class="summary">'.html($item->title());
 		if($item_type=='link'){
 			$l.=': '.excerpt(html($item->text()), 120);
 		}else{
 			$l.=': '.excerpt($item->text(), 120);
 		}
-		$l.='</span><em><span class="fa fa-'.$icon.'"></span>Posted '.$item_date.'</em></a></li>';
+		$l.='</span><span class="label"><span class="fa fa-'.$icon.'"></span>Posted '.$item_date.'</span></a></li>';
 
 		// Add this item to the items array
 		$items[$i]['date'] = $item_date_specific;
@@ -63,7 +63,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 				$item_date = date_human(date('j M y', strtotime($tweet->{'created_at'})));
 				$item_date_specific = date('D M d H:i:s Y', strtotime($tweet->{'created_at'}));
 				$items[$i]['date'] = $item_date_specific;
-				$items[$i]['content'] = '<li class="twitter"><a href="https://twitter.com/brendanmurty/status/'.$tweet->{'id_str'}.'" title="View this post on Twitter"><span>'.$tweet->{'text'}.'</span><em><span class="fa fa-twitter"></span>Posted '.$item_date.'</em></a></li>';
+				$items[$i]['content'] = '<li class="twitter"><a href="https://twitter.com/brendanmurty/status/'.$tweet->{'id_str'}.'" title="View this post on Twitter"><span class="summary">'.$tweet->{'text'}.'</span><span class="label"><span class="fa fa-twitter"></span>Posted '.$item_date.'</span></a></li>';
 				$i++;
 			}
 		}
@@ -87,11 +87,11 @@ function list_items($pages_object,$type='all',$mode='all'){
 						$event_url = str_replace('/commits', '/commit', $event_url);
 
 						$item_content = '<li class="github github-commit"><a href="'.$event_url.'" title="View this commit on GitHub">';
-						$item_content .= '<span>'.$event['repo']['name'];
+						$item_content .= '<span class="summary">'.$event['repo']['name'];
 						if($event_message){
 							$item_content .= ': '.excerpt($event_message, 120);
 						}
-						$item_content .= '</span><em><span class="fa fa-github"></span>Authored '.$event_date.'</em></a></li>';
+						$item_content .= '</span><span class="label"><span class="fa fa-github"></span>Authored '.$event_date.'</span></a></li>';
 
 						$items[$i]['date'] = $event_date_specific;
 						$items[$i]['content'] = $item_content;
@@ -105,7 +105,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						$event_repo = $event['repo']['name'];
 
 						$item_content = '<li class="github github-star"><a href="'.$event_url.'" title="View this repository on GitHub">';
-						$item_content .= '<span>'.$event['repo']['name'];
+						$item_content .= '<span class="summary">'.$event['repo']['name'];
 						$repo_parts = explode('/', $event['repo']['name']);
 						try{
 							$repo = $github->api('repo')->show($repo_parts[0], $repo_parts[1]);
@@ -117,7 +117,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 								if($repo['description'] != '') $item_content .= ': '.excerpt($repo['description'], 120);
 							}
 						}
-						$item_content .= '</span><em><span class="fa fa-github"></span>Starred '.$event_date.'</em></a></li>';
+						$item_content .= '</span><span class="label"><span class="fa fa-github"></span>Starred '.$event_date.'</span></a></li>';
 
 						$items[$i]['date'] = $event_date_specific;
 						$items[$i]['content'] = $item_content;
@@ -141,13 +141,13 @@ function list_items($pages_object,$type='all',$mode='all'){
 						$post_date = date_human(date('j M y', $post->created_time));
 						$post_date_specific = date('D M d H:i:s Y', $post->created_time);
 						$items[$i]['date'] = $post_date_specific;
-						$items[$i]['content'] = '<li class="instagram instagram-post"><a href="'.$post->link.'" title="View this post on Instagram"><img src="'.$post->images->standard_resolution->url.'" /><span>';
+						$items[$i]['content'] = '<li class="instagram instagram-post"><a href="'.$post->link.'" title="View this post on Instagram"><img src="'.$post->images->standard_resolution->url.'" /><span class="summary">';
 						if($post->caption && array_key_exists('text', $post->caption)){
 							$items[$i]['content'] .= excerpt($post->caption->text, 90);
 						}else{
 							$items[$i]['content'] .= 'Post by @'.$username;
 						}
-						$items[$i]['content'] .= '</span><em><span class="fa fa-instagram"></span>Posted '.$post_date.'</em></a></li>';
+						$items[$i]['content'] .= '</span><span class="label"><span class="fa fa-instagram"></span>Posted '.$post_date.'</span></a></li>';
 						$i++;
 					}
 				}
@@ -162,13 +162,13 @@ function list_items($pages_object,$type='all',$mode='all'){
 						$like_date = date_human(date('j M y', $like->created_time));
 						$like_date_specific = date('D M d H:i:s Y', $like->created_time);
 						$items[$i]['date'] = $like_date_specific;
-						$items[$i]['content'] = '<li class="instagram instagram-liked"><a href="'.$like->link.'" title="View this post on Instagram"><img src="'.$like->images->standard_resolution->url.'" /><span>';
+						$items[$i]['content'] = '<li class="instagram instagram-liked"><a href="'.$like->link.'" title="View this post on Instagram"><img src="'.$like->images->standard_resolution->url.'" /><span class="summary">';
 						if($like->caption && array_key_exists('text', $like->caption)){
 							$items[$i]['content'] .= excerpt($like->caption->text, 90);
 						}else{
 							$items[$i]['content'] .= 'Post by @'.$like->user->username;
 						}
-						$items[$i]['content'] .= '</span><em><span class="fa fa-instagram"></span>Liked '.$like_date.'</em></a></li>';
+						$items[$i]['content'] .= '</span><span class="label"><span class="fa fa-instagram"></span>Liked '.$like_date.'</span></a></li>';
 						$i++;
 					}
 				}
@@ -184,7 +184,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 	array_multisort($items_sorted, SORT_DESC, $items);
 
 	// Construct the final list output
-	$t='<ul class="item-listing item-listing-'.$type.' grid">';
+	$t='<ul class="item-listing item-listing-'.$type.'">';
 	for ($j=0; $j < count($items); $j++){
 		$t.=$items[$j]['content'];
 	}

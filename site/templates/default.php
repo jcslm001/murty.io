@@ -14,8 +14,8 @@ if($site->uri()->path()=='tags'){
         if($tag_count!=1){
             $tag_count.='s';
         }
-        $h.='<li><a href="/tag:'.$tag_name.'" title="View all items tagged '.$tag_title.'"><span>'.$tag_title.'</span>';
-        $h.='<em><span class="fa fa-tag""></span>'.$tag_count.'</em></a></li>';
+        $h.='<li><a href="/tag:'.$tag_name.'" title="View all items tagged '.$tag_title.'"><span class="summary">'.$tag_title.'</span>';
+        $h.='<span class="label"><span class="fa fa-tag""></span>'.$tag_count.'</span></a></li>';
     }
     $h.='</ul>';
     echo $h;
