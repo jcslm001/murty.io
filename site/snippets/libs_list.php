@@ -45,7 +45,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 		}else{
 			$l.=': '.excerpt($item->text(), 120);
 		}
-		$l.='</span><em><i class="fa fa-'.$icon.'"></i>Posted '.$item_date.'</em></a></li>';
+		$l.='</span><em><span class="fa fa-'.$icon.'"></span>Posted '.$item_date.'</em></a></li>';
 
 		// Add this item to the items array
 		$items[$i]['date'] = $item_date_specific;
@@ -63,7 +63,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 				$item_date = date_human(date('j M y', strtotime($tweet->{'created_at'})));
 				$item_date_specific = date('D M d H:i:s Y', strtotime($tweet->{'created_at'}));
 				$items[$i]['date'] = $item_date_specific;
-				$items[$i]['content'] = '<li class="twitter"><a href="https://twitter.com/brendanmurty/status/'.$tweet->{'id_str'}.'" title="View this post on Twitter"><span>'.$tweet->{'text'}.'</span><em><i class="fa fa-twitter"></i>Posted '.$item_date.'</em></a></li>';
+				$items[$i]['content'] = '<li class="twitter"><a href="https://twitter.com/brendanmurty/status/'.$tweet->{'id_str'}.'" title="View this post on Twitter"><span>'.$tweet->{'text'}.'</span><em><span class="fa fa-twitter"></span>Posted '.$item_date.'</em></a></li>';
 				$i++;
 			}
 		}
@@ -91,7 +91,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						if($event_message){
 							$item_content .= ': '.excerpt($event_message, 120);
 						}
-						$item_content .= '</span><em><i class="fa fa-github"></i>Authored '.$event_date.'</em></a></li>';
+						$item_content .= '</span><em><span class="fa fa-github"></span>Authored '.$event_date.'</em></a></li>';
 
 						$items[$i]['date'] = $event_date_specific;
 						$items[$i]['content'] = $item_content;
@@ -117,7 +117,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 								if($repo['description'] != '') $item_content .= ': '.excerpt($repo['description'], 120);
 							}
 						}
-						$item_content .= '</span><em><i class="fa fa-github"></i>Starred '.$event_date.'</em></a></li>';
+						$item_content .= '</span><em><span class="fa fa-github"></span>Starred '.$event_date.'</em></a></li>';
 
 						$items[$i]['date'] = $event_date_specific;
 						$items[$i]['content'] = $item_content;
@@ -147,7 +147,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						}else{
 							$items[$i]['content'] .= 'Post by @'.$username;
 						}
-						$items[$i]['content'] .= '</span><em><i class="fa fa-instagram"></i>Posted '.$post_date.'</em></a></li>';
+						$items[$i]['content'] .= '</span><em><span class="fa fa-instagram"></span>Posted '.$post_date.'</em></a></li>';
 						$i++;
 					}
 				}
@@ -168,7 +168,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						}else{
 							$items[$i]['content'] .= 'Post by @'.$like->user->username;
 						}
-						$items[$i]['content'] .= '</span><em><i class="fa fa-instagram"></i>Liked '.$like_date.'</em></a></li>';
+						$items[$i]['content'] .= '</span><em><span class="fa fa-instagram"></span>Liked '.$like_date.'</em></a></li>';
 						$i++;
 					}
 				}

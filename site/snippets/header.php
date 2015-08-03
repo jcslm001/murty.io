@@ -120,22 +120,22 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 			<h3>Over five years of commercial <a href="/about" title="Learn more about me">experience</a>.<h3>
 			<ul class="social">
 				<li>
-					<a href="mailto:brendan@brendanmurty.com" title="Send me an email"><i class="fa fa-envelope"></i></a>
+					<a href="mailto:brendan@brendanmurty.com" title="Send me an email"><span class="fa fa-envelope"></span></a>
 				</li>
 				<li>
-					<a href="https://github.com/brendanmurty" title="View my code on GitHub"><i class="fa fa-github"></i></a>
+					<a href="https://github.com/brendanmurty" title="View my code on GitHub"><span class="fa fa-github"></span></a>
 				</li>
 				<li>
-					<a href="https://twitter.com/brendanmurty" title="View my Twitter profile"><i class="fa fa-twitter"></i></a>
+					<a href="https://twitter.com/brendanmurty" title="View my Twitter profile"><span class="fa fa-twitter"></span></a>
 				</li>
 				<li>
-					<a href="https://instagram.com/brendan.murty" title="View my Instagram posts"><i class="fa fa-instagram"></i></a>
+					<a href="https://instagram.com/brendan.murty" title="View my Instagram posts"><span class="fa fa-instagram"></span></a>
 				</li>
 				<li>
-					<a href="http://www.last.fm/user/brendanmurty" title="See my music statistics on Last.fm"><i class="fa fa-music"></i></a>
+					<a href="http://www.last.fm/user/brendanmurty" title="See my music statistics on Last.fm"><span class="fa fa-music"></span></a>
 				</li>
 				<li>
-					<a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam"><i class="fa fa-gamepad"></i></a>
+					<a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam"><span class="fa fa-gamepad"></span></a>
 				</li>
 			</ul>
 			<?php } ?>

@@ -15,7 +15,7 @@
 	?>
 	<form action="<?php echo thisURL() ?>" name="searchform" id="searchform">
 		<input type="text" class="text" value="<?= $field_value ?>" name="term" onclick="this.select();" />
-		<a class="button" href="#" onclick="searchform.submit();return false;"><i class="fa fa-search"></i></a>
+		<a class="button" href="#" onclick="searchform.submit();return false;"><span class="fa fa-search"></span></a>
 	</form>
 	<?php
 	if($results){
@@ -45,7 +45,7 @@
 		}else{
 			$s.=': '.excerpt($item->text(),50);
 		}
-		$s.='</span><em><i class="fa fa-'.$icon.'"></i>'.$item_footer.'</em></a></li>';
+		$s.='</span><em><span class="fa fa-'.$icon.'"></span>'.$item_footer.'</em></a></li>';
 	  }
 	  echo $s;
 	  ?>
