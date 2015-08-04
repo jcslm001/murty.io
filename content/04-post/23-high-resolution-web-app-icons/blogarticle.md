@@ -6,7 +6,7 @@ Tags: develop, design
 ----
 Thumbnail: upcomingtasks.png
 ----
-Text: 
+Text:
 
 Web apps like [UpcomingTasks](http://upcomingtasks.com/) are put to better use when they are added to home screens on devices. This allows the user to access them quickly and your web app earns it's place amongst the users' other apps.
 
@@ -24,7 +24,7 @@ To ensure that [iOS](http://www.apple.com/ios/) doesn't apply the default shine 
 
 For Windows 8/RT devices, you'll just need to include the following in the *head* section of your page:
 
-	<meta name="application-name" content="YourWebApp"/> 
+	<meta name="application-name" content="YourWebApp"/>
 	<meta name="msapplication-TileColor" content="#325ba0"/>
 	<meta name="msapplication-TileImage" content="/images/logo-144-clear.png"/>
 	<meta name="msapplication-starturl" content="/webapphome.php" />
@@ -50,7 +50,7 @@ Unfortunately, [Windows Phone](http://www.windowsphone.com/) requires a little m
 		<body>
 			<div id="icon">
 				<p>
-					<img src="/images/logo-160.png" />
+					<img src="/images/logo-160.png" alt="YourWebApp" />
 				</p>
 			</div>
 			<div id="instructions">
@@ -95,4 +95,3 @@ I'd also recommend a guide to assist your users in adding the page to their home
  - [iOS Web App Configuration](https://gist.github.com/jdaihl/472519)
  - [Making An Awesome Windows 8 Pinned Tile for your Website](http://dontcodetired.com/blog/post/Making-An-Awesome-Windows-8-Pinned-Tile-for-your-Website.aspx)
  - [Creating a pinnable Windows Phone 7 tile for your website like Google](http://www.russellbeattie.com/blog/creating-a-pinnable-windows-phone-7-tile-for-your-website-like-google)
-
