@@ -13,7 +13,7 @@
 			$nav_actions .= '<a class="facebook" href="http://www.facebook.com/sharer.php?u='.$page->url().'&amp;t='.urlencode($page->title()).'+by+Brendan+Murty">Post to Facebook</a></li>';
 		}elseif($page_name=='about'){
 			$nav_actions  = '<a href="/contact">Contact me</a>';
-			$nav_actions .= '<a href="/resume" target="_blank">View my resumé</a>';
+			$nav_actions .= '<a href="/resume">View my resumé</a>';
 		}elseif($page_name=='contact'){
 			$nav_actions  = '<a href="mailto:brendan@brendanmurty.com">Email me</a>';
 		}
