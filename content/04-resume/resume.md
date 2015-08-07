@@ -24,8 +24,8 @@ I'm a Web Developer with over five years of commercial experience in many areas 
 
 ### Employment
 
-- __PHP Developer__ *[Sentral Education](http://sentral.com.au) &mdash; January 2015 - present* I started a new job at Sentral Education working with a team of talented developers, I'm working on new features on our student management software.
-- __Lead Developer: Siteflex Classic__ *[Solutions Outsourced](http://solutionsoutsourced.com.au) &mdash; Sep 2009 - Dec 2014* I worked in various back-end & front-end development, client support and product training roles at Solutions Outsourced and their CMS and SMS/email marketing platform called Siteflex. This included working directly with clients on website projects, creation and management of a Siteflex training system and most recently leading development on Siteflex Classic.
+- __PHP Developer__ *[Sentral Education](http://sentral.com.au) &mdash; January 2015 - present* I'm working at Sentral Education on our teacher and student management software. My responsibilities include planning and developing new product features, maintenance and assisting the support team.
+- __Lead Developer: Siteflex Classic__ *[Solutions Outsourced](http://solutionsoutsourced.com.au) &mdash; Sep 2009 - Dec 2014* I worked in various back-end & front-end development, client support and product training roles at Solutions Outsourced related to their CMS and SMS/email marketing platform called Siteflex. This included working directly with clients on website development projects, creation of a Siteflex training system and most recently leading development on Siteflex Classic.
 - __Field Assistant__ *[PBA Surveyors](http://pbasurvey.com.au/) &mdash; Apr 2004 - Sep 2009* I worked with a team of Cadastral and Construction Surveyors around Sydney. I also developed their company website in my free time.
 
 ### Experience
