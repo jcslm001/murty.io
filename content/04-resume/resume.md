@@ -34,7 +34,7 @@ I'm a Web Developer with over five years of commercial experience in many areas 
 
 ### Reference
 
-- __Brett Daniels__ *Solutions Outsourced &mdash; Lead Web Developer, 2014*
+- __Brett Daniels__ *[Solutions Outsourced](http://solutionsoutsourced.com.au) &mdash; Lead Web Developer, 2014*
 
 > Brendan has developed the skill to look at tasks objectively, keeping calm under pressure while aiming to achieve the best results for clients. Brendan's eye for detail, in particular with regard to thorough planning and documentation, is also highly noteworthy.
 
