@@ -120,7 +120,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 			<h3>Over five years of commercial <a href="/about" title="Learn more about me" aria-label="Learn more about me">experience</a>.</h3>
 			<ul class="social">
 				<li>
-					<a href="mailto:brendan@brendanmurty.com" title="Send me an email" aria-label="Send me an email"><span class="fa fa-envelope"></span></a>
+					<a href="mailto:brendan@murty.id.au" title="Send me an email" aria-label="Send me an email"><span class="fa fa-envelope"></span></a>
 				</li>
 				<li>
 					<a href="https://github.com/brendanmurty" title="View my code on GitHub" aria-label="View my code on GitHub"><span class="fa fa-github"></span></a>

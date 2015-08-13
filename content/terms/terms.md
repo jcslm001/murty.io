@@ -10,7 +10,7 @@ Brendan reserves the right to change these Terms without notice; it is the clien
 
 Contact with Brendan must be made in one of the following ways:
 
-- Email: [brendan@brendanmurty.com](mailto:brendan@brendanmurty.com)
+- Email: [brendan@murty.id.au](mailto:brendan@murty.id.au)
 - Twitter: [brendanmurty](https://twitter.com/brendanmurty)
 - Phone: *(Available upon request)*
 - Australian Post: *(Street address available upon request)*
@@ -21,7 +21,7 @@ All payment amounts mentioned in this document or in any correspondence with Bre
 
 Payments can be made to Brendan in the following ways:
 
-- PayPal (www.paypal.com): brendan@brendanmurty.com
+- PayPal (www.paypal.com): brendan@murty.id.au
 - Direct Deposit: *(Brendan’s account details are available upon request)*
 
 Upon acceptance of quote, the client must:
