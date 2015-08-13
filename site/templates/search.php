@@ -13,7 +13,7 @@
 		$field_value=$_GET['term'];
 	}
 	?>
-	<form action="<?php echo str_replace('http://brendanmurty.com', '', thisURL()) ?>" name="searchform" id="searchform">
+	<form action="<?php echo str_replace('http://brendan.murty.id.au', '', thisURL()) ?>" name="searchform" id="searchform">
 		<input type="text" class="text" value="<?= $field_value ?>" name="term" onclick="this.select();" />
 		<a class="button" href="#" onclick="searchform.submit();return false;"><span class="fa fa-search"></span></a>
 	</form>

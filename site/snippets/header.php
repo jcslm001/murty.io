@@ -11,7 +11,7 @@ snippet('libs_twitter');
 
 $page_title = page_title(html($page->title()).' - '.html($site->title()), $page, $site);
 $page_description = page_description($page);
-$page_image = page_first_image('http://brendanmurty.com/assets/images/common/brendan_murty.jpg', $page);
+$page_image = page_first_image('http://brendan.murty.id.au/assets/images/common/brendan_murty.jpg', $page);
 $page_type = page_type($page);
 $page_name = $site->uri()->path()->first();
 if (!$page_name) {

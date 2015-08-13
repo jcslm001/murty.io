@@ -4,7 +4,7 @@ Text:
 
 For the purposes of this document, Brendan Murty will herein be referred to as *Brendan*. *Client* refers to any person who is undertaking work with Brendan Murty. *Deposit* refers to the one off 40% payment of the agreed quote amount.
 
-Brendan reserves the right to change these Terms without notice; it is the clients responsibility to check for updates (the most recent version of this document is available online at [brendanmurty.com/terms](http://brendanmurty.com/terms)).
+Brendan reserves the right to change these Terms without notice; it is the clients responsibility to check for updates (the most recent version of this document is available online at [brendan.murty.id.au/terms](http://brendan.murty.id.au/terms)).
 
 ### Contact
 

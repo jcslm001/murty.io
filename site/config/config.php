@@ -44,7 +44,7 @@ c::set('url', '/');
  
 */
 
-c::set('url', 'http://brendanmurty.com/');
+c::set('url', 'http://brendan.murty.id.au/');
 
 
 /*

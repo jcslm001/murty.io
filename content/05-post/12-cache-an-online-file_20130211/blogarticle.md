@@ -6,7 +6,7 @@ Tags: php
 ----
 Text:
 
-When connecting to a third-party web service, it’s a good idea to keep a cached version of the required files in case the third-party service is having issues. This way your website will at least show old data instead of no data at all. The *cache* function below is very similar to the solution that was used on [brendanmurty.com](http://brendanmurty.com) to list my recent Twitter posts.
+When connecting to a third-party web service, it’s a good idea to keep a cached version of the required files in case the third-party service is having issues. This way your website will at least show old data instead of no data at all. The *cache* function below is very similar to the solution that was used on [brendan.murty.id.au](http://brendan.murty.id.au) to list my recent Twitter posts.
 
 	<?php
 	/*

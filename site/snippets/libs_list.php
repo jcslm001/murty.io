@@ -31,7 +31,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 		$item_type=$item_type['0'];
 		$item_date=date_human($item->date('j M y'));
 		$item_date_specific=$item->date('D M d H:i:s Y');
-		$link=str_replace('http://brendanmurty.com', '', $item->url());
+		$link=str_replace('http://brendan.murty.id.au', '', $item->url());
 		$link_description='Read the full length post';
 		$icon='file-text';
 		if($item_type=='link'){
@@ -199,7 +199,7 @@ function list_pages($pages_object, $site_object) {
 	$list = '<h1><a href="/" title="Go to the home page" aria-label="Go to the home page">' . $site_object->title() . '</a></h1>';
 	$list .= '<ul>';
 	foreach($pages as $page) {
-		$link = str_replace('http://brendanmurty.com', '', $page->url());
+		$link = str_replace('http://brendan.murty.id.au', '', $page->url());
 		$title = $page->title();
 		if ($link != '/' && $link != '/home') {
 			if ($link == '/post') {
