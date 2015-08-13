@@ -16,11 +16,10 @@ A simple date picker designed for use on mobile devices. Creates three dropdown 
 	// Purpose: Create a date picker allowing selection of dates in the next 10 years
 	// Notes: Defaults to selecting today but custom selected date can be set (in YYYY-MM-DD format)
 	// Example: <?= form_date_picker('2012-12-25'); ?>
-	// Sample: http://brendanmurty.com/dev/date-picker.php
 	function form_date_picker($custom_date=''){
 		$this_year=date('Y');
 		$ten_years=$this_year+11;
-		
+
 		if($custom_date==''){ // Use todays date
 			$selected_day=date('j');
 			$selected_month=date('m');
@@ -31,7 +30,7 @@ A simple date picker designed for use on mobile devices. Creates three dropdown 
 			$selected_month=$date_parts['1'];
 			$selected_year=$date_parts['0'];
 		}
-		
+
 		// Day
 		$f='<select id="date_day" name="date_day">';
 		for($i=1;$i<32;$i++){
@@ -42,7 +41,7 @@ A simple date picker designed for use on mobile devices. Creates three dropdown 
 			$f.='>'.$i.'</option>';
 		}
 		$f.='</select>';
-		
+
 		// Month
 		$f.='<select id="date_month" name="date_month">';
 		for($i=1;$i<13;$i++){
@@ -54,7 +53,7 @@ A simple date picker designed for use on mobile devices. Creates three dropdown 
 			$f.='>'.$i.'</option>';
 		}
 		$f.='</select>';
-		
+
 		// Year
 		$f.='<select id="date_year" name="date_year">';
 		for($i=$this_year;$i<$ten_years;$i++){
@@ -63,7 +62,7 @@ A simple date picker designed for use on mobile devices. Creates three dropdown 
 			$f.='>'.$i.'</option>';
 		}
 		$f.='</select>';
-	
+
 		return $f;
 	}
 	?>
