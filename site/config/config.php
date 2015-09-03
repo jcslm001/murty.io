@@ -41,10 +41,10 @@ Make sure to write the url without a trailing slash.
 To work with relative URLs, you can set the URL like this:
 
 c::set('url', '/');
- 
+
 */
 
-c::set('url', 'http://brendan.murty.id.au/');
+c::set('url', 'http://brendan.murty.id.au');
 
 
 /*
@@ -68,7 +68,7 @@ if you are using the .htaccess file, make sure to
 set the right RewriteBase there as well:
 
 RewriteBase /subfolder
- 
+
 */
 
 c::set('subfolder', '');
