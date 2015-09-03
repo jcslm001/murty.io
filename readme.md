@@ -1,9 +1,9 @@
-brendanmurty.com
+brendan.murty.id.au
 =======
 
 ## About ##
 
-Here's my entire [personal website](http://brendanmurty.com) built on [Kirby CMS](https://github.com/bastianallgeier/kirbycms), coded in [Atom](https://atom.io/) and hosted by [Digital Ocean](http://digitalocean.com).
+Here's my entire [personal website](http://brendan.murty.id.au) built on [Kirby CMS](https://github.com/bastianallgeier/kirbycms), coded in [Atom](https://atom.io/) and hosted by [Digital Ocean](http://digitalocean.com).
 
 I've built a customised [pulse feed](https://github.com/brendanmurty/website/tree/master/site/snippets/libs_list.php#L3) on the [home page](https://github.com/brendanmurty/website/tree/master/site/templates/home.php#L9) to show my recent public activity on [Twitter](https://twitter.com/brendanmurty), [GitHub](https://github.com/brendanmurty) and [Instagram](https://instagram.com/brendan.murty).
 

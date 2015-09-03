@@ -43,7 +43,7 @@ function page_first_image($default,$page_object){
 			$o=preg_match_all('/\(\/assets\/images\/(.*)\)/i',$page_object->content()->text(),$matches);
 			if($matches[0]){
 				if($matches[0][0]!=''){
-					$p='http://brendanmurty.com'.preg_replace('/\((.*)\)/','$1',$matches[0][0]);
+					$p='http://brendan.murty.id.au'.preg_replace('/\((.*)\)/','$1',$matches[0][0]);
 				}
 			}
 		}

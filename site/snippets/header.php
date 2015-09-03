@@ -1,5 +1,6 @@
 <?php
-$css_update_date = "20150805";
+
+$css_update_date = "20150813";
 $js_update_date = "20140906";
 
 snippet('auth');
@@ -11,7 +12,7 @@ snippet('libs_twitter');
 
 $page_title = page_title(html($page->title()).' - '.html($site->title()), $page, $site);
 $page_description = page_description($page);
-$page_image = page_first_image('http://brendanmurty.com/assets/images/common/brendan_murty.jpg', $page);
+$page_image = page_first_image('http://brendan.murty.id.au/assets/images/common/brendan_murty.jpg', $page);
 $page_type = page_type($page);
 $page_name = $site->uri()->path()->first();
 if (!$page_name) {
@@ -120,7 +121,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 			<h3>Over five years of commercial <a href="/about" title="Learn more about me" aria-label="Learn more about me">experience</a>.</h3>
 			<ul class="social">
 				<li>
-					<a href="mailto:brendan@brendanmurty.com" title="Send me an email" aria-label="Send me an email"><span class="fa fa-envelope"></span></a>
+					<a href="mailto:brendan@murty.id.au" title="Send me an email" aria-label="Send me an email"><span class="fa fa-envelope"></span></a>
 				</li>
 				<li>
 					<a href="https://github.com/brendanmurty" title="View my code on GitHub" aria-label="View my code on GitHub"><span class="fa fa-github"></span></a>

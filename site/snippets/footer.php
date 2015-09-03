@@ -15,7 +15,7 @@
 			$nav_actions  = '<a href="/contact">Contact me</a>';
 			$nav_actions .= '<a href="/resume">View my resumé</a>';
 		}elseif($page_name=='contact'){
-			$nav_actions  = '<a href="mailto:brendan@brendanmurty.com">Email me</a>';
+			$nav_actions  = '<a href="mailto:brendan@murty.id.au">Email me</a>';
 		}
 		if($nav_actions!='') echo '<nav class="actions">'.$nav_actions.'</nav>';
 
