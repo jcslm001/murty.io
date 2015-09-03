@@ -55,6 +55,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 
 	// Add third-party activity to the items list
 	if($type=='all' && $mode!='taglist'){
+		load_thirdparty_classes();
 
 		// Twitter
 		$tweets = twitter_tweets_data('brendanmurty', '5', '');
@@ -69,7 +70,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 		}
 
 		// GitHub
-		$github = new \Github\Client();
+		$github = new Github\Client();
 		if($github){
 			try{
 				$events = $github->api('user')->publicEvents('brendanmurty');
@@ -194,7 +195,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 }
 
 function list_pages($pages_object, $site_object) {
-	$current = '/' . $site_object->uri()->path()->first();
+	$current = '/' . $site_object->kirby()->uri();
 	$pages = $pages_object->visible();
 	$list = '<h1><a href="/" title="Go to the home page" aria-label="Go to the home page">' . $site_object->title() . '</a></h1>';
 	$list .= '<ul>';
