@@ -1,6 +1,6 @@
 <?php
 
-$css_update_date = "20150813";
+$css_update_date = "20150903";
 $js_update_date = "20140906";
 
 snippet('auth');
@@ -14,10 +14,7 @@ $page_title = page_title(html($page->title()).' - '.html($site->title()), $page,
 $page_description = page_description($page);
 $page_image = page_first_image('http://brendan.murty.id.au/assets/images/common/brendan_murty.jpg', $page);
 $page_type = page_type($page);
-$page_name = $site->uri()->path()->first();
-if (!$page_name) {
-	$page_name = 'home';
-}
+$page_name = page_name($page);
 
 $body_extra = '';
 if($page->title() == 'Find' && !isset($_GET['term'])){
@@ -35,13 +32,13 @@ if ($page_name == "post" && $page->title() == "Post") {
 $header_about_content = '<h2>'.html($page->title()).'</h2>';
 if ($page_type == 'home' || $page_name == 'resume') {
 	$header_about_content = '';
-} elseif (param('tag')) {
-	$header_about_content='<h2 class="lighter">Tagged <em>' . tag_title(param('tag')) . '</em></h2>';
+} elseif ($page->uri() == 'tag' && get('name')) {
+	$header_about_content='<h2 class="lighter">Tagged <em>' . tag_title(get('name')) . '</em></h2>';
 } elseif ($page_name == 'about' || $page_name == 'contact') {
 	$header_about_content = '<h2>' . ucfirst($page_name) . ' Brendan</h2>';
 } elseif ($page_name == 'link') {
 	$header_about_content = '<h2 class="lighter">Link: <em>' . html($page->title()) . '</em></h2>';
-} elseif ($page_name == 'post') {
+} elseif ($page_type == 'post' && $page_name != 'posts') {
 	$header_about_content='<h2 class="lighter">Post: <em>' . html($page->title()) . '</em></h2>';
 } elseif (isset ($_GET['term']) && $_GET['term'] != '') {
 	$header_about_content = '<h2 class="lighter">Search for <em>' . $_GET['term'] . '</em></h2>';
@@ -104,7 +101,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <body<?php echo $body_extra ?>>
 	<section id="container">
 		<nav class="pages">
-			<?php echo list_pages($pages,$site) ?>
+			<?php echo list_pages($pages, $site, $page) ?>
 		</nav>
 
 		<?php if ($page_type == 'home' || $page_name == 'resume') { ?>

@@ -2,6 +2,7 @@
 <article class="search">
 	<?php
 	$field_value = '';
+	$results = '';
 	if(get('term')){
 	    $results = $site->search(get('term'))->visible();
 		$field_value = get('term');
@@ -33,7 +34,7 @@
 				$item_footer='Page';
 			}
 		}
-		$s.='<li class="'.$item_type.'"><a href="'.$item->url().'" title="'.$link_description.'"><span class="summary">'.html($item->title());
+		$s.='<li class="'.$item_type.'"><a href="/'.$item->uri().'" title="'.$link_description.'"><span class="summary">'.html($item->title());
 		if($item_type=='link'){
 			$s.=': '.excerpt(html($item->text()),50);
 		}else{

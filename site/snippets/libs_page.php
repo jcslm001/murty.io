@@ -52,38 +52,44 @@ function page_first_image($default,$page_object){
 	return $p;
 }
 
-function page_title($default_title, $page_object, $site_object ){
-	if(param('tag')){
-		$t='Tagged '.tag_title(param('tag')).' - '.html($site_object->title());
+function page_title($default_title, $page_object, $site_object) {
+	if($page_object->uri() == 'tag' && get('name')){
+		$t='Tagged '.tag_title(get('name')).' - '.html($site_object->title());
 	}elseif(html($page_object->title())=='Home'){
 		$t=html($site_object->title());
-	}elseif(isset($_GET['term'])&&$_GET['term']!=''){
+	}elseif(get('term')){
 		$t='Search for '.$_GET['term'].' - '.html($site_object->title());
-	}elseif($site_object->uri()->path()->first()=='link'){
-		$t='Link: '.html($page_object->title()).' - '.html($site_object->title());
-	}elseif($site_object->uri()->path()->first()=='post'){
+	}elseif(strpos(page_name($page_object), 'post') !== false){
 		$t='Post: '.html($page_object->title()).' - '.html($site_object->title());
 	}
 	if(!isset($t)) $t = $default_title;
 	return $t;
 }
 
-function page_type($page_object){
+function page_type($page_object) {
 	$type = 'default';
-	if($page_object->parent()){
-		if($page_object->parent()->title()=='Posts'){
-			$type = 'post';
-		}
-	}elseif($page_object->uri()=='resume' || $page_object->uri()=='terms'){
+	if ($page_object->uri() == 'home') {
+		$type = 'home';
+	} elseif (strpos(page_name($page_object), 'post') !== false) {
+		$type = 'post';
+	} elseif ($page_object->uri() == 'resume' || $page_object->uri() == 'terms') {
 		$type = 'formal';
-	}else{
-		if(param('tag')){
-			$type = 'tag-list';
-		}elseif($page_object->title()=='Home'){
-			$type = 'home';
-		}
+	} elseif ($page_object->uri() == 'tag' && get('name')) {
+		$type = 'tag';
 	}
 	return $type;
+}
+
+function page_name($page_object) {
+	$page_name = $page_object->uri();
+	if (!$page_name) {
+		$page_name = 'home';
+	} elseif (strpos($page_name, '/') !== false) {
+		$page_name = str_replace('/', '-', $page_name);
+	} elseif ($page_object->uri() == 'tag' && get('name')) {
+		$page_name = 'tag-' . get('name');
+	}
+	return $page_name;
 }
 
 function page_count($pages_object, $type='post'){

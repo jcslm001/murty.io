@@ -194,13 +194,13 @@ function list_items($pages_object,$type='all',$mode='all'){
 	return $t;
 }
 
-function list_pages($pages_object, $site_object) {
-	$current = '/' . $site_object->kirby()->uri();
+function list_pages($pages_object, $site_object, $page_object) {
+	$current = '/' . $page_object->uri();
 	$pages = $pages_object->visible();
 	$list = '<h1><a href="/" title="Go to the home page" aria-label="Go to the home page">' . $site_object->title() . '</a></h1>';
 	$list .= '<ul>';
 	foreach($pages as $page) {
-		$link = str_replace('http://brendan.murty.id.au', '', $page->url());
+		$link = '/' . $page->uri();
 		$title = $page->title();
 		if ($link != '/' && $link != '/home') {
 			if ($link == '/post') {
@@ -214,7 +214,7 @@ function list_pages($pages_object, $site_object) {
 				$title = 'Tags';
 			}
 			$list .= '<li';
-			if ($link == $current) {
+			if ($link == $current || ($link == '/posts' && page_type($page_object) == 'post')) {
 				$list .= ' class="current"';
 			}
 			$link_description = 'Go to the ' . $title . ' page';
