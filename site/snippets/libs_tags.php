@@ -13,7 +13,7 @@ function post_tags($page, $mode){
 					if($name!=''){
 						$title=tag_title($name);
 						if($mode=='inline'){
-							$pt.='<a href="/tag:'.$name.'" title="View all items tagged '.$title.'">'.$title.'</a>';
+							$pt.='<a href="/tag?name='.$name.'" title="View all items tagged '.$title.'">'.$title.'</a>';
 							if($i==$tags_count-1){
 								$pt.='<span class="separator second-last">&amp;</span>';
 								$i++;
@@ -25,7 +25,7 @@ function post_tags($page, $mode){
 								$i++;
 							}
 						}else{
-							$pt.='<li><a href="/tag:'.$name.'" title="View all items tagged '.$title.'">'.$title.'</a></li>';
+							$pt.='<li><a href="/tag?name='.$name.'" title="View all items tagged '.$title.'">'.$title.'</a></li>';
 							$i++;
 						}
 					}
@@ -47,18 +47,18 @@ function post_tags($page, $mode){
 	}
 }
 
-function tag_title($name){
-	if(strlen($name)<=3 && $name!='art' && $name!='mac'){
-		$title=strtoupper($name);
-	}else{
-		if($name=='upcomingtasks'){
-			$title='UpcomingTasks';
-		}elseif($name=='javascript'){
-			$title='JavaScript';
-		}elseif($name=='windowsphone'){
-			$title='Windows Phone';
-		}else{
-			$title=ucfirst($name);
+function tag_title($name) {
+	if (strlen($name) <= 3 && $name != 'art' && $name != 'mac') {
+		$title = strtoupper($name);
+	} else {
+		if ($name == 'upcomingtasks') {
+			$title = 'UpcomingTasks';
+		} elseif ($name == 'javascript') {
+			$title = 'JavaScript';
+		} elseif ($name == 'windowsphone') {
+			$title = 'Windows Phone';
+		} else {
+			$title = ucfirst($name);
 		}
 	}
 	return $title;
