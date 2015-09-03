@@ -1,19 +1,13 @@
 <?php snippet('header') ?>
 <article class="search">
 	<?php
-	$search = new search(array(
-		'searchfield' => 'term',
-		'fields' => array('title','tags','text'),
-		'ignore' => array('sitemap','error','post','feed')
-	));
-	$results = $search->results();
-
-	$field_value='';
-	if(isset($_GET['term'])&&$_GET['term']!=''){
-		$field_value=$_GET['term'];
+	$field_value = '';
+	if(get('term')){
+	    $results = $site->search(get('term'))->visible();
+		$field_value = get('term');
 	}
 	?>
-	<form action="<?php echo str_replace('http://brendanmurty.com', '', thisURL()) ?>" name="searchform" id="searchform">
+	<form action="<?php echo str_replace('http://brendan.murty.id.au', '', thisURL()) ?>" name="searchform" id="searchform">
 		<input type="text" class="text" value="<?= $field_value ?>" name="term" onclick="this.select();" />
 		<a class="button" href="#" onclick="searchform.submit();return false;"><span class="fa fa-search"></span></a>
 	</form>
@@ -51,8 +45,10 @@
 	  ?>
 	</ul>
 	<?php
-	}else{
-		if($field_value!='') echo '<p class="item-listing-search-empty">No results found.</p>';
+	} else {
+		if ($field_value) {
+		    echo '<p class="item-listing-search-empty">No results found.</p>';
+		}
 	}
 	?>
 </article>
