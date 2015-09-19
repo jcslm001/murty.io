@@ -28,9 +28,9 @@ I'm a Web Developer with over five years of commercial experience in many areas 
 - __Lead Developer: Siteflex Classic__ *[Solutions Outsourced](http://solutionsoutsourced.com.au) &mdash; Sep 2009 - Dec 2014* I worked in various back-end & front-end development, client support and product training roles at Solutions Outsourced related to their CMS and SMS/email marketing platform called Siteflex. This included working directly with clients on website development projects, creation of a Siteflex training system and most recently leading development on Siteflex Classic.
 - __Field Assistant__ *[PBA Surveyors](http://pbasurvey.com.au/) &mdash; Apr 2004 - Sep 2009* I worked with a team of Cadastral and Construction Surveyors around Sydney. I also developed their company website in my free time.
 
-### Experience
+### Projects
 
-- __Developer and Creator__ *[UpcomingTasks](https://upcomingtasks.com/) &mdash; Sep 2012 - present* In created a free open-source responsive Basecamp client called UpcomingTasks to easily manage tasks on smaller devices. It uses the Basecamp API to interface with Basecamp tasks and projects. As of December 2014, the system has around 600 active users.
+- __Developer and Creator__ *[UpcomingTasks](https://upcomingtasks.com/) &mdash; Sep 2012 - present* I created a free open-source responsive Basecamp client called UpcomingTasks to easily manage tasks on smaller devices. It uses the Basecamp API to interface with Basecamp tasks and projects. As of September 2015, the system has around 1000 active users.
 
 ### Reference
 
