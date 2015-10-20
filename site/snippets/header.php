@@ -60,7 +60,7 @@ if($page->isVisible() || $page_name == "home"){
 <meta name="robots" content="<?= $page_meta_robots ?>">
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="480">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 <meta name="theme-color" content="#2B9CB2">
 <meta name="google-site-verification" content="PDu5txmerBIQFL25egiXIxNeijFAFkVAH88blb0nGcU">
 <meta name="p:domain_verify" content="bc7a37f5bb3bd7ed682192fab9cecd32">
