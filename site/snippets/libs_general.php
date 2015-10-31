@@ -43,6 +43,8 @@ function load_thirdparty_classes() {
             'guzzle\\http\\redirectplugin' => $classes . 'Guzzle' . DS . 'Http' . DS . 'RedirectPlugin.php',
             'guzzle\\http\\url' => $classes . 'Guzzle' . DS . 'Http' . DS . 'Url.php',
             'guzzle\\http\\entitybodyinterface' => $classes . 'Guzzle' . DS . 'Http' . DS . 'EntityBodyInterface.php',
+            'guzzle\\http\\queryaggregator\\phpaggregator' => $classes . 'Guzzle' . DS . 'Http' . DS . 'QueryAggregator' . DS . 'PhpAggregator.php',
+            'guzzle\\http\\queryaggregator\\queryaggregatorinterface' => $classes . 'Guzzle' . DS . 'Http' . DS . 'QueryAggregator' . DS . 'QueryAggregatorInterface.php',
             'guzzle\\stream\\stream' => $classes . 'Guzzle' . DS . 'Stream' . DS . 'Stream.php',
             'guzzle\\stream\\streaminterface' => $classes . 'Guzzle' . DS . 'Stream' . DS . 'StreamInterface.php',
             'guzzle\\common\\event' => $classes . 'Guzzle' . DS . 'Common' . DS . 'Event.php',

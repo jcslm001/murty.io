@@ -11,5 +11,6 @@ $GLOBALS['auth_twitter_token'] = '123-abcdefg';
 $GLOBALS['auth_twitter_secret'] = 'abCdeFg';
 $GLOBALS['auth_twitter_consumer_key'] = 'abcdEFgh';
 $GLOBALS['auth_twitter_consumer_secret'] = 'iJkLmnop';
+$GLOBALS['auth_pinboard_api'] = 'username:AbcDef';
 
 ?>
