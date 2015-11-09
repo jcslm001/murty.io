@@ -211,8 +211,8 @@ ul.item-listing img{width:100%;height:auto;display:block;min-height:300px;max-he
 ul.item-listing .summary{height:390px;font-size:20px;line-height:30px;padding:12px 5% 0;width:90%;display:block;color:#222;background-color:#fff;word-wrap:break-word;overflow:hidden}
 ul.item-listing-tags .summary, ul.item-listing-search .summary{height:130px}
 ul.item-listing .instagram .summary{height:90px;font-size:16px;line-height:22px}
-ul.item-listing .label{color:#fff;font-style:normal;font-size:16px;line-height:48px;width:92%;display:block;background-color:#3FB9D1;padding:0 4%}
-ul.item-listing .fa{color:#fff;float:none;margin:1px 7px 0 0}
+ul.item-listing .label{color:#fff;font-size:18px;line-height:48px;width:92%;display:block;background-color:#3FB9D1;padding:0 4%}
+ul.item-listing .fa{color:#fff;float:none;margin:0 10px 1px 0;font-size:25px}
 
 /* Formal pages */
 
