@@ -133,7 +133,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 					<a href="http://www.last.fm/user/brendanmurty" title="See my music statistics on Last.fm" aria-label="See my music statistics on Last.fm"><span class="fa fa-music"></span></a>
 				</li>
 				<li>
-					<a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam" aria-label="Join me in a game on Steam"><span class="fa fa-gamepad"></span></a>
+					<a href="https://pinboard.in/u:brendanmurty" title="View my favourite bookmarks on Pinboard" aria-label="View my favourite bookmarks on Pinboard"><span class="fa fa-bookmark"></span></a>
 				</li>
 			</ul>
 			<?php } ?>
