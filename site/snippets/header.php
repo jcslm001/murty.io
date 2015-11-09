@@ -1,6 +1,6 @@
 <?php
 
-$css_update_date = "20151110b";
+$css_update_date = "20151110c";
 $js_update_date = "20140906";
 
 snippet('auth');
