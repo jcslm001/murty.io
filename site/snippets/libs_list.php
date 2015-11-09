@@ -131,7 +131,6 @@ function list_items($pages_object,$type='all',$mode='all'){
 		// Instagram
 		$instagram = new \Instagram($GLOBALS['auth_instagram_client'], $GLOBALS['auth_instagram_secret'], '');
 		if($instagram){
-
 			// Show posts by "brendan.murty"
 			$instagram_results = $instagram->getUserMedia('990505523', '10');
 			if($instagram_results){
@@ -190,7 +189,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 					$item_date = date_human(date('j M y', strtotime($link->time)));
 					$item_date_specific = date('D M d H:i:s Y', strtotime($link->time));
 					$items[$i]['date'] = $item_date_specific;
-					$items[$i]['content'] = '<li class="pinboard"><a href="' . $link->href . '" title="Visit this link"><span class="summary">' . $link->description . '</span><span class="label"><span class="fa fa-external-link"></span>Saved ' . $item_date . '</span></a></li>';
+					$items[$i]['content'] = '<li class="pinboard"><a href="' . $link->href . '" title="Visit this link"><span class="summary">' . $link->description . '</span><span class="label"><span class="fa fa-bookmark"></span>Saved ' . $item_date . '</span></a></li>';
 
 					$i++;
 				}
