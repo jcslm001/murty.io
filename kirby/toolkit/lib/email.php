@@ -23,8 +23,8 @@ class Email extends Obj {
   const ERROR_INVALID_SERVICE = 5;
   const ERROR_DISABLED = 6;
 
-  static public $services = array();
-  static public $disabled = false;
+  public static $services = array();
+  public static $disabled = false;
 
   public $error = null;
 
@@ -78,7 +78,7 @@ class Email extends Obj {
       if(static::$disabled) throw new Error('Sending emails is disabled', static::ERROR_DISABLED);
 
       // overwrite already set values
-      if(is_array($params) and !empty($params)) {
+      if(is_array($params) && !empty($params)) {
         if(isset($params['service'])) $this->service = $params['service'];
         if(isset($params['options'])) $this->options = $params['options'];
         if(isset($params['to']))      $this->to      = $params['to'];
