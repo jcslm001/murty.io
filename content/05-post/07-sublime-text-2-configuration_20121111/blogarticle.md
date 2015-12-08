@@ -25,4 +25,4 @@ I'm now using the [Revelation](https://github.com/daylerees/colour-schemes#revel
 
 ### Update (15 Jan 2014)
 
-I'm now sharing my [Sublime Text 3 preferences](https://github.com/brendanmurty/sublime-text-preferences) on GitHub! Feel free to have a look at my current setup.
+I'm now sharing my [Sublime Text 3 preferences](https://github.com/brendanmurty/sublime-text-configuration) on GitHub! Feel free to have a look at my current setup.
