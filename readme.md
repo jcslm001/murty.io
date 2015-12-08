@@ -5,7 +5,7 @@ brendan.murty.id.au
 
 Here's my entire [personal website](http://brendan.murty.id.au) built on [Kirby CMS](http://getkirby.com/), coded in [Atom](https://atom.io/) and hosted by [Digital Ocean](http://digitalocean.com).
 
-I've built a customised [pulse feed](https://github.com/brendanmurty/website/tree/master/site/snippets/libs_list.php#L3) on the [home page](https://github.com/brendanmurty/website/tree/master/site/templates/home.php#L9) to show my recent public activity on [Twitter](https://twitter.com/brendanmurty), [GitHub](https://github.com/brendanmurty) and [Instagram](https://instagram.com/brendan.murty).
+I've built a customised [pulse feed](http://git.murty.id.au/brendan/brendan.murty.id.au/blob/master/site/snippets/libs_list.php#L3) on the [home page](http://git.murty.id.au/brendan/brendan.murty.id.au/blob/master/site/templates/home.php) to show my recent public activity on [Twitter](https://twitter.com/brendanmurty), [GitHub](https://github.com/brendanmurty) and [Instagram](https://instagram.com/brendan.murty).
 
 ## Why
 
@@ -17,10 +17,10 @@ I hope a budding web developer can learn something new from what I've done here 
 
 ## Contribute
 
-If you have an idea for an update or have found a bug, please [submit a new issue](https://github.com/brendanmurty/website/issues/new?assignee=brendanmurty). I'm also tracking my work on the website in the [issues section](https://github.com/brendanmurty/website/issues).
+If you have an idea for an update or have found a bug, please [submit a new issue](http://git.murty.id.au/brendan/brendan.murty.id.au/issues). I'm also tracking my work on the website in the [issues section](http://git.murty.id.au/brendan/brendan.murty.id.au/issues).
 
 ## License
 
-You can view the [License](https://github.com/brendanmurty/website/blob/master/license.md) file for rights and limitations when using the code here in your own projects.
+You can view the [License](http://git.murty.id.au/brendan/brendan.murty.id.au/blob/master/license.md) file for rights and limitations when using the code here in your own projects.
 
 The license is based on the [CSS-Tricks License](https://css-tricks.com/license/) which was created by [Chris Coyier](https://github.com/chriscoyier/).
